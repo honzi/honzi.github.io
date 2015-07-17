@@ -1,4 +1,4 @@
-honzi.github.io
----------------
+honzi.cz
+--------
 
-CC0 redirect from http://honzi.github.io to http://honzi.cz.
+A partial backup of http://honzi.cz, which is a website created and updated by [Jan Hořava](https://github.com/honzi).

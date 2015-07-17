@@ -1,0 +1,5 @@
+error_log
+.htaccess
+.htpasswd
+*.php
+*.zip
