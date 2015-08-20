@@ -1,4 +1,25 @@
 <!doctype html>
-<meta charset=utf-8>
-<meta content="0;url=/" http-equiv=refresh>
-<title>Redirecting...</title>
+<head>
+    <meta charset=utf-8>
+    <title>Redirecting...</title>
+</head>
+
+<script>
+var path = window.location.pathname.split('/');
+if(path[1] == 'repositories'){
+    path = '/' + window.location.pathname.split('/')[2] + '/';
+}else{
+    path = '..'
+}
+
+var redirect = document.createElement('meta');
+redirect.setAttribute(
+  'http-equiv',
+  'refresh'
+);
+redirect.setAttribute(
+  'content',
+  '0;url=' + path
+);
+document.getElementsByTagName('head')[0].appendChild(redirect);
+</script>
