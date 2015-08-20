@@ -5,11 +5,11 @@
 </head>
 
 <script>
-var path = window.location.pathname.split('/');
-if(path[1] == 'repositories'){
-    path = '/' + window.location.pathname.split('/')[2] + '/';
+var path = document.referrer.split('/');
+if(path[3] == 'repositories'){
+    path = '/' + path[4] + '/';
 }else{
-    path = '..'
+    path = '..';
 }
 
 var redirect = document.createElement('meta');
