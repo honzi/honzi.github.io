@@ -1,19 +1,21 @@
 <!doctype html>
 <meta charset=utf-8>
-<title>LHRD HTML Tool (made with TinyMCE, updated: 2013-12-05)</title>
-<link href=d.css rel=stylesheet>
+<title>LHRD HTML Tool (made with TinyMCE, updated: 2015-08-23)</title>
+<link href=html.css rel=stylesheet>
 
 <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
-<script type="text/javascript">tinyMCE.init({
-content_css:'h.css',
-menubar:false,
-mode:'textareas',
-plugins:'code link lists print',
-statusbar:false,
-toolbar:'undo redo | bold italic | bullist numlist | link unlink | print code',
-valid_elements:'a[href|target],em,li,ol,p,strong,ul'
-});</script>
+<script type="text/javascript">
+tinyMCE.init({
+  content_css:'tinymce.css',
+  menubar:false,
+  mode:'textareas',
+  plugins:'code link lists print',
+  statusbar:false,
+  toolbar:'undo redo | bold italic | bullist numlist | link unlink | print code',
+  valid_elements:'a[href|target],em,li,ol,p,strong,ul',
+});
+</script>
 
 <textarea rows=30></textarea>
 
-<script src=a.js></script>
+<script src=html.js></script>
