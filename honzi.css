@@ -3,7 +3,8 @@ a{
     display: block;
     line-height: 3em;
 }
-a:hover{
+a:hover,
+td:nth-child(2) a:hover{
     color: #777;
 }
 b{
