@@ -1,14 +1,10 @@
 a{
     color: #4c4;
     display: block;
-    line-height: 3em;
 }
 a:hover,
 td:nth-child(2) a:hover{
     color: #777;
-}
-b{
-    font-size: 142%;
 }
 body{
     background: #000;
@@ -23,6 +19,7 @@ table{
 }
 td{
     border-bottom: 1px solid #555;
+    line-height: 3em;
 }
 td:nth-child(2) a{
     color: #f70;
