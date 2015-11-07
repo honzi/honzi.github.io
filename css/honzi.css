@@ -9,3 +9,6 @@ body{
     color: #aaa;
     font-family: sans-serif;
 }
+pre{
+    white-space: pre-wrap;
+}
