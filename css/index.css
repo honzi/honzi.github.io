@@ -12,6 +12,9 @@ body{
     font-family: sans-serif;
     text-align: center;
 }
+.dl td:first-child a{
+    color: #19f;
+}
 table{
     display: inline-block;
     margin: auto;
@@ -23,7 +26,4 @@ td{
 }
 td:nth-child(2) a{
     color: #f70;
-}
-.zip{
-    color: #19f;
 }
