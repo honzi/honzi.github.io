@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://honzi.cz/Dream/</loc>
+        <loc>http://honzi.cz/dream/</loc>
+    </url>
+    <url>
+        <loc>http://honzi.cz/gifs/</loc>
+    </url>
+    <url>
+        <loc>http://honzi.cz/kitties/</loc>
     </url>
     <url>
         <loc>http://honzi.cz/personalbests/</loc>
