@@ -1,6 +1,5 @@
 a{
     color: #4c4;
-    display: block;
 }
 body{
     background: #000;
@@ -8,28 +7,31 @@ body{
     font-family: monospace;
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
 }
-.dl a{
-    color: #19f;
-    display: inline-block;
-}
-.dl a:first-child,
 .external{
     color: #f70;
 }
+.header{
+    background: #333;
+}
 table{
-    display: inline-block;
+    border-collapse: collapse;
+    margin: auto;
     text-align: left;
-    vertical-align: top;
 }
 td{
-    border-bottom: 1px solid #555;
-    line-height: 3em;
+    border: 1px solid #555;
+    padding: 9px;
+    vertical-align: top;
+}
+ul{
+    margin: 0;
+    padding-left: 20px;
 }
 
-a:hover,
-.dl a:hover,
-td:nth-child(2) a:hover{
+a:hover{
     color: #777;
+}
+tr:hover{
+    background: #333;
 }
