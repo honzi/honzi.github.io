@@ -1,7 +1,7 @@
 honzi/honzi.github.io
 ---------------------
 
-The files that run http://honzi.cz.
+The files that run https://honzi.cz.
 
 ---
 

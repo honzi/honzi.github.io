@@ -1,4 +1,4 @@
-Sitemap: http://honzi.cz/sitemap.xml
+Sitemap: https://honzi.cz/sitemap.xml
 
 User-agent: *
 Disallow:
