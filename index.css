@@ -4,20 +4,14 @@ a{
 body{
     background: #000;
     color: #aaa;
-    font-family: monospace;
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px monospace;
 }
 .external{
     color: #f70;
 }
-.header{
-    background: #333;
-}
 table{
     border-collapse: collapse;
     margin: auto;
-    text-align: left;
 }
 td{
     border: 1px solid #555;
