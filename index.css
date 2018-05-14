@@ -5,22 +5,15 @@ body{
     background: #000;
     color: #aaa;
     font: bold 14px monospace;
+    text-align: center;
+}
+div{
+    border-bottom: 1px solid #555;
+    display: inline-block;
+    padding: 9px;
 }
 .external{
     color: #f70;
-}
-table{
-    border-collapse: collapse;
-    margin: auto;
-}
-td{
-    border: 1px solid #555;
-    padding: 9px;
-    vertical-align: top;
-}
-ul{
-    margin: 0;
-    padding-left: 20px;
 }
 
 a:hover{
