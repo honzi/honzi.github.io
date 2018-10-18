@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://honzi.cz/kitties/</loc>
+        <loc>https://honzi.cz/bookmarks/</loc>
     </url>
     <url>
         <loc>https://honzi.cz/personalbests/</loc>
     </url>
     <url>
         <loc>https://honzi.cz/scp/</loc>
+    </url>
+    <url>
+        <loc>https://honzi.cz/skills/</loc>
     </url>
     <url>
         <loc>https://honzi.cz/writings/</loc>
