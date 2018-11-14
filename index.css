@@ -1,17 +1,12 @@
 a{
     color: #4c4;
 }
-.big{
-    font-size: 150%;
-}
 body{
     background: #000;
     color: #aaa;
     font: bold 14px monospace;
+    line-height: 2em;
     text-align: center;
-}
-div{
-    padding: 9px;
 }
 .external{
     color: #f70;
