@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://honzi.cz/bookmarks/</loc>
+        <loc>https://honzi.cz/bookmarks/index.htm</loc>
     </url>
     <url>
-        <loc>https://honzi.cz/personalbests/</loc>
+        <loc>https://honzi.cz/personalbests/index.htm</loc>
     </url>
     <url>
-        <loc>https://honzi.cz/scp/</loc>
+        <loc>https://honzi.cz/scp/index.htm</loc>
     </url>
     <url>
-        <loc>https://honzi.cz/skills/</loc>
+        <loc>https://honzi.cz/skills/index.htm</loc>
     </url>
     <url>
-        <loc>https://honzi.cz/writings/</loc>
+        <loc>https://honzi.cz/writings/index.htm</loc>
     </url>
 </urlset>
