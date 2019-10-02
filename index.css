@@ -12,6 +12,9 @@ body{
     color: #f70;
 }
 
+a:focus{
+    outline: thin solid #4c4;
+}
 a:hover{
     color: #777;
 }
