@@ -14,6 +14,7 @@
     <li><a href=#armor-coating-bpos>Armor Coating BPOs</a>
     <li><a href=#ballistic-control-system-bpos>Ballistic Control System BPOs</a>
     <li><a href=#co-processor-bpos>Co-Processor BPOs</a>
+    <li><a href=#container-bpos>Container BPOs</a>
     <li><a href=#damage-control-bpos>Damage Control BPOs</a>
     <li><a href=#defender-missile-bpos>Defender Missile BPOs</a>
     <li><a href=#drone-upgrade-bpos>Drone Upgrade BPOs</a>
@@ -42,12 +43,17 @@
     <li><a href=#script-bpos>Script BPOs</a>
     <li><a href=#sensor-booster-bpos>Sensor Booster BPOs</a>
     <li><a href=#shield-boost-amplifier-bpos>Shield Boost Amplifier BPOs</a>
+    <li><a href=#shield-booster-bpos>Shield Booster BPOs</a>
+    <li><a href=#shield-extender-bpos>Shield Extender BPOs</a>
+    <li><a href=#shield-hardener-bpos>Shield Hardener BPOs</a>
     <li><a href=#shield-recharger-bpos>Shield Recharger BPOs</a>
+    <li><a href=#shield-resistance-amplifier-bpos>Shield Resistance Amplifier BPOs</a>
+    <li><a href=#shuttle-bpos>Shuttle BPOs</a>
     <li><a href=#signal-amplifier-bpos>Signal Amplifier BPOs</a>
     <li><a href=#smart-bomb-bpos>Smart Bomb BPOs</a>
     <li><a href=#survey-probe-launcher-bpos>Survey Probe Launcher BPOs</a>
     <li><a href=#survey-scanner-bpos>Survey Scanner BPOs</a>
-    <li><a href=#tractor-beam-bpos>Tractor Beam BPOs</a>
+    <li><a href=#tool-bpos>Tool BPOs</a>
     <li><a href=#warp-scrambler-bpos>Warp Scrambler BPOs</a>
     <li><a href=#weapon-disruptor-bpos>Weapon Disruptor BPOs</a>
   </ul>
@@ -286,7 +292,6 @@
     <li><a href=#scan-probe-launchers>Scan Probe Launchers</a>
     <li><a href=#scanner-probes>Scanner Probes</a>
     <li><a href=#scanning-upgrades>Scanning Upgrades</a>
-    <li><a href=#scanning-upgrade-times>Scanning Upgrade Times</a>
     <li><a href=#scordite>Scordite</a>
     <li><a href=#secure-cargo-containers>Secure Cargo Containers</a>
     <li><a href=#security-tags>Security Tags</a>
@@ -357,10 +362,10 @@
     <td>Armor Coating BPOs
     <td>Material
     <td>Time
-  <tr>
+  <tr class=gold>
     <td>EM Coating 1
-    <td>-1%
-    <td>
+    <td>-10%
+    <td>-20%
   <tr>
     <td>EM Energized Membrane 1
     <td>-1%
@@ -416,6 +421,22 @@
   <tr>
     <td>Co-Processor 1
     <td>-1%
+    <td>
+  <tr class=header id=container-bpos>
+    <td>Container BPOs
+    <td>Material
+    <td>Time
+  <tr>
+    <td>Station Container
+    <td>
+    <td>
+  <tr>
+    <td>Station Vault Container
+    <td>
+    <td>
+  <tr>
+    <td>Station Warehouse Container
+    <td>
     <td>
   <tr class=header id=damage-control-bpos>
     <td>Damage Control BPOs
@@ -1298,6 +1319,10 @@
     <td>-10%
     <td>-20%
   <tr class=gold>
+    <td>Small Nanobot Accelerator 1
+    <td>-10%
+    <td>-20%
+  <tr class=gold>
     <td>Small Particle Dispersion Augmentor 1
     <td>-10%
     <td>-20%
@@ -1378,12 +1403,16 @@
     <td>Material
     <td>Time
   <tr>
+    <td>Scan Acquisition Array 1
+    <td>
+    <td>
+  <tr>
     <td>Scan Pinpointing Array 1
-    <td>-2%
+    <td>
     <td>
   <tr>
     <td>Scan Rangefinding Array 1
-    <td>-2%
+    <td>
     <td>
   <tr class=header id=script-bpos>
     <td>Script BPOs
@@ -1417,6 +1446,42 @@
     <td>Shield Boost Amplifier 1
     <td>-1%
     <td>
+  <tr class=header id=shield-booster-bpos>
+    <td>Shield Booster BPOs
+    <td>Material
+    <td>Time
+  <tr>
+    <td>Small Shield Booster 1
+    <td>
+    <td>
+  <tr class=header id=shield-extender-bpos>
+    <td>Shield Extender BPOs
+    <td>Material
+    <td>Time
+  <tr>
+    <td>Small Shield Extender 1
+    <td>
+    <td>
+  <tr class=header id=shield-hardener-bpos>
+    <td>Shield Hardener BPOs
+    <td>Material
+    <td>Time
+  <tr>
+    <td>Explosive Shield Hardener 1
+    <td>
+    <td>
+  <tr>
+    <td>Kinetic Shield Hardener 1
+    <td>
+    <td>
+  <tr>
+    <td>Multispectrum Shield Hardener 1
+    <td>
+    <td>
+  <tr>
+    <td>Thermal Shield Hardener 1
+    <td>
+    <td>
   <tr class=header id=shield-recharger-bpos>
     <td>Shield Recharger BPOs
     <td>Material
@@ -1444,6 +1509,18 @@
   <tr>
     <td>Thermal Shield Amplifier 1
     <td>-1%
+    <td>
+  <tr class=header id=shuttle-bpos>
+    <td>Shuttle BPOs
+    <td>Material
+    <td>Time
+  <tr>
+    <td>Amarr Shuttle
+    <td>
+    <td>
+  <tr>
+    <td>Caldari Shuttle
+    <td>
     <td>
   <tr class=header id=signal-amplifier-bpos>
     <td>Signal Amplifier BPOs
@@ -1497,14 +1574,46 @@
     <td>Survey Scanner 1
     <td>-1%
     <td>
-  <tr class=header id=tractor-beam-bpos>
-    <td>Tractor Beam BPOs
+  <tr class=header id=tool-bpos>
+    <td>Tool BPOs
     <td>Material
     <td>Time
-  <tr class=gold>
-    <td>Small Tractor Beam 1
-    <td>-10%
-    <td>-20%
+  <tr>
+    <td>R.A.M. - Ammunition Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Armor/Hull Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Electronics
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Energy Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Robotics
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Shield Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Starship Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.A.M. - Weapon Tech
+    <td>
+    <td>
+  <tr>
+    <td>R.Db - Ishukone
+    <td>
+    <td>
   <tr class=header id=warp-scrambler-bpos>
     <td>Warp Scrambler BPOs
     <td>Material
@@ -1601,8 +1710,8 @@
     <td>8
   <tr>
     <td>Calm Dark Filament
-    <td>26
-    <td>26
+    <td>28
+    <td>28
   <tr>
     <td>Calm Electrical Filament
     <td>15
@@ -1725,8 +1834,8 @@
     <td>4
   <tr>
     <td>Hunt YC123 Acceleration Gate Key
-    <td>1
-    <td>8
+    <td>9
+    <td>9
   <tr>
     <td>Key of the Arcane
     <td>0
@@ -1745,8 +1854,8 @@
     <td>2
   <tr>
     <td>Scratched and Dented Keycard
-    <td>989
-    <td>990
+    <td>997
+    <td>997
   <tr>
     <td>Security Cypher for Angel Prison
     <td>3
@@ -2201,28 +2310,28 @@
     <td>2
   <tr>
     <td>Upgraded EM Coating 1
-    <td>154
-    <td>154
+    <td>155
+    <td>155
   <tr>
     <td>Upgraded Explosive Coating 1
     <td>108
     <td>108
   <tr>
     <td>Upgraded Kinetic Coating 1
-    <td>132
-    <td>132
+    <td>133
+    <td>133
   <tr>
     <td>Upgraded Layered Coating 1
-    <td>145
-    <td>145
+    <td>146
+    <td>146
   <tr>
     <td>Upgraded Multispectrum Coating 1
     <td>130
     <td>130
   <tr>
     <td>Upgraded Thermal Coating 1
-    <td>115
-    <td>115
+    <td>116
+    <td>116
   <tr class=header id=armor-hardeners>
     <td>Armor Hardeners
     <td>Now
@@ -2277,8 +2386,8 @@
     <td>1
   <tr>
     <td>Prototype Compact Thermal Armor Hardener 1
-    <td>16
-    <td>16
+    <td>17
+    <td>17
   <tr>
     <td>Thermal Armor Hardener 1
     <td>2
@@ -2301,12 +2410,12 @@
     <td>26
   <tr>
     <td>100mm Crystalline Carbonide Restrained Plates
-    <td>218
-    <td>218
+    <td>219
+    <td>219
   <tr>
     <td>100mm Rolled Tungsten Compact Plates
-    <td>244
-    <td>244
+    <td>246
+    <td>246
   <tr>
     <td>100mm Steel Plates 1
     <td>8
@@ -2329,12 +2438,12 @@
     <td>9
   <tr>
     <td>200mm Crystalline Carbonide Restrained Plates
-    <td>228
-    <td>228
+    <td>229
+    <td>229
   <tr>
     <td>200mm Rolled Tunsten Compact Plates
-    <td>213
-    <td>213
+    <td>217
+    <td>217
   <tr>
     <td>200mm Steel Plates 1
     <td>3
@@ -2345,12 +2454,12 @@
     <td>2
   <tr>
     <td>400mm Crystalline Carbonide Restrained Plates
-    <td>213
-    <td>213
+    <td>216
+    <td>216
   <tr>
     <td>400mm Rolled Tungsten Compact Plates
-    <td>210
-    <td>210
+    <td>211
+    <td>211
   <tr>
     <td>400mm Steel Plates 1
     <td>1
@@ -2437,8 +2546,8 @@
     <td>1
   <tr>
     <td>Small ACM Compact Armor Repairer
-    <td>114
-    <td>114
+    <td>115
+    <td>115
   <tr>
     <td>Small Armor Repairer 1
     <td>22
@@ -2557,8 +2666,8 @@
     <td>115
   <tr>
     <td>Men's 'Oculina Carmina' Facial Augmentation
-    <td>91
-    <td>91
+    <td>93
+    <td>93
   <tr>
     <td>Men's 'RubySet TorsoRig' Body Augmentation
     <td>10
@@ -2577,16 +2686,16 @@
     <td>130
   <tr>
     <td>Women's 'Eico Auroralite' Facial Augmentation
-    <td>87
-    <td>87
+    <td>88
+    <td>88
   <tr>
     <td>Women's 'Eico BioSec' Facial Augmentation
     <td>1
     <td>1
   <tr>
     <td>Women's 'Eico Flamjaw' Facial Augmentation
-    <td>95
-    <td>95
+    <td>96
+    <td>96
   <tr>
     <td>Women's 'Eico Redwire XVI' Facial Augmentation
     <td>13
@@ -2597,8 +2706,8 @@
     <td>72
   <tr>
     <td>Women's 'Oculina Carmina' Facial Augmentation
-    <td>70
-    <td>70
+    <td>71
+    <td>71
   <tr>
     <td>Womens's 'Purity Vector' Facial Augmentation
     <td>1
@@ -2649,40 +2758,40 @@
     <td>Most
   <tr>
     <td>Inferno Auto-Targeting Heavy Missile 1
-    <td>41,500
-    <td>41,500
+    <td>41,900
+    <td>41,900
   <tr>
     <td>Mjolnir Auto-Targeting Heavy Missile 1
-    <td>39,800
-    <td>39,800
+    <td>40,200
+    <td>40,200
   <tr>
     <td>Nova Auto-Targeting Heavy Missile 1
-    <td>40,200
-    <td>40,200
+    <td>40,600
+    <td>40,600
   <tr>
     <td>Scourge Auto-Targeting Heavy Missile 1
-    <td>40,100
-    <td>40,100
+    <td>40,700
+    <td>40,700
   <tr class=header id=auto-targeting-light-missiles>
     <td>Auto-Targeting Light Missiles
     <td>Now
     <td>Most
   <tr>
     <td>Inferno Auto-Targeting Light Missile 1
-    <td>19,277
-    <td>19,277
+    <td>19,577
+    <td>19,577
   <tr>
     <td>Mjolnir Auto-Targeting Light Missile 1
-    <td>17,100
-    <td>17,100
+    <td>17,300
+    <td>17,300
   <tr>
     <td>Nova Auto-Targeting Light Missile 1
     <td>14,000
     <td>14,000
   <tr>
     <td>Scourge Auto-Targeting Light Missile 1
-    <td>14,700
-    <td>14,700
+    <td>15,100
+    <td>15,100
   <tr class=header id=auxiliary-power-cores>
     <td>Auxiliary Power Cores
     <td>Now
@@ -2713,8 +2822,8 @@
     <td>1
   <tr>
     <td>Ballistic Control System 1
-    <td>3
-    <td>3
+    <td>4
+    <td>4
   <tr>
     <td>Ballistic Control System 2
     <td>16
@@ -2737,8 +2846,8 @@
     <td>300
   <tr>
     <td>Oxygen
-    <td>399
-    <td>400
+    <td>409
+    <td>409
   <tr>
     <td>Reactive Metals
     <td>584
@@ -3017,16 +3126,16 @@
     <td>1
   <tr>
     <td>Men's 'Outlaw' Pants (Guristas)
-    <td>5
-    <td>6
+    <td>10
+    <td>10
   <tr>
     <td>Men's Jita 4-4 Crew Pants
     <td>0
     <td>1
   <tr>
     <td>Men's YC119 Yoiul Festival Pants
-    <td>93
-    <td>94
+    <td>99
+    <td>99
   <tr>
     <td>Men's Yoiul Stormchasers Pants
     <td>8
@@ -3045,8 +3154,8 @@
     <td>1
   <tr>
     <td>Women's YC119 Yoiul Festival Pants
-    <td>67
-    <td>67
+    <td>75
+    <td>75
   <tr>
     <td>Women's Yoiul Stormchasers Pants
     <td>8
@@ -3085,12 +3194,12 @@
     <td>26
   <tr>
     <td>Deluge Enduring Burst Jammer
-    <td>75
-    <td>75
+    <td>76
+    <td>76
   <tr>
     <td>Rash Compact Burst Jammer
-    <td>76
-    <td>76
+    <td>77
+    <td>77
   <tr class=header id=capacitor-batteries>
     <td>Capacitor Batteries
     <td>Now
@@ -3117,8 +3226,8 @@
     <td>1
   <tr>
     <td>Medium Compact Pb-Acid Cap Battery
-    <td>289
-    <td>289
+    <td>293
+    <td>293
   <tr>
     <td>Republic Fleet Large Cap Battery
     <td>0
@@ -3137,8 +3246,8 @@
     <td>2
   <tr>
     <td>Small Compact Pb-Acid Cap Battery
-    <td>188
-    <td>188
+    <td>192
+    <td>192
   <tr class=header id=capacitor-boosters>
     <td>Capacitor Boosters
     <td>Now
@@ -3161,8 +3270,8 @@
     <td>1
   <tr>
     <td>Medium F-RX Compact Capacitor Booster
-    <td>496
-    <td>496
+    <td>499
+    <td>499
   <tr>
     <td>Small Capacitor Booster 1
     <td>21
@@ -3173,8 +3282,8 @@
     <td>13
   <tr>
     <td>Small F-RX Compact Capacitor Booster
-    <td>291
-    <td>291
+    <td>292
+    <td>292
   <tr class=header id=capacitor-booster-charges>
     <td>Capacitor Booster Charges
     <td>Now
@@ -3253,12 +3362,12 @@
     <td>4
   <tr>
     <td>Mark 1 Compact Capacitor Flux Coil
-    <td>94
-    <td>94
+    <td>95
+    <td>95
   <tr>
     <td>Type-D Restrained Capacitor Flux Coil
-    <td>83
-    <td>83
+    <td>84
+    <td>84
   <tr class=header id=capacitor-power-relays>
     <td>Capacitor Power Relays
     <td>Now
@@ -3273,12 +3382,12 @@
     <td>3
   <tr>
     <td>Mark 1 Compact Capacitor Power Relay
-    <td>268
-    <td>268
+    <td>273
+    <td>273
   <tr>
     <td>Type-D Restrained Capacitor Power Relay
-    <td>295
-    <td>295
+    <td>298
+    <td>298
   <tr class=header id=capacitor-rechargers>
     <td>Capacitor Rechargers
     <td>Now
@@ -3301,8 +3410,8 @@
     <td>1
   <tr>
     <td>Eutectic Compact Cap Recharger
-    <td>386
-    <td>386
+    <td>390
+    <td>390
   <tr class=header id=cargo-containers>
     <td>Cargo Containers
     <td>Now
@@ -3337,8 +3446,8 @@
     <td>95
   <tr>
     <td>Type-E Enduring Cargo Scanner
-    <td>407
-    <td>407
+    <td>410
+    <td>410
   <tr class=header id=cloaking-devices>
     <td>Cloaking Devices
     <td>Now
@@ -3437,16 +3546,16 @@
     <td>5
   <tr>
     <td>Acolyte 1
-    <td>511
-    <td>511
+    <td>513
+    <td>513
   <tr>
     <td>Acolyte 2
     <td>38
     <td>38
   <tr>
     <td>Berserker 1
-    <td>203
-    <td>203
+    <td>204
+    <td>204
   <tr>
     <td>Berserker 2
     <td>0
@@ -3497,16 +3606,16 @@
     <td>9
   <tr>
     <td>Hammerhead 1
-    <td>1,024
-    <td>1,024
+    <td>1,027
+    <td>1,027
   <tr>
     <td>Hammerhead 2
     <td>11
     <td>39
   <tr>
     <td>Hobgoblin 1
-    <td>849
-    <td>849
+    <td>860
+    <td>860
   <tr>
     <td>Hobgoblin 2
     <td>64
@@ -3533,24 +3642,24 @@
     <td>7
   <tr>
     <td>Infiltrator 1
-    <td>646
-    <td>646
+    <td>648
+    <td>648
   <tr>
     <td>Infiltrator 2
     <td>0
     <td>13
   <tr>
     <td>Ogre 1
-    <td>105
-    <td>105
+    <td>106
+    <td>106
   <tr>
     <td>Ogre 2
     <td>0
     <td>21
   <tr>
     <td>Praetor 1
-    <td>144
-    <td>144
+    <td>146
+    <td>146
   <tr>
     <td>Praetor 2
     <td>0
@@ -3573,16 +3682,16 @@
     <td>10
   <tr>
     <td>Valkyrie 1
-    <td>193
-    <td>193
+    <td>194
+    <td>194
   <tr>
     <td>Valkyrie 2
     <td>0
     <td>24
   <tr>
     <td>Vespa 1
-    <td>215
-    <td>215
+    <td>219
+    <td>219
   <tr>
     <td>Vespa 2
     <td>6
@@ -3593,8 +3702,8 @@
     <td>5
   <tr>
     <td>Warrior 1
-    <td>327
-    <td>327
+    <td>328
+    <td>328
   <tr>
     <td>Warrior 2
     <td>35
@@ -3729,8 +3838,8 @@
     <td>1
   <tr>
     <td>DED Informant's Frozen Corpse
-    <td>68
-    <td>68
+    <td>80
+    <td>80
   <tr>
     <td>Device
     <td>0
@@ -3801,8 +3910,8 @@
     <td>3
   <tr>
     <td>Metal Scraps
-    <td>45,025
-    <td>45,025
+    <td>45,384
+    <td>45,384
   <tr>
     <td>Minmatar Graduation Certificate (signed)
     <td>1
@@ -3825,8 +3934,8 @@
     <td>1
   <tr>
     <td>R.S. Officer's Passcard
-    <td>97
-    <td>98
+    <td>99
+    <td>99
   <tr>
     <td>Reinforced Metal Scraps
     <td>125
@@ -3993,8 +4102,8 @@
     <td>8
   <tr>
     <td>Photonic Upgraded Co-Processor
-    <td>216
-    <td>216
+    <td>222
+    <td>222
   <tr class=header id=criminal-tags>
     <td>Criminal Tags
     <td>Now
@@ -4017,8 +4126,8 @@
     <td>4
   <tr>
     <td>Angel Electrum Tag
-    <td>80
-    <td>80
+    <td>83
+    <td>83
   <tr>
     <td>Angel Palladium Tag
     <td>16
@@ -4161,8 +4270,8 @@
     <td>2
   <tr>
     <td>Sansha Palladium Tag
-    <td>26
-    <td>26
+    <td>27
+    <td>27
   <tr>
     <td>Sansha Silver Tag
     <td>17
@@ -4225,8 +4334,8 @@
     <td>1,000
   <tr>
     <td>Inferno Cruise Missile
-    <td>6,768
-    <td>6,768
+    <td>6,868
+    <td>6,868
   <tr>
     <td>Mjolnir Cruise Missile
     <td>7,200
@@ -4333,7 +4442,7 @@
     <td>23
   <tr>
     <td>ISK (Honzifox)
-    <td>105,275,253.60
+    <td>267,817,364.75
     <td>13,700,607,892.36
   <tr>
     <td>Memory
@@ -4353,8 +4462,8 @@
     <td>2,860
   <tr>
     <td>Skill Points
-    <td>11,816,718
-    <td>11,816,718
+    <td>11,856,718
+    <td>11,856,718
   <tr>
     <td>Willpower
     <td>23
@@ -4461,7 +4570,7 @@
     <td>Most
   <tr>
     <td>Cybernetic Subprocessor - Basic
-    <td>4
+    <td>5
     <td>8
   <tr>
     <td>Limited Cybernetic Subprocessor - Beta
@@ -4525,7 +4634,7 @@
     <td>1
   <tr>
     <td>Social Adaption Chip - Basic
-    <td>16
+    <td>15
     <td>16
   <tr>
     <td>Social Adaption Chip - Standard
@@ -4689,12 +4798,12 @@
     <td>70
   <tr>
     <td>EFFA Compact Assault Damage Control
-    <td>62
-    <td>62
+    <td>63
+    <td>63
   <tr>
     <td>FFR Enduring Assault Damage Control
-    <td>39
-    <td>39
+    <td>40
+    <td>40
   <tr>
     <td>IFFA Compact Damage Control
     <td>7
@@ -4929,8 +5038,8 @@
     <td>Most
   <tr>
     <td>AE-K Compact Drone Damage Amplifier
-    <td>170
-    <td>170
+    <td>171
+    <td>171
   <tr>
     <td>Drone Damage Amplifier 1
     <td>7
@@ -4965,12 +5074,12 @@
     <td>Most
   <tr>
     <td>AML Compact Omnidirectional Tracking Link
-    <td>213
-    <td>213
+    <td>215
+    <td>215
   <tr>
     <td>Denny Enduring Omnidirectional Tracking Link
-    <td>196
-    <td>196
+    <td>200
+    <td>200
   <tr>
     <td>Omnidirectional Tracking Link 1
     <td>12
@@ -4997,8 +5106,8 @@
     <td>460
   <tr>
     <td>Drop
-    <td>1,562
-    <td>1,563
+    <td>1,572
+    <td>1,572
   <tr>
     <td>Exile
     <td>61
@@ -5033,56 +5142,56 @@
     <td>Most
   <tr>
     <td>Aergia Compact Magnetometric ECM
-    <td>95
-    <td>95
+    <td>96
+    <td>96
   <tr>
     <td>BZ-5 Scoped Gravimetric ECM
-    <td>29
-    <td>29
+    <td>30
+    <td>30
   <tr>
     <td>Compulsive Scoped Multispectral ECM
-    <td>75
-    <td>75
+    <td>76
+    <td>76
   <tr>
     <td>CZ-4 Compact Gravimetric ECM
     <td>102
     <td>103
   <tr>
     <td>Enfeebling Scoped Ladar ECM
-    <td>213
-    <td>213
+    <td>214
+    <td>214
   <tr>
     <td>FZ-3a Enduring Gravimetric ECM
     <td>32
     <td>32
   <tr>
     <td>Gloom Enduring Radar ECM
-    <td>55
-    <td>55
+    <td>56
+    <td>56
   <tr>
     <td>Halting Compact Ladar ECM
     <td>153
     <td>153
   <tr>
     <td>Hypnos Scoped Magnetometric ECM
-    <td>93
-    <td>93
+    <td>94
+    <td>94
   <tr>
     <td>Induced Compact Multispectral ECM
     <td>133
     <td>133
   <tr>
     <td>Initiated Enduring Multispectral ECM
-    <td>136
-    <td>136
+    <td>138
+    <td>138
   <tr>
     <td>Ladar ECM 1
     <td>2
     <td>2
   <tr>
     <td>Languid Enduring Ladar ECM
-    <td>182
-    <td>182
+    <td>186
+    <td>186
   <tr>
     <td>Morpheus Enduring Magnetometric ECM
     <td>90
@@ -5097,20 +5206,20 @@
     <td>2
   <tr>
     <td>Shade Compact Radar ECM
-    <td>47
-    <td>47
+    <td>48
+    <td>48
   <tr>
     <td>Umbra Scoped Radar ECM
-    <td>51
-    <td>52
+    <td>53
+    <td>53
   <tr class=header id=ecm-stabilizers>
     <td>ECM Stabilizers
     <td>Now
     <td>Most
   <tr>
     <td>Hypnos Compact Signal Distortion Amplifier 1
-    <td>204
-    <td>204
+    <td>206
+    <td>206
   <tr>
     <td>Signal Distortion Amplifier 1
     <td>2
@@ -5213,11 +5322,11 @@
     <td>97
   <tr>
     <td>Federation Navy Command Sergeant Major Insignia 1
-    <td>543
-    <td>543
+    <td>551
+    <td>551
   <tr>
     <td>Federation Navy Fleet Captain Insignia 1
-    <td>45
+    <td>62
     <td>311
   <tr>
     <td>Federation Navy Fleet Colonel Insignia 1
@@ -5229,7 +5338,7 @@
     <td>12
   <tr>
     <td>Federation Navy Fleet Major Insignia 1
-    <td>32
+    <td>41
     <td>546
   <tr>
     <td>Federation Navy Midshipman Insignia 1
@@ -5245,16 +5354,16 @@
     <td>233
   <tr>
     <td>Federation Navy Sergeant Insignia 1
-    <td>596
-    <td>596
+    <td>600
+    <td>600
   <tr>
     <td>Federation Navy Sergeant Insignia 2
-    <td>588
-    <td>588
+    <td>599
+    <td>599
   <tr>
     <td>Federation Navy Sergeant Insignia 3
-    <td>100
-    <td>100
+    <td>102
+    <td>102
   <tr>
     <td>Federation Navy Sergeant Major Insignia 1
     <td>56
@@ -5313,24 +5422,24 @@
     <td>403
   <tr>
     <td>Republic Fleet Captain Insignia 1
-    <td>39
+    <td>48
     <td>213
   <tr>
     <td>Republic Fleet Commander Insignia 2
-    <td>2
+    <td>6
     <td>98
   <tr>
     <td>Republic Fleet High Captain Insignia 1
-    <td>89
+    <td>105
     <td>271
   <tr>
     <td>Republic Fleet Midshipman Insignia 1
-    <td>318
-    <td>318
+    <td>331
+    <td>331
   <tr>
     <td>Republic Fleet Midshipman Insignia 2
-    <td>493
-    <td>493
+    <td>505
+    <td>505
   <tr>
     <td>Republic Fleet Midshipman Insignia 3
     <td>44
@@ -5341,20 +5450,20 @@
     <td>1,075
   <tr>
     <td>Republic Fleet Private Insignia 2
-    <td>778
-    <td>778
+    <td>794
+    <td>794
   <tr>
     <td>Republic Fleet Private Insignia 3
-    <td>511
-    <td>511
+    <td>517
+    <td>517
   <tr>
     <td>Republic Fleet Private Insignia 4
     <td>65
     <td>65
   <tr>
     <td>Republic Fleet Private Insignia 5
-    <td>75
-    <td>75
+    <td>82
+    <td>82
   <tr>
     <td>Zazzmatazz's Bodyguard Insignia
     <td>125
@@ -5381,20 +5490,20 @@
     <td>1
   <tr>
     <td>Compact EM Energized Membrane
-    <td>161
-    <td>161
+    <td>162
+    <td>162
   <tr>
     <td>Compact Explosive Energized Membrane
     <td>126
     <td>126
   <tr>
     <td>Compact Kinetic Energized Membrane
-    <td>117
-    <td>117
+    <td>118
+    <td>118
   <tr>
     <td>Compact Layered Energized Membrane
-    <td>132
-    <td>132
+    <td>133
+    <td>133
   <tr>
     <td>Compact Multispectrum Energized Membrane
     <td>142
@@ -5473,12 +5582,12 @@
     <td>1
   <tr>
     <td>Medium Gremlin Compact Energy Neutralizer
-    <td>57
-    <td>57
+    <td>58
+    <td>58
   <tr>
     <td>Medium Infectious Scoped Energy Neutralizer
-    <td>84
-    <td>84
+    <td>85
+    <td>85
   <tr>
     <td>Small Energy Neutralizer 1
     <td>18
@@ -5489,12 +5598,12 @@
     <td>4
   <tr>
     <td>Small Gremlin Compact Energy Neutralizer
-    <td>228
-    <td>228
+    <td>231
+    <td>231
   <tr>
     <td>Small Infectious Scoped Energy Neutralizer
-    <td>241
-    <td>241
+    <td>246
+    <td>246
   <tr>
     <td>True Sansha Heavy Energy Neutralizer
     <td>0
@@ -5529,8 +5638,8 @@
     <td>3
   <tr>
     <td>Medium Ghoul Compact Energy Nosferatu
-    <td>63
-    <td>63
+    <td>65
+    <td>65
   <tr>
     <td>Medium Knave Scoped Energy Nosferatu
     <td>56
@@ -5541,12 +5650,12 @@
     <td>2
   <tr>
     <td>Small Ghoul Compact Energy Nosferatu
-    <td>292
-    <td>292
+    <td>293
+    <td>293
   <tr>
     <td>Small Knave Scoped Energy Nosferatu
-    <td>289
-    <td>289
+    <td>290
+    <td>290
   <tr class=header id=energy-weapons>
     <td>Energy Weapons
     <td>Now
@@ -5629,20 +5738,20 @@
     <td>1
   <tr>
     <td>Dual Modal Light Laser 1
-    <td>99
-    <td>99
+    <td>100
+    <td>100
   <tr>
     <td>Dual Modal Pulse Laser 1
-    <td>34
-    <td>34
+    <td>35
+    <td>35
   <tr>
     <td>Dual Modulated Heavy Energy Beam 1
     <td>7
     <td>7
   <tr>
     <td>Dual Modulated Light Energy Beam 1
-    <td>54
-    <td>54
+    <td>55
+    <td>55
   <tr>
     <td>Dual Modulated Pulse Energy Beam 1
     <td>29
@@ -5673,16 +5782,16 @@
     <td>4
   <tr>
     <td>Focused Modal Medium Laser 1
-    <td>22
-    <td>22
+    <td>23
+    <td>23
   <tr>
     <td>Focused Modal Pulse Laser 1
     <td>2
     <td>2
   <tr>
     <td>Focused Modulated Medium Energy Beam 1
-    <td>17
-    <td>17
+    <td>19
+    <td>19
   <tr>
     <td>Focused Modulated Pulse Energy Beam 1
     <td>2
@@ -5709,20 +5818,20 @@
     <td>24
   <tr>
     <td>Heavy Afocal Maser 1
-    <td>113
-    <td>113
+    <td>115
+    <td>115
   <tr>
     <td>Heavy Afocal Pulse Maser 1
-    <td>66
-    <td>66
+    <td>68
+    <td>68
   <tr>
     <td>Heavy Anode Particle Stream 1
-    <td>48
-    <td>48
+    <td>49
+    <td>49
   <tr>
     <td>Heavy Anode Pulse Particle Stream 1
-    <td>39
-    <td>39
+    <td>40
+    <td>40
   <tr>
     <td>Heavy Beam Laser 1
     <td>8
@@ -5737,8 +5846,8 @@
     <td>50
   <tr>
     <td>Heavy Modulated Energy Beam 1
-    <td>39
-    <td>39
+    <td>40
+    <td>40
   <tr>
     <td>Heavy Modulated Pulse Energy Beam 1
     <td>27
@@ -5809,8 +5918,8 @@
     <td>60
   <tr>
     <td>Small Focused Afocal Pulse Maser 1
-    <td>78
-    <td>78
+    <td>79
+    <td>79
   <tr>
     <td>Small Focused Anode Particle Stream 1
     <td>41
@@ -5945,8 +6054,8 @@
     <td>4,234
   <tr>
     <td>Barium Firework
-    <td>213,602
-    <td>213,602
+    <td>216,602
+    <td>216,602
   <tr>
     <td>Blood Dagger Firework
     <td>2,979
@@ -5961,12 +6070,12 @@
     <td>321
   <tr>
     <td>Copper Firework CXIV
-    <td>4,774
-    <td>4,774
+    <td>5,034
+    <td>5,034
   <tr>
     <td>Copper Firework
-    <td>93,835
-    <td>93,835
+    <td>96,835
+    <td>96,835
   <tr>
     <td>Crimson Scythes Firework
     <td>1,065
@@ -5997,8 +6106,8 @@
     <td>1,058
   <tr>
     <td>Naughty People Firework
-    <td>835
-    <td>836
+    <td>1,035
+    <td>1,035
   <tr>
     <td>Pulsar Flare Firework
     <td>3
@@ -6017,8 +6126,8 @@
     <td>4,675
   <tr>
     <td>Sodium Firework
-    <td>424,440
-    <td>424,440
+    <td>438,340
+    <td>438,340
   <tr>
     <td>Spacetime Singularity Firework
     <td>1
@@ -6045,20 +6154,20 @@
     <td>6,004
   <tr>
     <td>Yoiul Festival Snowball
-    <td>3,284
-    <td>3,284
+    <td>3,501
+    <td>3,501
   <tr>
     <td>Yoiul Festival Starburst Firework
-    <td>436
-    <td>436
+    <td>536
+    <td>536
   <tr class=header id=festival-charges-expired>
     <td>Festival Charges Expired
     <td>Now
     <td>Most
   <tr>
     <td>Melted Snowball
-    <td>48,043
-    <td>48,044
+    <td>50,188
+    <td>50,188
   <tr class=header id=festival-launchers>
     <td>Festival Launchers
     <td>Now
@@ -6069,8 +6178,8 @@
     <td>174
   <tr>
     <td>Festival Launcher
-    <td>2,462
-    <td>2,462
+    <td>2,481
+    <td>2,481
   <tr class=header id=flex-armor-hardener-scripts>
     <td>Flex Armor Hardener Scripts
     <td>Now
@@ -6213,8 +6322,8 @@
     <td>27
   <tr>
     <td>Gamma M
-    <td>205
-    <td>205
+    <td>207
+    <td>207
   <tr>
     <td>Gamma S
     <td>280
@@ -6253,32 +6362,32 @@
     <td>18
   <tr>
     <td>Infrared M
-    <td>186
-    <td>186
+    <td>188
+    <td>188
   <tr>
     <td>Infrared S
-    <td>771
-    <td>771
+    <td>772
+    <td>772
   <tr>
     <td>Microwave L
     <td>25
     <td>25
   <tr>
     <td>Microwave M
-    <td>219
-    <td>219
+    <td>223
+    <td>223
   <tr>
     <td>Microwave S
-    <td>285
-    <td>285
+    <td>288
+    <td>288
   <tr>
     <td>Multifrequency L
     <td>25
     <td>25
   <tr>
     <td>Multifrequency M
-    <td>198
-    <td>198
+    <td>202
+    <td>202
   <tr>
     <td>Multifrequency S
     <td>464
@@ -6293,8 +6402,8 @@
     <td>197
   <tr>
     <td>Radio S
-    <td>278
-    <td>278
+    <td>279
+    <td>279
   <tr>
     <td>Sanshas Infrared M
     <td>1
@@ -6337,12 +6446,12 @@
     <td>31
   <tr>
     <td>Standard M
-    <td>234
-    <td>234
+    <td>235
+    <td>235
   <tr>
     <td>Standard S
-    <td>269
-    <td>269
+    <td>270
+    <td>270
   <tr>
     <td>True Sanshas Microwave M
     <td>1
@@ -6361,24 +6470,24 @@
     <td>24
   <tr>
     <td>Ultraviolet M
-    <td>196
-    <td>196
+    <td>197
+    <td>197
   <tr>
     <td>Ultraviolet S
-    <td>262
-    <td>262
+    <td>263
+    <td>263
   <tr>
     <td>Xray L
     <td>17
     <td>17
   <tr>
     <td>Xray M
-    <td>193
-    <td>193
+    <td>195
+    <td>195
   <tr>
     <td>Xray S
-    <td>240
-    <td>240
+    <td>242
+    <td>242
   <tr class=header id=frigates>
     <td>Frigates
     <td>Now
@@ -6577,16 +6686,16 @@
     <td>252
   <tr>
     <td>Hydrogen Batteries
-    <td>427
-    <td>427
+    <td>437
+    <td>437
   <tr>
     <td>Quafe Ultra
     <td>11
     <td>11
   <tr>
     <td>Quafe
-    <td>1,190
-    <td>1,190
+    <td>1,200
+    <td>1,200
   <tr>
     <td>Reports
     <td>14,395
@@ -6597,8 +6706,8 @@
     <td>620
   <tr>
     <td>Spiced Wine
-    <td>905
-    <td>905
+    <td>925
+    <td>925
   <tr>
     <td>Spirits
     <td>1,205
@@ -6733,16 +6842,16 @@
     <td>14
   <tr>
     <td>Men's 'Republic Valkear' Beret
-    <td>58
+    <td>59
     <td>59
   <tr>
     <td>Men's 'State Protector' Beret
-    <td>59
+    <td>60
     <td>60
   <tr>
     <td>Men's Aurora Universalis Cap
-    <td>138
-    <td>139
+    <td>140
+    <td>140
   <tr>
     <td>Men's Cap (Blood Raiders)
     <td>2
@@ -6753,15 +6862,15 @@
     <td>45
   <tr>
     <td>Men's Capsuleer Day XVI Cap
-    <td>128
+    <td>129
     <td>129
   <tr>
     <td>Men's Capsuleer Day XVII Cap
-    <td>195
+    <td>196
     <td>196
   <tr>
     <td>Men's Capsuleer Elite XV Cap
-    <td>268
+    <td>269
     <td>269
   <tr>
     <td>Men's Exoplanets Hunter Cap
@@ -6769,15 +6878,15 @@
     <td>177
   <tr>
     <td>Men's Permaband Tour Cap
-    <td>189
+    <td>190
     <td>190
   <tr>
     <td>Men's Project Discovery Cytometry Cap
-    <td>96
+    <td>97
     <td>97
   <tr>
     <td>Men's YC119 Yoiul Festival Cap
-    <td>163
+    <td>164
     <td>164
   <tr>
     <td>Men's Yoiul Stormchasers Cap
@@ -6797,8 +6906,8 @@
     <td>58
   <tr>
     <td>Women's 'Imperial Loyalist' Beret
-    <td>46
-    <td>46
+    <td>47
+    <td>47
   <tr>
     <td>Women's 'Liberator' Cap (Minmatar Republic)
     <td>2
@@ -6813,16 +6922,16 @@
     <td>1
   <tr>
     <td>Women's 'Republic Valkear' Beret
-    <td>51
-    <td>51
+    <td>52
+    <td>52
   <tr>
     <td>Women's 'State Protector' Beret
-    <td>56
-    <td>56
+    <td>57
+    <td>57
   <tr>
     <td>Women's Aurora Universalis Cap
-    <td>174
-    <td>174
+    <td>177
+    <td>177
   <tr>
     <td>Women's Cap (Blood Raiders)
     <td>7
@@ -6833,32 +6942,32 @@
     <td>36
   <tr>
     <td>Women's Capsuleer Day XVI Cap
-    <td>180
-    <td>180
+    <td>182
+    <td>182
   <tr>
     <td>Women's Capsuleer Day XVII Cap
-    <td>142
-    <td>142
+    <td>147
+    <td>147
   <tr>
     <td>Women's Capsuleer Elite XV Cap
-    <td>268
-    <td>268
+    <td>269
+    <td>269
   <tr>
     <td>Women's Exoplanets Hunter Cap
     <td>266
     <td>266
   <tr>
     <td>Women's Permaband Tour Cap
-    <td>355
-    <td>355
+    <td>359
+    <td>359
   <tr>
     <td>Women's Project Discovery Cytometry Cap
-    <td>111
-    <td>111
+    <td>115
+    <td>115
   <tr>
     <td>Women's YC119 Yoiul Festival Cap
-    <td>136
-    <td>136
+    <td>137
+    <td>137
   <tr>
     <td>Women's Yoiul Stormchasers Cap
     <td>4
@@ -6869,8 +6978,8 @@
     <td>Most
   <tr>
     <td>Extruded Compact Heat Sink
-    <td>102
-    <td>102
+    <td>105
+    <td>105
   <tr>
     <td>Heat Sink 1
     <td>22
@@ -6925,20 +7034,20 @@
     <td>200
   <tr>
     <td>Inferno Heavy Missile
-    <td>88,524
-    <td>88,524
+    <td>89,524
+    <td>89,524
   <tr>
     <td>Mjolnir Heavy Missile
-    <td>103,767
-    <td>103,767
+    <td>104,567
+    <td>104,567
   <tr>
     <td>Nova Heavy Missile
-    <td>90,645
-    <td>90,645
+    <td>91,345
+    <td>91,345
   <tr>
     <td>Scourge Heavy Missile
-    <td>97,719
-    <td>97,719
+    <td>98,219
+    <td>98,219
   <tr class=header id=hedbergite>
     <td>Hedbergite
     <td>Now
@@ -6973,8 +7082,8 @@
     <td>Most
   <tr>
     <td>Large 'Hope' Hull Reconstructor 1
-    <td>5
-    <td>5
+    <td>6
+    <td>6
   <tr>
     <td>Large Automated Structural Restoration
     <td>5
@@ -6989,12 +7098,12 @@
     <td>6
   <tr>
     <td>Medium 'Hope' Hull Reconstructor 1
-    <td>41
-    <td>41
+    <td>42
+    <td>42
   <tr>
     <td>Medium Automated Structural Restoration
-    <td>115
-    <td>115
+    <td>116
+    <td>116
   <tr>
     <td>Medium Hull Repairer 1
     <td>1
@@ -7045,8 +7154,8 @@
     <td>1,800
   <tr>
     <td>Antimatter Charge M
-    <td>68,396
-    <td>68,396
+    <td>68,496
+    <td>68,496
   <tr>
     <td>Antimatter Charge S
     <td>80,098
@@ -7125,36 +7234,36 @@
     <td>3,200
   <tr>
     <td>Iridium Charge M
-    <td>51,700
-    <td>51,700
+    <td>52,300
+    <td>52,300
   <tr>
     <td>Iridium Charge S
-    <td>17,100
-    <td>17,100
+    <td>17,300
+    <td>17,300
   <tr>
     <td>Iron Charge L
     <td>3,300
     <td>3,300
   <tr>
     <td>Iron Charge M
-    <td>60,300
-    <td>60,300
+    <td>60,700
+    <td>60,700
   <tr>
     <td>Iron Charge S
-    <td>135,217
-    <td>135,217
+    <td>135,317
+    <td>135,317
   <tr>
     <td>Lead Charge L
     <td>3,100
     <td>3,100
   <tr>
     <td>Lead Charge M
-    <td>49,100
-    <td>49,100
+    <td>49,700
+    <td>49,700
   <tr>
     <td>Lead Charge S
-    <td>22,598
-    <td>22,598
+    <td>22,998
+    <td>22,998
   <tr>
     <td>Orbital Hybrid S
     <td>0
@@ -7165,24 +7274,24 @@
     <td>2,600
   <tr>
     <td>Plutonium Charge M
-    <td>46,500
-    <td>46,500
+    <td>47,000
+    <td>47,000
   <tr>
     <td>Plutonium Charge S
-    <td>18,407
-    <td>18,407
+    <td>18,807
+    <td>18,807
   <tr>
     <td>Shadow Iron Charge M
     <td>500
     <td>500
   <tr>
     <td>Thorium Charge L
-    <td>3,400
-    <td>3,400
+    <td>3,500
+    <td>3,500
   <tr>
     <td>Thorium Charge M
-    <td>45,300
-    <td>45,300
+    <td>45,700
+    <td>45,700
   <tr>
     <td>Thorium Charge S
     <td>19,500
@@ -7193,20 +7302,20 @@
     <td>2,200
   <tr>
     <td>Tungsten Charge M
-    <td>46,700
-    <td>46,700
+    <td>46,800
+    <td>46,800
   <tr>
     <td>Tungsten Charge S
-    <td>19,814
-    <td>19,814
+    <td>19,914
+    <td>19,914
   <tr>
     <td>Uranium Charge L
     <td>3,100
     <td>3,100
   <tr>
     <td>Uranium Charge M
-    <td>44,000
-    <td>44,000
+    <td>44,800
+    <td>44,800
   <tr>
     <td>Uranium Charge S
     <td>22,453
@@ -7253,12 +7362,12 @@
     <td>74
   <tr>
     <td>150mm Carbide Railgun 1
-    <td>79
-    <td>79
+    <td>80
+    <td>80
   <tr>
     <td>150mm Compressed Coil Gun 1
-    <td>44
-    <td>44
+    <td>45
+    <td>45
   <tr>
     <td>150mm Prototype Gauss Gun
     <td>34
@@ -7273,35 +7382,35 @@
     <td>74
   <tr>
     <td>200mm Carbide Railgun 1
-    <td>79
-    <td>79
+    <td>82
+    <td>82
   <tr>
     <td>200mm Compressed Coil Gun 1
     <td>70
     <td>70
   <tr>
     <td>200mm Prototype Gauss Gun
-    <td>50
-    <td>50
+    <td>52
+    <td>52
   <tr>
     <td>200mm Railgun 1
     <td>2
     <td>2
   <tr>
     <td>250mm 'Scout' Accelerator Cannon
-    <td>239
-    <td>239
+    <td>243
+    <td>243
   <tr>
     <td>250mm Carbide Railgun 1
-    <td>334
-    <td>334
+    <td>336
+    <td>336
   <tr>
     <td>250mm Compressed Coil Gun 1
-    <td>178
-    <td>178
+    <td>179
+    <td>179
   <tr>
     <td>250mm Prototype Gauss Gun
-    <td>55
+    <td>56
     <td>56
   <tr>
     <td>250mm Railgun 1
@@ -7369,8 +7478,8 @@
     <td>50
   <tr>
     <td>Anode Ion Particle Cannon 1
-    <td>53
-    <td>53
+    <td>54
+    <td>54
   <tr>
     <td>Anode Light Electron Particle Cannon 1
     <td>12
@@ -7401,12 +7510,12 @@
     <td>36
   <tr>
     <td>Dual 150mm Carbide Railgun 1
-    <td>57
-    <td>57
+    <td>58
+    <td>58
   <tr>
     <td>Dual 150mm Compressed Coil Gun 1
-    <td>26
-    <td>26
+    <td>27
+    <td>27
   <tr>
     <td>Dual 150mm Prototype Gauss Gun
     <td>13
@@ -7477,12 +7586,12 @@
     <td>13
   <tr>
     <td>Limited Electron Blaster 1
-    <td>47
-    <td>47
+    <td>48
+    <td>48
   <tr>
     <td>Limited Ion Blaster 1
-    <td>65
-    <td>65
+    <td>66
+    <td>66
   <tr>
     <td>Limited Light Electron Blaster 1
     <td>29
@@ -7505,12 +7614,12 @@
     <td>3
   <tr>
     <td>Limited Neutron Blaster 1
-    <td>44
-    <td>44
+    <td>46
+    <td>46
   <tr>
     <td>Modal Electron Particle Accelerator 1
-    <td>40
-    <td>40
+    <td>42
+    <td>42
   <tr>
     <td>Modal Ion Particle Accelerator 1
     <td>35
@@ -7521,8 +7630,8 @@
     <td>16
   <tr>
     <td>Modal Light Ion Particle Accelerator 1
-    <td>29
-    <td>29
+    <td>30
+    <td>30
   <tr>
     <td>Modal Light Neutron Particle Accelerator 1
     <td>24
@@ -7573,8 +7682,8 @@
     <td>1
   <tr>
     <td>Regulated Neutron Phase Cannon 1
-    <td>79
-    <td>79
+    <td>81
+    <td>81
   <tr class=header id=ice>
     <td>Ice
     <td>Now
@@ -7793,7 +7902,7 @@
     <td>20,258
   <tr>
     <td>Kernite
-    <td>868
+    <td>869
     <td>10,671
   <tr>
     <td>Luminous Kernite
@@ -7853,8 +7962,8 @@
     <td>2,040
   <tr>
     <td>Caldari Navy Nova Light Missile
-    <td>106
-    <td>106
+    <td>127
+    <td>127
   <tr>
     <td>Caldari Navy Scourge Light Missile
     <td>1,837
@@ -7873,20 +7982,20 @@
     <td>1,195
   <tr>
     <td>Inferno Light Missile
-    <td>46,211
-    <td>46,211
+    <td>46,711
+    <td>46,711
   <tr>
     <td>Mjolnir Light Missile
-    <td>36,882
-    <td>36,882
+    <td>37,282
+    <td>37,282
   <tr>
     <td>Nova Light Missile
-    <td>41,479
-    <td>41,479
+    <td>41,779
+    <td>41,779
   <tr>
     <td>Scourge Light Missile
-    <td>40,228
-    <td>40,228
+    <td>40,728
+    <td>40,728
   <tr class=header id=livestock>
     <td>Livestock
     <td>Now
@@ -7921,12 +8030,12 @@
     <td>250
   <tr>
     <td>Exotic Dancers, Female
-    <td>689
-    <td>689
+    <td>699
+    <td>699
   <tr>
     <td>Exotic Dancers, Male
-    <td>568
-    <td>568
+    <td>618
+    <td>618
   <tr>
     <td>Freedom Fighters
     <td>74
@@ -7997,8 +8106,8 @@
     <td>10
   <tr>
     <td>Militants
-    <td>2,578
-    <td>2,578
+    <td>2,588
+    <td>2,588
   <tr>
     <td>Miner
     <td>0
@@ -8053,8 +8162,8 @@
     <td>1
   <tr>
     <td>Tourists
-    <td>1,413
-    <td>1,413
+    <td>1,433
+    <td>1,433
   <tr class=header id=logistic-drones>
     <td>Logistic Drones
     <td>Now
@@ -8097,8 +8206,8 @@
     <td>198,115
   <tr>
     <td>Ardishapur Family
-    <td>116,315
-    <td>116,315
+    <td>149,304
+    <td>149,304
   <tr>
     <td>Carthum Conglomerate
     <td>165,199
@@ -8185,8 +8294,8 @@
     <td>22
   <tr>
     <td>Vortex Compact Magnetic Field Stabilizer
-    <td>48
-    <td>48
+    <td>53
+    <td>53
   <tr class=header id=masks>
     <td>Masks
     <td>Now
@@ -8417,12 +8526,12 @@
     <td>845
   <tr>
     <td>EP-S Gaussian Scoped Mining Laser
-    <td>387
-    <td>387
+    <td>392
+    <td>392
   <tr>
     <td>Gallente Mining Laser
-    <td>540
-    <td>540
+    <td>546
+    <td>546
   <tr>
     <td>Miner 1
     <td>63
@@ -8437,8 +8546,8 @@
     <td>1
   <tr>
     <td>Particle Bore Compact Mining Laser
-    <td>421
-    <td>421
+    <td>424
+    <td>424
   <tr class=header id=mining-upgrades>
     <td>Mining Upgrades
     <td>Now
@@ -8637,8 +8746,8 @@
     <td>2
   <tr>
     <td>Kruul's DNA
-    <td>238
-    <td>238
+    <td>239
+    <td>239
   <tr>
     <td>Large Crates of Construction Blocks
     <td>0
@@ -8797,8 +8906,8 @@
     <td>59
   <tr>
     <td>Synthetic Coffee
-    <td>180
-    <td>181
+    <td>190
+    <td>190
   <tr>
     <td>Tattered Doll
     <td>0
@@ -8877,8 +8986,8 @@
     <td>9
   <tr>
     <td>'Limos' Cruise Launcher 1
-    <td>14
-    <td>14
+    <td>15
+    <td>15
   <tr>
     <td>'Malkuth' Cruise Launcher 1
     <td>8
@@ -8893,12 +9002,12 @@
     <td>46
   <tr>
     <td>'Malkuth' Heavy Missile Launcher 1
-    <td>180
-    <td>180
+    <td>181
+    <td>181
   <tr>
     <td>Advanced 'Limos' Heavy Missile Bay 1
-    <td>127
-    <td>127
+    <td>128
+    <td>128
   <tr>
     <td>Heavy Missile Launcher 1
     <td>4
@@ -8909,16 +9018,16 @@
     <td>3
   <tr>
     <td>XR-3200 Heavy Missile Bay
-    <td>86
-    <td>86
+    <td>87
+    <td>87
   <tr class=header id=missile-launcher-heavy-assaults>
     <td>Missile Launcher Heavy Assaults
     <td>Now
     <td>Most
   <tr>
     <td>Experimental XT-2800 Heavy Assault Missile Launcher 1
-    <td>126
-    <td>126
+    <td>128
+    <td>128
   <tr>
     <td>Heavy Assault Missile Launcher 1
     <td>1
@@ -8929,24 +9038,24 @@
     <td>6
   <tr>
     <td>Limited 'Limos' Heavy Assault Missile Launcher 1
-    <td>147
-    <td>147
+    <td>150
+    <td>150
   <tr>
     <td>Prototype 'Arbalest' Heavy Assault Missile Launcher 1
-    <td>81
-    <td>81
+    <td>83
+    <td>83
   <tr>
     <td>Upgraded 'Malkuth' Heavy Assault Missile Launcher 1
-    <td>167
-    <td>167
+    <td>170
+    <td>170
   <tr class=header id=missile-launcher-lights>
     <td>Missile Launcher Lights
     <td>Now
     <td>Most
   <tr>
     <td>Arbalest Compact Light Missile Launcher
-    <td>163
-    <td>163
+    <td>166
+    <td>166
   <tr>
     <td>Civilian Light Missile Launcher 1
     <td>2
@@ -8961,8 +9070,8 @@
     <td>4
   <tr>
     <td>TE-2100 Ample Light Missile Launcher
-    <td>145
-    <td>145
+    <td>146
+    <td>146
   <tr class=header id=missile-launcher-rapid-heavys>
     <td>Missile Launcher Rapid Heavys
     <td>Now
@@ -8989,15 +9098,15 @@
     <td>4
   <tr>
     <td>YO-5000 Rapid Heavy Missile Launcher
-    <td>15
-    <td>15
+    <td>16
+    <td>16
   <tr class=header id=missile-launcher-rapid-lights>
     <td>Missile Launcher Rapid Lights
     <td>Now
     <td>Most
   <tr>
     <td>Experimental SV-2000 Rapid Light Missile Launcher
-    <td>8
+    <td>9
     <td>105
   <tr>
     <td>Limited 'Limos' Rapid Light Missile Launcher
@@ -9017,8 +9126,8 @@
     <td>5
   <tr>
     <td>Upgraded 'Malkuth' Rapid Light Missile Launcher
-    <td>211
-    <td>211
+    <td>213
+    <td>213
   <tr class=header id=missile-launcher-rockets>
     <td>Missile Launcher Rockets
     <td>Now
@@ -9033,8 +9142,8 @@
     <td>118
   <tr>
     <td>'Malkuth' Rocket Launcher 1
-    <td>223
-    <td>223
+    <td>226
+    <td>226
   <tr>
     <td>OE-5200 Rocket Launcher
     <td>53
@@ -9241,8 +9350,8 @@
     <td>18
   <tr>
     <td>Type-D Restrained Nanofiber Structure
-    <td>120
-    <td>120
+    <td>122
+    <td>122
   <tr class=header id=omber>
     <td>Omber
     <td>Now
@@ -9261,8 +9370,8 @@
     <td>1,799
   <tr>
     <td>Omber
-    <td>134,274
-    <td>134,274
+    <td>137,607
+    <td>137,607
   <tr>
     <td>Platinoid Omber
     <td>1
@@ -9373,8 +9482,8 @@
     <td>2
   <tr>
     <td>Women's 'Gunner' Jacket (Blood Raiders black)
-    <td>126
-    <td>126
+    <td>127
+    <td>127
   <tr>
     <td>Women's 'Gunner' Jacket (Guristas)
     <td>40
@@ -9437,8 +9546,8 @@
     <td>34
   <tr>
     <td>Women's Polar Aurora Exploration Suit
-    <td>53
-    <td>53
+    <td>54
+    <td>54
   <tr>
     <td>Women's SOE Expeditionary Suit
     <td>56
@@ -9465,8 +9574,8 @@
     <td>15
   <tr>
     <td>Type-D Restrained Overdrive Injector
-    <td>117
-    <td>117
+    <td>118
+    <td>118
   <tr class=header id=overseers-personal-effects>
     <td>Overseer's Personal Effects
     <td>Now
@@ -9529,8 +9638,8 @@
     <td>112
   <tr>
     <td>Suppressed Targeting System 1
-    <td>419
-    <td>419
+    <td>424
+    <td>424
   <tr class=header id=permanent-skins>
     <td>Permanent SKINs
     <td>Now
@@ -9617,8 +9726,8 @@
     <td>75
   <tr>
     <td>Apotheosis Capsuleer Elite XV SKIN
-    <td>157
-    <td>157
+    <td>162
+    <td>162
   <tr>
     <td>Apotheosis Glacial Drift SKIN
     <td>0
@@ -9933,8 +10042,8 @@
     <td>2
   <tr>
     <td>Caldari Shuttle Biosecurity Responders SKIN
-    <td>30
-    <td>30
+    <td>43
+    <td>43
   <tr>
     <td>Caldari Shuttle Exoplanets Hunter SKIN
     <td>14
@@ -10461,12 +10570,12 @@
     <td>1
   <tr>
     <td>Gallente Shuttle Biosecurity Responders SKIN
-    <td>12
-    <td>12
+    <td>14
+    <td>14
   <tr>
     <td>Gallente Shuttle Exoplanets Hunter SKIN
-    <td>26
-    <td>26
+    <td>27
+    <td>27
   <tr>
     <td>Gallente Shuttle Glacial Drift SKIN
     <td>0
@@ -11169,12 +11278,12 @@
     <td>1
   <tr>
     <td>Minmatar Shuttle Biosecurity Responders SKIN
-    <td>26
-    <td>26
+    <td>32
+    <td>32
   <tr>
     <td>Minmatar Shuttle Exoplanets Hunter SKIN
-    <td>106
-    <td>106
+    <td>109
+    <td>109
   <tr>
     <td>Minmatar Shuttle Glacial Drift SKIN
     <td>0
@@ -12321,8 +12430,8 @@
     <td>Most
   <tr>
     <td>Mark 1 Compact Power Diagnostic System
-    <td>114
-    <td>114
+    <td>116
+    <td>116
   <tr>
     <td>Power Diagnostic System 1
     <td>7
@@ -12369,28 +12478,28 @@
     <td>500
   <tr>
     <td>Carbonized Lead L
-    <td>2,600
-    <td>2,600
+    <td>2,700
+    <td>2,700
   <tr>
     <td>Carbonized Lead M
     <td>14,000
     <td>14,000
   <tr>
     <td>Carbonized Lead S
-    <td>18,602
-    <td>18,602
+    <td>18,802
+    <td>18,802
   <tr>
     <td>Depleted Uranium L
     <td>3,500
     <td>3,500
   <tr>
     <td>Depleted Uranium M
-    <td>13,900
-    <td>13,900
+    <td>14,100
+    <td>14,100
   <tr>
     <td>Depleted Uranium S
-    <td>19,645
-    <td>19,645
+    <td>19,945
+    <td>19,945
   <tr>
     <td>Domination EMP L
     <td>876
@@ -12417,12 +12526,12 @@
     <td>4
   <tr>
     <td>EMP L
-    <td>3,300
-    <td>3,300
+    <td>3,400
+    <td>3,400
   <tr>
     <td>EMP M
-    <td>12,640
-    <td>12,640
+    <td>12,740
+    <td>12,740
   <tr>
     <td>EMP S
     <td>35,587
@@ -12437,20 +12546,20 @@
     <td>13,400
   <tr>
     <td>Fusion S
-    <td>18,028
-    <td>18,028
+    <td>18,328
+    <td>18,328
   <tr>
     <td>Nuclear L
     <td>5,100
     <td>5,100
   <tr>
     <td>Nuclear M
-    <td>16,000
-    <td>16,000
+    <td>16,200
+    <td>16,200
   <tr>
     <td>Nuclear S
-    <td>19,700
-    <td>19,700
+    <td>19,800
+    <td>19,800
   <tr>
     <td>Orbital EMP S
     <td>0
@@ -12461,24 +12570,24 @@
     <td>4,500
   <tr>
     <td>Phased Plasma M
-    <td>12,638
-    <td>12,638
+    <td>12,738
+    <td>12,738
   <tr>
     <td>Phased Plasma S
-    <td>19,500
-    <td>19,500
+    <td>19,700
+    <td>19,700
   <tr>
     <td>Proton L
     <td>3,500
     <td>3,500
   <tr>
     <td>Proton M
-    <td>13,894
-    <td>13,894
+    <td>14,094
+    <td>14,094
   <tr>
     <td>Proton S
-    <td>18,118
-    <td>18,118
+    <td>18,218
+    <td>18,218
   <tr>
     <td>Republic Fleet Carbonized Lead S
     <td>2,992
@@ -12581,8 +12690,8 @@
     <td>2
   <tr>
     <td>1200mm Heavy Gallium Cannon
-    <td>3
-    <td>3
+    <td>4
+    <td>4
   <tr>
     <td>1200mm Heavy Prototype Siege Cannon
     <td>2
@@ -12613,7 +12722,7 @@
     <td>1
   <tr>
     <td>1400mm 'Scout' Artillery 1
-    <td>0
+    <td>1
     <td>59
   <tr>
     <td>1400mm Carbine Howitzer 1
@@ -12665,8 +12774,8 @@
     <td>10
   <tr>
     <td>200mm Light 'Scout' Autocannon 1
-    <td>36
-    <td>36
+    <td>37
+    <td>37
   <tr>
     <td>200mm Light Carbine Repeating Cannon 1
     <td>66
@@ -12705,8 +12814,8 @@
     <td>3
   <tr>
     <td>250mm Light 'Scout' Artillery 1
-    <td>16
-    <td>16
+    <td>17
+    <td>17
   <tr>
     <td>250mm Light Artillery Cannon 1
     <td>2
@@ -12721,16 +12830,16 @@
     <td>75
   <tr>
     <td>250mm Light Gallium Cannon
-    <td>46
-    <td>46
+    <td>47
+    <td>47
   <tr>
     <td>250mm Light Prototype Siege Cannon
     <td>36
     <td>36
   <tr>
     <td>280mm 'Scout' Artillery 1
-    <td>38
-    <td>38
+    <td>39
+    <td>39
   <tr>
     <td>280mm Carbine Howitzer 1
     <td>87
@@ -12761,8 +12870,8 @@
     <td>17
   <tr>
     <td>425mm Medium Carbine Repeating Cannon 1
-    <td>37
-    <td>37
+    <td>38
+    <td>38
   <tr>
     <td>425mm Medium Gallium Machine Gun
     <td>23
@@ -12781,8 +12890,8 @@
     <td>15
   <tr>
     <td>650mm Medium Carbine Howitzer 1
-    <td>32
-    <td>32
+    <td>33
+    <td>33
   <tr>
     <td>650mm Medium Gallium Cannon
     <td>20
@@ -12893,8 +13002,8 @@
     <td>1
   <tr>
     <td>100MN Monopropellant Enduring Afterburner
-    <td>24
-    <td>24
+    <td>25
+    <td>25
   <tr>
     <td>100MN Y-S8 Compact Afterburner
     <td>24
@@ -12909,12 +13018,12 @@
     <td>1
   <tr>
     <td>10MN Monopropellant Enduring Afterburner
-    <td>551
-    <td>551
+    <td>555
+    <td>555
   <tr>
     <td>10MN Y-S8 Compact Afterburner
-    <td>528
-    <td>528
+    <td>531
+    <td>531
   <tr>
     <td>1MN Afterburner 1
     <td>58
@@ -12929,12 +13038,12 @@
     <td>689
   <tr>
     <td>1MN Monopropellant Enduring Afterburner
-    <td>331
-    <td>331
+    <td>335
+    <td>335
   <tr>
     <td>1MN Y-S8 Compact Afterburner
-    <td>311
-    <td>311
+    <td>312
+    <td>312
   <tr>
     <td>500MN Cold-Gas Enduring Microwarpdrive
     <td>20
@@ -12953,8 +13062,8 @@
     <td>11
   <tr>
     <td>50MN Cold-Gas Enduring Microwarpdrive
-    <td>499
-    <td>499
+    <td>506
+    <td>506
   <tr>
     <td>50MN Microwarpdrive 1
     <td>3
@@ -12965,16 +13074,16 @@
     <td>1
   <tr>
     <td>50MN Quad LiF Restrained Microwarpdrive
-    <td>501
-    <td>501
+    <td>506
+    <td>506
   <tr>
     <td>50MN Y-T8 Compact Microwarpdrive
-    <td>548
-    <td>548
+    <td>551
+    <td>551
   <tr>
     <td>5MN Cold-Gas Enduring Microwarpdrive
-    <td>332
-    <td>332
+    <td>336
+    <td>336
   <tr>
     <td>5MN Microwarpdrive 1
     <td>30
@@ -12985,11 +13094,11 @@
     <td>1
   <tr>
     <td>5MN Quad LiF Restrained Microwarpdrive
-    <td>299
-    <td>299
+    <td>301
+    <td>301
   <tr>
     <td>5MN Y-T8 Compact Microwarpdrive
-    <td>22
+    <td>24
     <td>193
   <tr>
     <td>Coreli A-Type 5MN Microwarpdrive
@@ -13065,8 +13174,8 @@
     <td>1
   <tr>
     <td>Mark 1 Compact Reactor Control Unit
-    <td>242
-    <td>242
+    <td>249
+    <td>249
   <tr>
     <td>Reactor Control Unit 1
     <td>12
@@ -13205,8 +13314,8 @@
     <td>10
   <tr>
     <td>Type-D Restrained Reinforced Bulkheads
-    <td>54
-    <td>54
+    <td>56
+    <td>56
   <tr class=header id=remote-armor-repairers>
     <td>Remote Armor Repairers
     <td>Now
@@ -13229,12 +13338,12 @@
     <td>62
   <tr>
     <td>Medium I-ax Enduring Remote Armor Repairer
-    <td>46
-    <td>46
+    <td>49
+    <td>49
   <tr>
     <td>Medium Solace Scoped Remote Armor Repairer
-    <td>55
-    <td>55
+    <td>59
+    <td>59
   <tr>
     <td>Small Coaxial Compact Remote Armor Repairer
     <td>94
@@ -13249,8 +13358,8 @@
     <td>1
   <tr>
     <td>Small Solace Scoped Remote Armor Repairer
-    <td>85
-    <td>85
+    <td>86
+    <td>86
   <tr class=header id=remote-capacitor-transmitters>
     <td>Remote Capacitor Transmitters
     <td>Now
@@ -13273,20 +13382,20 @@
     <td>7
   <tr>
     <td>Medium Inductive Compact Remote Capacitor Transmitter
-    <td>71
-    <td>71
+    <td>74
+    <td>74
   <tr>
     <td>Medium Radiative Scoped Remote Capacitor Transmitter
     <td>84
     <td>84
   <tr>
     <td>Small Inductive Compact Remote Capacitor Transmitter
-    <td>398
-    <td>398
+    <td>401
+    <td>401
   <tr>
     <td>Small Radiative Scoped Remote Capacitor Transmitter
-    <td>603
-    <td>603
+    <td>609
+    <td>609
   <tr>
     <td>Small Remote Capacitor Transmitter 1
     <td>49
@@ -13301,16 +13410,16 @@
     <td>1
   <tr>
     <td>Coadjunct Scoped Remote Sensor Booster
-    <td>210
-    <td>210
+    <td>211
+    <td>211
   <tr>
     <td>F-23 Compact Remote Sensor Booster
-    <td>210
-    <td>210
+    <td>215
+    <td>215
   <tr>
     <td>Linked Enduring Remote Sensor Booster
-    <td>201
-    <td>201
+    <td>204
+    <td>204
   <tr>
     <td>Remote Sensor Booster 1
     <td>3
@@ -13341,12 +13450,12 @@
     <td>12
   <tr>
     <td>Medium Asymmetric Enduring Remote Shield Booster
-    <td>161
-    <td>161
+    <td>165
+    <td>165
   <tr>
     <td>Medium Murky Compact Remote Shield Booster
-    <td>190
-    <td>190
+    <td>191
+    <td>191
   <tr>
     <td>Medium Remote Shield Booster 1
     <td>2
@@ -13357,12 +13466,12 @@
     <td>219
   <tr>
     <td>Small Asymmetric Enduring Remote Shield Booster
-    <td>145
-    <td>145
+    <td>147
+    <td>147
   <tr>
     <td>Small Murky Compact Remote Shield Booster
-    <td>122
-    <td>122
+    <td>123
+    <td>123
   <tr>
     <td>Small Remote Shield Booster 1
     <td>4
@@ -13377,16 +13486,16 @@
     <td>Most
   <tr>
     <td>Alfven Enduring Remote Tracking Computer
-    <td>125
-    <td>125
+    <td>126
+    <td>126
   <tr>
     <td>F-293 Scoped Remote Tracking Computer
-    <td>184
-    <td>184
+    <td>189
+    <td>189
   <tr>
     <td>P-S Compact Remote Tracking Computer
-    <td>129
-    <td>129
+    <td>130
+    <td>130
   <tr class=header id=rig-armors>
     <td>Rig Armors
     <td>Now
@@ -13613,20 +13722,20 @@
     <td>1,002
   <tr>
     <td>Inferno Rocket
-    <td>21,208
-    <td>21,208
+    <td>21,308
+    <td>21,308
   <tr>
     <td>Mjolnir Rocket
-    <td>22,300
-    <td>22,300
+    <td>22,700
+    <td>22,700
   <tr>
     <td>Nova Rocket
-    <td>21,100
-    <td>21,100
+    <td>21,400
+    <td>21,400
   <tr>
     <td>Scourge Rocket
-    <td>20,911
-    <td>20,911
+    <td>21,011
+    <td>21,011
   <tr class=header id=rogue-drone-components>
     <td>Rogue Drone Components
     <td>Now
@@ -13673,11 +13782,11 @@
     <td>Most
   <tr>
     <td>Alloyed Tritanium Bar
-    <td>2,171
-    <td>2,171
+    <td>2,198
+    <td>2,198
   <tr>
     <td>Armor Plates
-    <td>312
+    <td>363
     <td>2,445
   <tr>
     <td>Artificial Neural Network
@@ -13685,11 +13794,11 @@
     <td>16
   <tr>
     <td>Broken Drone Transceiver
-    <td>1,145
-    <td>1,145
+    <td>1,176
+    <td>1,176
   <tr>
     <td>Burned Logic Circuit
-    <td>1,144
+    <td>1,331
     <td>4,497
   <tr>
     <td>Capacitor Console
@@ -13697,23 +13806,23 @@
     <td>8
   <tr>
     <td>Charred Micro Circuit
-    <td>16,665
-    <td>16,665
+    <td>16,816
+    <td>16,816
   <tr>
     <td>Conductive Polymer
-    <td>1,945
-    <td>1,945
+    <td>1,963
+    <td>1,963
   <tr>
     <td>Conductive Thermoplastic
     <td>35
     <td>35
   <tr>
     <td>Contaminated Lorentz Fluid
-    <td>74
+    <td>95
     <td>657
   <tr>
     <td>Contaminated Nanite Compound
-    <td>360
+    <td>414
     <td>1,522
   <tr>
     <td>Current Pump
@@ -13721,12 +13830,12 @@
     <td>16
   <tr>
     <td>Damaged Artificial Neural Network
-    <td>1,901
-    <td>1,901
+    <td>1,924
+    <td>1,924
   <tr>
     <td>Defective Current Pump
-    <td>2,531
-    <td>2,531
+    <td>2,563
+    <td>2,563
   <tr>
     <td>Drone Transceiver
     <td>9
@@ -13737,8 +13846,8 @@
     <td>9
   <tr>
     <td>Fried Interface Circuit
-    <td>10,291
-    <td>10,291
+    <td>10,440
+    <td>10,440
   <tr>
     <td>Impetus Console
     <td>28
@@ -13765,12 +13874,12 @@
     <td>19
   <tr>
     <td>Malfunctioning Shield Emitter
-    <td>4,393
-    <td>4,393
+    <td>4,444
+    <td>4,444
   <tr>
     <td>Melted Capacitor Console
-    <td>1,117
-    <td>1,117
+    <td>1,130
+    <td>1,130
   <tr>
     <td>Micro Circuit
     <td>46
@@ -13789,19 +13898,19 @@
     <td>7
   <tr>
     <td>Scorched Telemetry Processor
-    <td>2,370
-    <td>2,370
+    <td>2,428
+    <td>2,428
   <tr>
     <td>Single-crystal Superalloy I-beam
     <td>20
     <td>20
   <tr>
     <td>Smashed Trigger Unit
-    <td>3,428
-    <td>3,428
+    <td>3,472
+    <td>3,472
   <tr>
     <td>Tangled Power Conduit
-    <td>109
+    <td>137
     <td>1,456
   <tr>
     <td>Telemetry Processor
@@ -13809,20 +13918,20 @@
     <td>24
   <tr>
     <td>Thruster Console
-    <td>923
-    <td>923
+    <td>934
+    <td>934
   <tr>
     <td>Trigger Unit
     <td>22
     <td>22
   <tr>
     <td>Tripped Power Circuit
-    <td>9,730
-    <td>9,730
+    <td>9,949
+    <td>9,949
   <tr>
     <td>Ward Console
-    <td>1,547
-    <td>1,547
+    <td>1,587
+    <td>1,587
   <tr class=header id=salvagers>
     <td>Salvagers
     <td>Now
@@ -13884,6 +13993,10 @@
     <td>Now
     <td>Most
   <tr>
+    <td>Scan Acquisition Array 1
+    <td>2
+    <td>2
+  <tr>
     <td>Scan Pinpointing Array 1
     <td>1
     <td>1
@@ -13899,14 +14012,6 @@
     <td>Scan Rangefinding Array 2
     <td>1
     <td>1
-  <tr class=header id=scanning-upgrade-times>
-    <td>Scanning Upgrade Times
-    <td>Now
-    <td>Most
-  <tr>
-    <td>Scan Acquisition Array 1
-    <td>2
-    <td>2
   <tr class=header id=scordite>
     <td>Scordite
     <td>Now
@@ -13969,16 +14074,16 @@
     <td>Most
   <tr>
     <td>Alumel-Wired Enduring Sensor Booster
-    <td>587
-    <td>587
+    <td>588
+    <td>588
   <tr>
     <td>Cormack's Modified Sensor Booster
     <td>0
     <td>3
   <tr>
     <td>F-90 Compact Sensor Booster
-    <td>960
-    <td>960
+    <td>965
+    <td>965
   <tr>
     <td>Sensor Booster 1
     <td>21
@@ -14013,12 +14118,12 @@
     <td>Most
   <tr>
     <td>Kapteyn Compact Sensor Dampener
-    <td>173
-    <td>173
+    <td>174
+    <td>174
   <tr>
     <td>LFT Enduring Sensor Dampener
-    <td>82
-    <td>82
+    <td>83
+    <td>83
   <tr>
     <td>Phased Muon Scoped Sensor Dampener
     <td>101
@@ -14077,16 +14182,16 @@
     <td>4
   <tr>
     <td>Large Clarity Ward Enduring Shield Booster
-    <td>9
-    <td>9
+    <td>10
+    <td>10
   <tr>
     <td>Medium C5-L Compact Shield Booster
     <td>214
     <td>214
   <tr>
     <td>Medium Clarity Ward Enduring Shield Booster
-    <td>205
-    <td>205
+    <td>206
+    <td>206
   <tr>
     <td>Medium Shield Booster 1
     <td>2
@@ -14141,15 +14246,15 @@
     <td>8
   <tr>
     <td>Large Shield Extender 2
-    <td>13
+    <td>14
     <td>14
   <tr>
     <td>Medium Azeotropic Restrained Shield Extender
-    <td>6
+    <td>7
     <td>71
   <tr>
     <td>Medium F-S9 Regolith Compact Shield Extender
-    <td>5
+    <td>6
     <td>26
   <tr>
     <td>Medium Shield Extender 1
@@ -14173,8 +14278,8 @@
     <td>1
   <tr>
     <td>Small Azeotropic Restrained Shield Extender
-    <td>38
-    <td>38
+    <td>39
+    <td>39
   <tr>
     <td>Small F-S9 Regolith Compact Shield Extender
     <td>31
@@ -14205,8 +14310,8 @@
     <td>21
   <tr>
     <td>Type-D Restrained Shield Flux Coil
-    <td>114
-    <td>114
+    <td>116
+    <td>116
   <tr class=header id=shield-hardeners>
     <td>Shield Hardeners
     <td>Now
@@ -14229,24 +14334,24 @@
     <td>14
   <tr>
     <td>Compact EM Shield Hardener
-    <td>353
-    <td>353
+    <td>354
+    <td>354
   <tr>
     <td>Compact Explosive Shield Hardener
-    <td>204
-    <td>204
+    <td>208
+    <td>208
   <tr>
     <td>Compact Kinetic Shield Hardener
-    <td>206
-    <td>206
+    <td>209
+    <td>209
   <tr>
     <td>Compact Multispectrum Shield Hardener
     <td>130
     <td>130
   <tr>
     <td>Compact Thermal Shield Hardener
-    <td>211
-    <td>211
+    <td>212
+    <td>212
   <tr>
     <td>EM Shield Hardener 1
     <td>6
@@ -14257,24 +14362,24 @@
     <td>4
   <tr>
     <td>Enduring EM Shield Hardener
-    <td>44
-    <td>44
+    <td>46
+    <td>46
   <tr>
     <td>Enduring Explosive Shield Hardener
-    <td>36
-    <td>36
+    <td>38
+    <td>38
   <tr>
     <td>Enduring Kinetic Shield Hardener
-    <td>48
-    <td>48
+    <td>49
+    <td>49
   <tr>
     <td>Enduring Multispectrum Shield Hardener
     <td>40
     <td>40
   <tr>
     <td>Enduring Thermal Shield Hardener
-    <td>51
-    <td>51
+    <td>53
+    <td>53
   <tr>
     <td>Explosive Shield Hardener 1
     <td>2
@@ -14333,24 +14438,24 @@
     <td>7
   <tr>
     <td>Mark 1 Compact Shield Power Relay
-    <td>107
-    <td>107
+    <td>109
+    <td>109
   <tr>
     <td>Shield Power Relay 2
     <td>5
     <td>5
   <tr>
     <td>Type-D Restrained Shield Power Relay
-    <td>103
-    <td>103
+    <td>105
+    <td>105
   <tr class=header id=shield-rechargers>
     <td>Shield Rechargers
     <td>Now
     <td>Most
   <tr>
     <td>M51 Benefactor Compact Shield Recharger
-    <td>438
-    <td>438
+    <td>444
+    <td>444
   <tr>
     <td>Shield Recharger 1
     <td>3
@@ -14365,16 +14470,16 @@
     <td>107
   <tr>
     <td>Compact Explosive Shield Amplifier
-    <td>155
-    <td>155
+    <td>158
+    <td>158
   <tr>
     <td>Compact Kinetic Shield Amplifier
-    <td>94
-    <td>94
+    <td>95
+    <td>95
   <tr>
     <td>Compact Thermal Shield Amplifier
-    <td>99
-    <td>99
+    <td>101
+    <td>101
   <tr>
     <td>Domination Thermal Shield Amplifier
     <td>1
@@ -14417,8 +14522,8 @@
     <td>30
   <tr>
     <td>Ta3 Compact Ship Scanner
-    <td>406
-    <td>406
+    <td>410
+    <td>410
   <tr class=header id=shuttles>
     <td>Shuttles
     <td>Now
@@ -14477,8 +14582,8 @@
     <td>3
   <tr>
     <td>F-89 Compact Signal Amplifier
-    <td>504
-    <td>504
+    <td>515
+    <td>515
   <tr>
     <td>Signal Amplifier 1
     <td>4
@@ -15521,12 +15626,12 @@
     <td>17
   <tr>
     <td>Large YF-12a Smartbomb
-    <td>11
-    <td>11
+    <td>12
+    <td>12
   <tr>
     <td>Medium 'Notos' Explosive Charge 1
-    <td>64
-    <td>64
+    <td>65
+    <td>65
   <tr>
     <td>Medium 'Vehemence' Shockwave Charge
     <td>4
@@ -15545,12 +15650,12 @@
     <td>1
   <tr>
     <td>Medium Rudimentary Concussion Bomb 1
-    <td>162
-    <td>162
+    <td>164
+    <td>164
   <tr>
     <td>Medium YF-12a Smartbomb
-    <td>114
-    <td>114
+    <td>118
+    <td>118
   <tr>
     <td>Small 'Notos' Explosive Charge 1
     <td>75
@@ -15577,8 +15682,8 @@
     <td>3
   <tr>
     <td>Small Rudimentary Concussion Bomb 1
-    <td>121
-    <td>121
+    <td>124
+    <td>124
   <tr>
     <td>Small YF-12a Smartbomb
     <td>121
@@ -15709,8 +15814,8 @@
     <td>1
   <tr>
     <td>Calm Abyssal Filaments Crate
-    <td>289
-    <td>289
+    <td>290
+    <td>290
   <tr>
     <td>Capital Parking Ticket
     <td>19
@@ -15737,8 +15842,8 @@
     <td>1
   <tr>
     <td>Capsuleer Day XVI T-Shirt Crate
-    <td>83
-    <td>83
+    <td>84
+    <td>84
   <tr>
     <td>Capsuleer Day XVII Alpha Booster Gift Box
     <td>0
@@ -15746,6 +15851,10 @@
   <tr>
     <td>Capsuleer Day XVII Cap and T-Shirt Crate
     <td>0
+    <td>1
+  <tr>
+    <td>Capsuleer Day XVIII T-Shirt and Cap Crate
+    <td>1
     <td>1
   <tr>
     <td>Capsuleer Day XVII Fireworks Package
@@ -15853,8 +15962,8 @@
     <td>1
   <tr>
     <td>Deathglow Residue
-    <td>111
-    <td>111
+    <td>112
+    <td>112
   <tr>
     <td>Decayed Deathglow
     <td>65
@@ -15865,8 +15974,8 @@
     <td>56
   <tr>
     <td>Diamond Ring
-    <td>24
-    <td>25
+    <td>26
+    <td>26
   <tr>
     <td>Dice of Jade
     <td>213
@@ -15905,8 +16014,8 @@
     <td>214
   <tr>
     <td>Fall of Fort Knocks YC120
-    <td>94
-    <td>94
+    <td>95
+    <td>95
   <tr>
     <td>Feawen's Approval Documentation
     <td>60
@@ -16001,11 +16110,11 @@
     <td>41
   <tr>
     <td>Fuel-Stealer Display
-    <td>35
-    <td>35
+    <td>50
+    <td>50
   <tr>
     <td>Gamealfur Ale
-    <td>95
+    <td>96
     <td>96
   <tr>
     <td>Gnosis &amp; Punisher SKIN Crate
@@ -16221,16 +16330,16 @@
     <td>86
   <tr>
     <td>Permaband Tour T-Shirt Crate
-    <td>55
-    <td>55
+    <td>57
+    <td>57
   <tr>
     <td>Polaris Eviction Notice
     <td>62
     <td>62
   <tr>
     <td>POS Fuel
-    <td>30
-    <td>31
+    <td>32
+    <td>32
   <tr>
     <td>Postcard From Poitot
     <td>0
@@ -16277,16 +16386,16 @@
     <td>1
   <tr>
     <td>Radiation-Rogue Display
-    <td>40
-    <td>40
+    <td>41
+    <td>41
   <tr>
     <td>Ration-Grabber Display
     <td>10
     <td>10
   <tr>
     <td>Recycler-Raider Display
-    <td>29
-    <td>29
+    <td>30
+    <td>30
   <tr>
     <td>Rejected Ship Replacement Program Request
     <td>107
@@ -16393,24 +16502,24 @@
     <td>109
   <tr>
     <td>Spiked Quafe
-    <td>35
-    <td>35
+    <td>39
+    <td>39
   <tr>
     <td>St. Tetrimon's Finger
     <td>148
     <td>148
   <tr>
     <td>Starsi
-    <td>138
-    <td>138
+    <td>143
+    <td>143
   <tr>
     <td>Superior Exoplanets Hunter Reward Crate
     <td>2,073
     <td>2,073
   <tr>
     <td>Superior Flow Cytometry Rewards Crate
-    <td>1,168
-    <td>1,168
+    <td>1,239
+    <td>1,239
   <tr>
     <td>Tarot of St. Jamyl
     <td>40
@@ -16441,8 +16550,8 @@
     <td>2
   <tr>
     <td>The Yulai Siege YC106
-    <td>283
-    <td>283
+    <td>284
+    <td>284
   <tr>
     <td>Titanium Plated Cranial Shielding
     <td>83
@@ -16549,8 +16658,8 @@
     <td>9
   <tr>
     <td>Yoiul Festival Snowballs Crate
-    <td>36
-    <td>36
+    <td>37
+    <td>37
   <tr>
     <td>Yoiul Festival YC120 Coin (Amarr)
     <td>25
@@ -16713,8 +16822,8 @@
     <td>1
   <tr>
     <td>Fleeting Compact Stasis Webifier
-    <td>357
-    <td>357
+    <td>359
+    <td>359
   <tr>
     <td>Stasis Webifier 1
     <td>17
@@ -16725,8 +16834,8 @@
     <td>10
   <tr>
     <td>X5 Enduring Stasis Webifier
-    <td>344
-    <td>344
+    <td>351
+    <td>351
   <tr class=header id=strip-miners>
     <td>Strip Miners
     <td>Now
@@ -16765,8 +16874,8 @@
     <td>Most
   <tr>
     <td>Standup Large Festival Launcher
-    <td>851
-    <td>851
+    <td>852
+    <td>852
   <tr class=header id=survey-probes>
     <td>Survey Probes
     <td>Now
@@ -16785,8 +16894,8 @@
     <td>Most
   <tr>
     <td>ML-3 Scoped Survey Scanner
-    <td>400
-    <td>400
+    <td>405
+    <td>405
   <tr>
     <td>Survey Scanner 1
     <td>16
@@ -16817,8 +16926,8 @@
     <td>58
   <tr>
     <td>Phased Scoped Target Painter
-    <td>63
-    <td>64
+    <td>65
+    <td>65
   <tr>
     <td>Target Painter 1
     <td>4
@@ -16841,24 +16950,24 @@
     <td>1,800
   <tr>
     <td>R.A.M. - Armor/Hull Tech
-    <td>2,200
-    <td>2,200
+    <td>2,300
+    <td>2,300
   <tr>
     <td>R.A.M. - Electronics
-    <td>3,700
-    <td>3,700
+    <td>3,800
+    <td>3,800
   <tr>
     <td>R.A.M. - Energy Tech
     <td>1,800
     <td>1,800
   <tr>
     <td>R.A.M. - Robotics
-    <td>3,100
-    <td>3,100
+    <td>3,200
+    <td>3,200
   <tr>
     <td>R.A.M. - Shield Tech
-    <td>2,100
-    <td>2,100
+    <td>2,200
+    <td>2,200
   <tr>
     <td>R.A.M. - Starship Tech
     <td>1,500
@@ -16881,8 +16990,8 @@
     <td>201
   <tr>
     <td>R.Db - CreoDron
-    <td>400
-    <td>401
+    <td>500
+    <td>500
   <tr>
     <td>R.Db - Duvolle Labs
     <td>500
@@ -16917,8 +17026,8 @@
     <td>Most
   <tr>
     <td>Men's 'Crimson Harvest' T-Shirt
-    <td>61
-    <td>61
+    <td>62
+    <td>62
   <tr>
     <td>Men's 'Form' T-Shirt (Blood Raiders)
     <td>1
@@ -16929,8 +17038,8 @@
     <td>7
   <tr>
     <td>Men's 'Serpentis' T-Shirt (olive/black)
-    <td>58
-    <td>58
+    <td>59
+    <td>59
   <tr>
     <td>Men's 'Sterling' dress Shirt (red/black leather)
     <td>2
@@ -16941,16 +17050,16 @@
     <td>4
   <tr>
     <td>Men's Amarr 'Loyalist' T-Shirt
-    <td>63
-    <td>63
+    <td>64
+    <td>64
   <tr>
     <td>Men's Aurora Universalis T-Shirt
-    <td>115
-    <td>115
+    <td>117
+    <td>117
   <tr>
     <td>Men's Caldari 'Patriot' T-Shirt
-    <td>69
-    <td>69
+    <td>70
+    <td>70
   <tr>
     <td>Men's Capsuleer Day XVI T-Shirt
     <td>135
@@ -16969,28 +17078,28 @@
     <td>78
   <tr>
     <td>Men's Gallente 'Defender' T-Shirt
-    <td>78
-    <td>78
+    <td>79
+    <td>79
   <tr>
     <td>Men's Jita 4-4 Crew Top
     <td>1
     <td>1
   <tr>
     <td>Men's Minmatar 'Liberator' T-Shirt
-    <td>52
-    <td>52
+    <td>55
+    <td>55
   <tr>
     <td>Men's Permaband Tour T-Shirt
     <td>114
     <td>114
   <tr>
     <td>Men's Project Discovery Cytometry T-Shirt
-    <td>56
-    <td>56
+    <td>58
+    <td>58
   <tr>
     <td>Men's YC119 Yoiul Festival T-Shirt
-    <td>105
-    <td>105
+    <td>106
+    <td>106
   <tr>
     <td>Men's Yoiul Stormchasers T-Shirt
     <td>17
@@ -17005,8 +17114,8 @@
     <td>1
   <tr>
     <td>Women's 'Crimson Harvest' T-Shirt
-    <td>66
-    <td>66
+    <td>68
+    <td>68
   <tr>
     <td>Women's 'Function' T-Shirt (Blood Raiders)
     <td>4
@@ -17037,40 +17146,40 @@
     <td>74
   <tr>
     <td>Women's Caldari 'Patriot' T-Shirt
-    <td>76
-    <td>76
+    <td>78
+    <td>78
   <tr>
     <td>Women's Capsuleer Day XVI T-Shirt
-    <td>143
-    <td>143
+    <td>144
+    <td>144
   <tr>
     <td>Women's Capsuleer Day XVII T-Shirt
-    <td>218
-    <td>218
+    <td>219
+    <td>219
   <tr>
     <td>Women's Capsuleer Elite XV T-Shirt
-    <td>241
-    <td>241
+    <td>242
+    <td>242
   <tr>
     <td>Women's Exoplanets Hunter T-Shirt
     <td>80
     <td>80
   <tr>
     <td>Women's Gallente 'Defender' T-Shirt
-    <td>91
-    <td>91
+    <td>92
+    <td>92
   <tr>
     <td>Women's Minmatar 'Liberator' T-Shirt
-    <td>62
-    <td>62
+    <td>66
+    <td>66
   <tr>
     <td>Women's Permaband Tour T-Shirt
     <td>98
     <td>98
   <tr>
     <td>Women's Project Discovery Cytometry T-Shirt
-    <td>63
-    <td>63
+    <td>65
+    <td>65
   <tr>
     <td>Women's YC119 Yoiul Festival T-Shirt
     <td>92
@@ -17101,16 +17210,16 @@
     <td>5,540
   <tr>
     <td>Inferno Torpedo
-    <td>2,300
-    <td>2,300
+    <td>2,400
+    <td>2,400
   <tr>
     <td>Mjolnir Torpedo
-    <td>3,200
-    <td>3,200
+    <td>3,400
+    <td>3,400
   <tr>
     <td>Nova Torpedo
-    <td>4,000
-    <td>4,000
+    <td>4,200
+    <td>4,200
   <tr>
     <td>Scourge Torpedo
     <td>4,521
@@ -17321,8 +17430,8 @@
     <td>236
   <tr>
     <td>Optical Compact Tracking Computer
-    <td>411
-    <td>411
+    <td>413
+    <td>413
   <tr>
     <td>Tracking Computer 1
     <td>21
@@ -17349,8 +17458,8 @@
     <td>Most
   <tr>
     <td>Fourier Compact Tracking Enhancer
-    <td>41
-    <td>41
+    <td>42
+    <td>42
   <tr>
     <td>Tracking Enhancer 1
     <td>1
@@ -17513,12 +17622,12 @@
     <td>81
   <tr>
     <td>'Repose' Core Compensation
-    <td>135
-    <td>135
+    <td>136
+    <td>136
   <tr>
     <td>'Stoic' Core Equalizer 1
-    <td>130
-    <td>130
+    <td>132
+    <td>132
   <tr>
     <td>Warp Core Stabilizer 1
     <td>39
@@ -17533,7 +17642,7 @@
     <td>Most
   <tr>
     <td>Clutch Restrained Warp Disruption Field Generator
-    <td>9
+    <td>11
     <td>41
   <tr>
     <td>M-36 Enduring Warp Disruption Field Generator
@@ -17541,7 +17650,7 @@
     <td>51
   <tr>
     <td>Pitfall Compact Warp Disruption Field Generator
-    <td>9
+    <td>11
     <td>50
   <tr class=header id=warp-disruption-scripts>
     <td>Warp Disruption Scripts
@@ -17569,28 +17678,28 @@
     <td>1
   <tr>
     <td>Faint Epsilon Scoped Warp Scrambler
-    <td>110
-    <td>110
+    <td>112
+    <td>112
   <tr>
     <td>Faint Scoped Warp Disruptor
-    <td>94
-    <td>94
+    <td>96
+    <td>96
   <tr>
     <td>Initiated Compact Warp Disruptor
-    <td>263
-    <td>263
+    <td>266
+    <td>266
   <tr>
     <td>Initiated Compact Warp Scrambler
     <td>242
     <td>242
   <tr>
     <td>J5 Enduring Warp Disruptor
-    <td>373
-    <td>373
+    <td>375
+    <td>375
   <tr>
     <td>J5b Enduring Warp Scrambler
-    <td>428
-    <td>428
+    <td>432
+    <td>432
   <tr>
     <td>Warp Disruptor 1
     <td>9
@@ -17601,8 +17710,8 @@
     <td>14
   <tr>
     <td>Warp Scrambler 1
-    <td>14
-    <td>14
+    <td>15
+    <td>15
   <tr>
     <td>Warp Scrambler 2
     <td>0
@@ -17621,24 +17730,24 @@
     <td>132
   <tr>
     <td>Baker Nunn Enduring Tracking Disruptor 1
-    <td>122
+    <td>123
     <td>123
   <tr>
     <td>Balmer Series Compact Tracking Disruptor 1
-    <td>123
-    <td>123
+    <td>124
+    <td>124
   <tr>
     <td>C-IR Compact Guidance Disruptor
-    <td>135
-    <td>135
+    <td>136
+    <td>136
   <tr>
     <td>DDO Scoped Tracking Disruptor 1
-    <td>139
-    <td>139
+    <td>140
+    <td>140
   <tr>
     <td>Highstroke Scoped Guidance Disruptor
-    <td>120
-    <td>120
+    <td>123
+    <td>123
   <tr>
     <td>Tracking Disruptor 1
     <td>1
@@ -17664,15 +17773,15 @@
   <tr>
     <td>Amarr Empire
     <td>9.99
-    <td>9.98
+    <td>9.99
   <tr>
     <td>Ammatar Mandate
     <td>9.08
     <td>9.00
   <tr>
     <td>Angel Cartel
-    <td>-7.47
-    <td>-9.86
+    <td>-7.49
+    <td>-9.87
   <tr>
     <td>Blood Raider Covenant
     <td>-7.60
@@ -17759,8 +17868,8 @@
     <td>5.72
   <tr>
     <td>Ardishapur Family
-    <td>9.19
-    <td>9.12
+    <td>9.57
+    <td>9.52
   <tr>
     <td>Blood Raiders
     <td>1.09
@@ -17827,8 +17936,8 @@
     <td>3.67
   <tr>
     <td>Imperial Chancellor
-    <td>4.16
-    <td>3.65
+    <td>6.44
+    <td>6.13
   <tr>
     <td>Imperial Shipment
     <td>7.73
@@ -18135,8 +18244,8 @@
     <td>10.00
   <tr>
     <td>Madia Yapera
-    <td>9.97
-    <td>9.96
+    <td>9.99
+    <td>9.99
   <tr>
     <td>Mahtennita Hamiahoor
     <td>1.22
@@ -19504,7 +19613,7 @@
     <td>Permanent Skins<br>(Honzifox)
   <tr>
     <td>Total SKINs
-    <td>738
+    <td>744
   <tr>
     <td>Aliastra
     <td>1/4 (25%)
@@ -19556,6 +19665,9 @@
   <tr class=gold>
     <td>Capsuleer Day XVII SoCT
     <td>4/4
+  <tr>
+    <td>Capsuleer Day XVIII
+    <td>5/16 (31.25%)
   <tr>
     <td>Capsuleer Elite XV
     <td>5/13 (38.4615385%)
@@ -19774,6 +19886,7 @@
     <td>Apotheosis
     <td>Capsuleer Day XVI
       <br>Capsuleer Day XVII
+      <br>Capsuleer Day XVIII
       <br>Capsuleer Elite XV
       <br>Glacial Drift
       <br>Icecloud Investigators
@@ -19930,6 +20043,7 @@
     <td>Capsule
       <br>Capsule - Genolution 'Auroral' 197-variant
     <td>Capsuleer Day XVII
+      <br>Capsuleer Day XVIII
       <br>Capsuleer Elite XV
       <br>Upwell
       <br>YC119 Capsuleer Day
@@ -20186,6 +20300,7 @@
     <td>Gnosis
     <td>Capsuleer Day XVI
       <br>Capsuleer Day XVII
+      <br>Capsuleer Day XVIII
       <br>Capsuleer Elite XV
       <br>Icecloud Investigators
       <br>Ironblood
@@ -20627,6 +20742,7 @@
     <td>Praxis
     <td>Capsuleer Day XVI
       <br>Capsuleer Day XVII
+      <br>Capsuleer Day XVIII
       <br>Capsuleer Elite XV
       <br>Icecloud Investigators
   <tr>
@@ -20847,6 +20963,7 @@
     <td>Sunesis
     <td>Capsuleer Day XVI
       <br>Capsuleer Day XVII
+      <br>Capsuleer Day XVIII
       <br>Capsuleer Elite XV
       <br>Icecloud Investigators
       <br>Versus Blueforce
@@ -21170,10 +21287,10 @@
     <td>9,242.33 m/s
   <tr>
     <td>Station - Alpha Modules
-    <td>4.864b ISK<br>354,130.3 m3
+    <td>4.864b ISK<br>357,215.3 m3
   <tr>
     <td>Station - Ammo
-    <td>0.552b ISK<br>51,012.8 m3
+    <td>0.620b ISK<br>51,297.9 m3
   <tr>
     <td>Station - Containers
     <td>0.172b ISK<br>120,104,532.0 m3
@@ -21188,19 +21305,19 @@
     <td>1.099b ISK<br>100,714.2 m3
   <tr>
     <td>Station - Collection Items
-    <td>14.408b ISK<br>22,518,652.1 m3
+    <td>14.408b ISK<br>22,949,609.0 m3
   <tr>
     <td>Station - Omega Modules
     <td>0.682b ISK<br>9,205.0 m3
   <tr>
     <td>Station - Ships
-    <td>5.137b ISK<br>3,852,100.0 m3
+    <td>5.144b ISK<br>3,852,100.0 m3
   <tr>
     <td>Station - Skill Books
     <td>0.162b ISK<br>1.7 m3
   <tr>
     <td>Station - SKINs
-    <td>1.318b ISK<br>22.1 m3
+    <td>1.318b ISK<br>22.4 m3
   <tr>
     <td>Station - Industry Supplies
     <td>0.769b ISK<br>100,714.2 m3
