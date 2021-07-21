@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>Annoying Bugs that CCP should Fix</title>
+<link href=../../../common/css/writings.css rel=stylesheet>
+
+<a href=../../index.htm>honzi</a>/<a href=../index.htm>Bookmarks</a>/<a href=../eve.htm>Honzifox's EVE</a>/Bugs
+<ul>
+  <li><a href=#automatic-filter>Automatic filtering/searching while typing causes a lot of lag</a>
+  <li><a href=#closest-loyalty-point-store>Closest Loyalty Point Store causes a lot of lag when viewing the Loyalty Points tab in the Wallet</a>
+  <li><a href=#drone-focus-fire>Drones don't actually Focus Fire</a>
+  <li><a href=#journal-tabs>Journal window does not remember selected tab</a>
+  <li><a href=#next-route-step>Next step in Route is not always automatically Selected after jumping</a>
+  <li><a href=#project-discovery-click>Project Discovery often incorrectly handles clicks and dragging</a>
+  <li><a href=#space-login>When logging in while in space, sometimes module icons are not visible until warp is nearly completed</a>
+</ul>
+<table>
+  <tr class=header>
+    <td>Bug
+    <td>Solution
+  <tr id=automatic-filter>
+    <td><textarea>Automatic filtering/searching while typing causes a lot of lag. When searching or filtering in various UIs, such as the market and hangars, the contents are automatically searched/filtered as you type. This results in a lot of lag on weaker computers unless values are copy+pasted in or typed really quickly, as hundreds of items are being checked multiple times per second.</textarea>
+    <td><textarea>Add an option to disable automatic filter/search while typing.</textarea>
+  <tr id=closest-loyalty-point-store>
+    <td><textarea>Whenever viewing the current number of Loyalty points in the Wallet, a column for the Closest Loyalty Point Store is displayed. While this information may be useful in some situations, its forced inclusion causes a lot of lag as the closest store location is calculated.</textarea>
+    <td><textarea>Hide the closest loyalty point store column information until the user specifically requests it. Perhaps a different UI window could display that information, such as the Agency window.</textarea>
+  <tr id=drone-focus-fire>
+    <td><textarea>Drones don't properly Focus Fire. Their behavior is incorrect, but predictable: If a drone's target is destroyed then it will take a few seconds to pick a new target. If a new enemy begins attacking your ship before the drone picks a new target, then it will attack the new enemy ship. Since drones often pick new targets on different server ticks because of being launched on different server ticks, drones will end up attacking different targets even when Focus Fire is selected.</textarea>
+    <td><textarea>If Focus Fire is selected, then all currently active drones should be launched on and handle commands on the exact same server tick.</textarea>
+  <tr id=journal-tabs>
+    <td><textarea>The Journal window sometimes incorrectly defaults to the Incursions tab, even when the Agents tab was selected when it was last closed.</textarea>
+    <td><textarea>Make the Journal window remember selected tab, much like nearly every other window already does.</textarea>
+  <tr id=next-route-step>
+    <td><textarea>When jumping into a new solar system while a Route is set, the next step in the Route is not always selected. This inconsistency sometimes results in requiring additional clicks just to continue along the Route. In some less common instances, an incorrect entity will be Selected, such as the Stargate that was just used. This can result in unintended additional jumps, wasted time, and potential death.</textarea>
+    <td><textarea>Make sure that the correct next step in the Route is always selected after jumping.</textarea>
+  <tr id=project-discovery-click>
+    <td><textarea>Often when attempting to click on the final vertex to create a polygon, the polygon will not be completed and instead the first vertex will be moved. This results in requiring additional clicks to complete the polygon and in some cases the user will not notice this failure and complete the current sample without the expected number of clusters. Also, dragging vertices too close to other vertices results in the vertex position being reset to its original location and the drag becomes no longer active.</textarea>
+    <td><textarea>Do not allow polygon vertices to be moved until the polygon is completed. Fix issues caused when vertices are dragged too close to other vertices.</textarea>
+  <tr id=space-login>
+    <td><textarea>When logging in while in space, sometimes module icons are not visible until warp is nearly completed. This can result in a big disadvantage in certain situations where promptly activating a module is needed, such as cloaking or resistance modules.</textarea>
+    <td><textarea>Make sure module icons are always visible and interactable when your ship is in space.</textarea>
+</table>
