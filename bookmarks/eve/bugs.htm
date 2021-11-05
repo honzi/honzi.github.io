@@ -7,12 +7,13 @@
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Bookmarks</a>/<a href=../eve.htm>Honzifox's EVE</a>/Bugs
 <ul>
   <li><a href=#automatic-filter>Automatic filtering/searching while typing causes a lot of lag</a>
+  <li><a href=#character-sheet-lag>Character Sheet 3D character model causes a lot of lag</a>
   <li><a href=#closest-loyalty-point-store>Closest Loyalty Point Store causes a lot of lag when viewing the Loyalty Points tab in the Wallet</a>
   <li><a href=#drone-focus-fire>Drones don't actually Focus Fire</a>
   <li><a href=#journal-tabs>Journal window does not remember selected tab</a>
   <li><a href=#next-route-step>Next step in Route is not always automatically Selected after jumping</a>
   <li><a href=#project-discovery-click>Project Discovery often incorrectly handles clicks and dragging</a>
-  <li><a href=#space-login>When logging in while in space, sometimes module icons are not visible until warp is nearly completed</a>
+  <li><a href=#space-login>When logging in while in space, sometimes module icons are not immediately visible</a>
 </ul>
 <table>
   <tr class=header>
@@ -21,6 +22,9 @@
   <tr id=automatic-filter>
     <td><textarea>Automatic filtering/searching while typing causes a lot of lag. When searching or filtering in various UIs, such as the market and hangars, the contents are automatically searched/filtered as you type. This results in a lot of lag on weaker computers unless values are copy+pasted in or typed really quickly, as hundreds of items are being checked multiple times per second.</textarea>
     <td><textarea>Add an option to disable automatic filter/search while typing.</textarea>
+  <tr id=character-sheet-lag>
+    <td><textarea>Character Sheet 3D character model causes a lot of lag when opening the Character Sheet and any of its sub-tabs.</textarea>
+    <td><textarea>Allow hiding the 3D character model portion of the character sheet. Players should not be forced to load this 3D model when attempting to use UI pages that do not require it.</textarea>
   <tr id=closest-loyalty-point-store>
     <td><textarea>Whenever viewing the current number of Loyalty points in the Wallet, a column for the Closest Loyalty Point Store is displayed. While this information may be useful in some situations, its forced inclusion causes a lot of lag as the closest store location is calculated.</textarea>
     <td><textarea>Hide the closest loyalty point store column information until the user specifically requests it. Perhaps a different UI window could display that information, such as the Agency window.</textarea>
@@ -37,6 +41,6 @@
     <td><textarea>Often when attempting to click on the final vertex to create a polygon, the polygon will not be completed and instead the first vertex will be moved. This results in requiring additional clicks to complete the polygon and in some cases the user will not notice this failure and complete the current sample without the expected number of clusters. Also, dragging vertices too close to other vertices results in the vertex position being reset to its original location and the drag becomes no longer active.</textarea>
     <td><textarea>Do not allow polygon vertices to be moved until the polygon is completed. Fix issues caused when vertices are dragged too close to other vertices.</textarea>
   <tr id=space-login>
-    <td><textarea>When logging in while in space, sometimes module icons are not visible until warp is nearly completed. This can result in a big disadvantage in certain situations where promptly activating a module is needed, such as cloaking or resistance modules.</textarea>
+    <td><textarea>When logging in while in space, sometimes module icons are not immediately visible. This can result in a big disadvantage in certain situations where promptly activating a module is needed, such as cloaking or resistance modules.</textarea>
     <td><textarea>Make sure module icons are always visible and interactable when your ship is in space.</textarea>
 </table>
