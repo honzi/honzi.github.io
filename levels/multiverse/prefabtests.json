@@ -1,0 +1,59 @@
+{
+  "spawn-translate-z": 40,
+  "characters": [
+    {
+      "id": "prefabtests"
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "character": "prefabtests",
+        "random-colors": true
+      }
+    },
+    {
+      "type": "webgl_primitive_ellipsoid",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 10
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 20
+      }
+    },
+    {
+      "type": "prefabs_webgl_humanoid",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 30
+      }
+    },
+    {
+      "type": "prefabs_webgl_lines_shrub",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 40
+      }
+    },
+    {
+      "type": "prefabs_webgl_lines_tree",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 50
+      }
+    },
+    {
+      "type": "prefabs_webgl_tree_2d",
+      "properties": {
+        "character": "prefabtests",
+        "translate-x": 60
+      }
+    }
+  ]
+}
