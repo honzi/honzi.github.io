@@ -1,0 +1,46 @@
+{
+  "spawn-translate-z": 10,
+  "characters": [
+    {
+      "id": "texturetests",
+      "entities": [
+        {
+          "id": "blend-grid",
+          "texture-id": "grid.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 15,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 0,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 0
+          ],
+          "vertices": [
+            5, 0, -5, 1,
+            -10, 0, -5, 1,
+            -10, 0, 5, 1,
+            5, 0, 5, 1
+          ]
+        },
+        {
+          "id": "blend-lavaleaf",
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 15,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 0,
+            0.2, 0.2, 0.2, 0,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            10, 0.01, -5, 1,
+            -5, 0.01, -5, 1,
+            -5, 0.01, 5, 1,
+            10, 0.01, 5, 1
+          ]
+        }
+      ]
+    }
+  ]
+}
