@@ -17,49 +17,49 @@
       "type": "webgl_primitive_ellipsoid",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 10
+        "translate-x": 20
       }
     },
     {
       "type": "webgl_primitive_frustum",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 20
+        "translate-x": 40
       }
     },
     {
       "type": "prefabs_webgl_cuboid_tree",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 30
+        "translate-x": 60
       }
     },
     {
       "type": "prefabs_webgl_humanoid",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 40
+        "translate-x": 80
       }
     },
     {
       "type": "prefabs_webgl_lines_shrub",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 50
+        "translate-x": 100
       }
     },
     {
       "type": "prefabs_webgl_lines_tree",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 60
+        "translate-x": 120
       }
     },
     {
       "type": "prefabs_webgl_tree_2d",
       "properties": {
         "character": "prefabtests",
-        "translate-x": 70
+        "translate-x": 140
       }
     }
   ]
