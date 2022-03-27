@@ -1,0 +1,532 @@
+{
+  "paths": {
+    "platform-0-obstacle": {
+      "end": -1,
+      "points": [
+        {
+          "translate-x": 50,
+          "translate-y": 20,
+          "translate-z": -50
+        },
+        {
+          "translate-x": -50
+        }
+      ],
+      "speed": 5
+    }
+  },
+  "spawn-rotate-x": 30,
+  "spawn-translate-y": 10,
+  "characters": [
+    {
+      "id": "lava",
+      "entities": [
+        {
+          "id": "lava",
+          "event-modify": [
+            {
+              "stat": "health-current",
+              "value": -1000
+            }
+          ],
+          "event-range": 0,
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-x": 5,
+          "texture-repeat-y": 15,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            100, 0, -300,
+            -100, 0, -300,
+            -100, 0, 300,
+            100, 0, 300
+          ]
+        },
+        {
+          "id": "lava-pillar-0",
+          "attach-offset-x": -15,
+          "attach-offset-y": 20,
+          "attach-offset-z": -155,
+          "event-modify": [
+            {
+              "stat": "health-current",
+              "value": -1000
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 90,
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ],
+          "vertices": [
+            20, 0, -5,
+            -20, 0, -5,
+            -20, 0, 5,
+            20, 0, 5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platform-0",
+      "entities": [
+        {
+          "id": "platform-0-shadow",
+          "alpha": 0.5,
+          "attach-offset-y": -19.99,
+          "collision": false,
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            7.5, 0, -7.5,
+            -7.5, 0, -7.5,
+            -7.5, 0, 7.5,
+            7.5, 0, 7.5
+          ]
+        }
+      ],
+      "path-end": -1,
+      "path-id": "platform-0-obstacle",
+      "translate-x": -20,
+      "translate-y": 20,
+      "translate-z": -50
+    },
+    {
+      "id": "platform-1",
+      "translate-x": 25,
+      "translate-y": 10,
+      "translate-z": -100
+    },
+    {
+      "id": "platform-2",
+      "translate-x": -40,
+      "translate-y": 1,
+      "translate-z": -142
+    },
+    {
+      "id": "platform-3",
+      "translate-x": 10,
+      "translate-y": 1,
+      "translate-z": -185
+    },
+    {
+      "id": "platform-4",
+      "translate-x": 15,
+      "translate-y": 1,
+      "translate-z": -52.5
+    },
+    {
+      "id": "platform-5",
+      "translate-x": -20,
+      "translate-y": 25,
+      "translate-z": -180
+    },
+    {
+      "id": "platform-6",
+      "entities": [
+        {
+          "id": "platform-6-shadow",
+          "alpha": 0.5,
+          "attach-offset-y": -29.99,
+          "collision": false,
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            19.5, 0, -9.5,
+            -19.5, 0, -9.5,
+            -19.5, 0, 9.5,
+            19.5, 0, 9.5
+          ]
+        }
+      ],
+      "translate-x": 5,
+      "translate-y": 30,
+      "translate-z": -150
+    },
+    {
+      "id": "platform-7",
+      "translate-x": 70,
+      "translate-y": 1,
+      "translate-z": -195
+    },
+    {
+      "id": "platform-8",
+      "translate-y": 5,
+      "translate-z": 155
+    },
+    {
+      "id": "platform-gate",
+      "translate-y": 5,
+      "translate-z": 85
+    },
+    {
+      "id": "platform-spawn",
+      "translate-y": 5
+    },
+    {
+      "id": "gate-0",
+      "translate-y": 35,
+      "translate-z": 85
+    },
+    {
+      "id": "tree-0",
+      "translate-x": -25,
+      "translate-y": 50,
+      "translate-z": -175
+    },
+    {
+      "id": "tree-1",
+      "translate-x": 18,
+      "translate-y": 40,
+      "translate-z": -152
+    },
+    {
+      "id": "guard-0",
+      "entities": [
+        {
+          "id": "guard-0-face",
+          "billboard": "y",
+          "collision": false,
+          "vertex-colors": [
+            1, 0, 0, 1,
+            0, 1, 0, 1,
+            0, 0, 1, 1
+          ],
+          "vertices": [
+            -2, 0, 0,
+            2, 0, 0,
+            0, 2, 0
+          ]
+        }
+      ],
+      "level": 273,
+      "translate-x": -20,
+      "translate-y": 35,
+      "translate-z": 80
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-0",
+        "all": {
+          "texture-id": "stone.png",
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "character": "platform-0",
+        "size-x": 15,
+        "size-y": 2,
+        "size-z": 15
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-1",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-1",
+        "size-x": 25,
+        "size-y": 20,
+        "size-z": 20
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-2",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-2",
+        "size-x": 20,
+        "size-y": 2,
+        "size-z": 20
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-3",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-3",
+        "size-x": 20,
+        "size-y": 2,
+        "size-z": 45
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-4",
+        "all": {
+          "texture-id": "stone.png",
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "back": {
+          "exclude": true
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-4",
+        "front": {
+          "exclude": true
+        },
+        "size-x": 5,
+        "size-y": 2,
+        "size-z": 75
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-5",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-5",
+        "size-x": 25,
+        "size-y": 50,
+        "size-z": 25
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-6",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "character": "platform-6",
+        "size-x": 39,
+        "size-y": 20,
+        "size-z": 19
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-7",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-7",
+        "size-x": 20,
+        "size-y": 2,
+        "size-z": 20
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-gate",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 4,
+          "texture-repeat-y": 4,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-gate",
+        "size-x": 55,
+        "size-y": 10,
+        "size-z": 55
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-8",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-8",
+        "size-x": 20,
+        "size-y": 10,
+        "size-z": 20
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "gate-0",
+        "all": {
+          "texture-id": "stone.png",
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "character": "gate-0",
+        "size-x": 55,
+        "size-y": 50,
+        "size-z": 5
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "platform-spawn",
+        "all": {
+          "texture-id": "stone.png",
+          "texture-repeat-x": 3,
+          "texture-repeat-y": 3,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "platform-spawn",
+        "size-x": 35,
+        "size-y": 10,
+        "size-z": 30
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "prefix": "tree-0",
+        "character": "tree-0",
+        "vertex-colors-leaves": [
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1
+        ]
+      }
+    },
+    {
+      "type": "prefabs_webgl_cuboid_tree",
+      "properties": {
+        "prefix": "tree-1",
+        "character": "tree-1",
+        "vertex-colors-leaves": [
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1,
+          0.666, 0, 0, 1
+        ]
+      }
+    }
+  ]
+}
