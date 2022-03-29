@@ -1,7 +1,7 @@
 {
   "paths": {
     "platform-0-obstacle": {
-      "end": -1,
+      "end": "reverse",
       "points": [
         {
           "translate-x": 50,
