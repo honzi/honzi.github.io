@@ -1,0 +1,142 @@
+{
+  "spawn-translate-y": 10,
+  "characters": [
+    {
+      "id": "dreams",
+      "entities": [
+        {
+          "id": "pool-floor-0",
+          "attach-offset-z": -50,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 50,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            50, 0, -10,
+            -50, 0, -10,
+            -50, 0, 10,
+            50, 0, 10
+          ]
+        },
+        {
+          "id": "pool-floor-1",
+          "attach-offset-z": -10,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 50,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            50, 0, -10,
+            -50, 0, -10,
+            -50, 0, 10,
+            50, 0, 10
+          ]
+        },
+        {
+          "id": "pool-floor-2",
+          "attach-offset-x": -40,
+          "attach-offset-z": -30,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        },
+        {
+          "id": "pool-floor-3",
+          "attach-offset-x": 40,
+          "attach-offset-z": -30,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 10,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "pool",
+        "all": {
+        },
+        "back": {
+          "vertex-colors": [
+            0, 0, 0, 0,
+            0, 0, 0, 0,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "dreams",
+        "front": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0, 0, 0, 0,
+            0, 0, 0, 0
+          ]
+        },
+        "left": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0, 0, 0, 0,
+            0, 0, 0, 0,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "right": {
+          "vertex-colors": [
+            0, 0, 0, 0,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0, 0, 0, 0
+          ]
+        },
+        "size-x": -60,
+        "size-y": -50,
+        "size-z": -20,
+        "top": {
+          "exclude": true
+        },
+        "translate-y": -25,
+        "translate-z": -30
+      }
+    }
+  ]
+}

@@ -96,5 +96,27 @@
         }
       ]
     }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "cuboidtest",
+        "all": {
+          "texture-id": "debug.png",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ]
+        },
+        "character": "texturetests",
+        "size-x": 10,
+        "size-y": 10,
+        "size-z": 10,
+        "translate-z": -30
+      }
+    }
   ]
 }
