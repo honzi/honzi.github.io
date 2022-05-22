@@ -1,12 +1,216 @@
 {
+  "paths": {
+    "tunnel": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": 250,
+          "translate-y": 10,
+          "translate-z": 25
+        },
+        {
+          "translate-x": 50
+        }
+      ],
+      "speed": 25
+    }
+  },
   "spawn-translate-y": 10,
   "characters": [
     {
       "id": "dreams",
       "entities": [
         {
-          "id": "pool-floor-0",
-          "attach-offset-z": -50,
+          "id": "bathroom0-floor",
+          "attach-offset-x": -80,
+          "attach-offset-z": 60,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 30,
+          "texture-repeat-y": 20,
+          "vertex-colors": [
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1
+          ],
+          "vertices": [
+            30, 0, -20,
+            -30, 0, -20,
+            -30, 0, 20,
+            30, 0, 20
+          ]
+        },
+        {
+          "id": "bathroom0-wall0",
+          "attach-offset-x": -110,
+          "attach-offset-y": 10,
+          "attach-offset-z": 60,
+          "rotate-x": 90,
+          "rotate-z": 270,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 20,
+          "vertex-colors": [
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1
+          ],
+          "vertices": [
+            20, 0, -10,
+            -20, 0, -10,
+            -20, 0, 10,
+            20, 0, 10
+          ]
+        },
+        {
+          "id": "bathroom0-wall0-window",
+          "attach-offset-x": -109.99,
+          "attach-offset-y": 10,
+          "attach-offset-z": 70,
+          "collision": false,
+          "rotate-x": 90,
+          "rotate-z": 270,
+          "vertex-colors": [
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "id": "bathroom0-wall1",
+          "attach-offset-x": -80,
+          "attach-offset-y": 10,
+          "attach-offset-z": 80,
+          "rotate-x": 270,
+          "texture-id": "wall.png",
+          "texture-repeat-x": 30,
+          "vertex-colors": [
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1,
+            0, 0, 0.2, 1
+          ],
+          "vertices": [
+            30, 0, -10,
+            -30, 0, -10,
+            -30, 0, 10,
+            30, 0, 10
+          ]
+        },
+        {
+          "id": "bathroom0-wall1-window",
+          "attach-offset-x": -100,
+          "attach-offset-y": 10,
+          "attach-offset-z": 79.99,
+          "collision": false,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1,
+            0, 0.1, 0.4, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "id": "field",
+          "attach-offset-z": -125,
+          "texture-id": "lavaleaf.png",
+          "vertex-colors": [
+            0, 0.2, 0, 1,
+            0, 0.2, 0, 1,
+            0, 0.2, 0, 1,
+            0, 0.2, 0, 1
+          ],
+          "vertices": [
+            250, 0, -125,
+            -250, 0, -125,
+            -250, 0, 125,
+            250, 0, 125
+          ]
+        },
+        {
+          "id": "goal0",
+          "attach-offset-x": -150,
+          "attach-offset-z": -125,
+          "collision": false,
+          "draw-mode": "LINES",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -10,
+            0, 10, -10,
+            0, 0, 10,
+            0, 10, 10,
+            0, 10, -10,
+            0, 10, 10
+          ]
+        },
+        {
+          "id": "goal1",
+          "attach-offset-x": 150,
+          "attach-offset-z": -125,
+          "collision": false,
+          "draw-mode": "LINES",
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            0, 0, -10,
+            0, 10, -10,
+            0, 0, 10,
+            0, 10, 10,
+            0, 10, -10,
+            0, 10, 10
+          ]
+        },
+        {
+          "id": "pitch",
+          "attach-offset-z": -125,
+          "attach-offset-y": 0.01,
+          "collision": false,
+          "texture-id": "wood.png",
+          "texture-repeat-x": 10,
+          "texture-repeat-y": 5,
+          "vertex-colors": [
+            0, 0.3, 0, 1,
+            0, 0.3, 0, 1,
+            0, 0.3, 0, 1,
+            0, 0.3, 0, 1
+          ],
+          "vertices": [
+            150, 0, -75,
+            -150, 0, -75,
+            -150, 0, 75,
+            150, 0, 75
+          ]
+        },
+        {
+          "id": "pool0-floor0",
+          "attach-offset-z": 10,
           "texture-id": "grid.png",
           "texture-repeat-x": 50,
           "texture-repeat-y": 10,
@@ -24,8 +228,8 @@
           ]
         },
         {
-          "id": "pool-floor-1",
-          "attach-offset-z": -10,
+          "id": "pool0-floor1",
+          "attach-offset-z": 50,
           "texture-id": "grid.png",
           "texture-repeat-x": 50,
           "texture-repeat-y": 10,
@@ -43,9 +247,9 @@
           ]
         },
         {
-          "id": "pool-floor-2",
+          "id": "pool0-floor2",
           "attach-offset-x": -40,
-          "attach-offset-z": -30,
+          "attach-offset-z": 30,
           "texture-id": "grid.png",
           "texture-repeat-x": 10,
           "texture-repeat-y": 10,
@@ -63,9 +267,9 @@
           ]
         },
         {
-          "id": "pool-floor-3",
+          "id": "pool0-floor3",
           "attach-offset-x": 40,
-          "attach-offset-z": -30,
+          "attach-offset-z": 30,
           "texture-id": "grid.png",
           "texture-repeat-x": 10,
           "texture-repeat-y": 10,
@@ -83,19 +287,47 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tunnel-train",
+      "entities": [
+        {
+          "id": "train-face",
+          "rotate-z": 90,
+          "texture-id": "grid.png",
+          "texture-repeat-x": 2,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ],
+      "path-id": "tunnel",
+      "translate-x": 250,
+      "translate-y": 10,
+      "translate-z": 25
     }
   ],
   "prefabs": [
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
-        "prefix": "pool",
+        "prefix": "pool0",
         "all": {
         },
         "back": {
           "vertex-colors": [
-            0, 0, 0, 0,
-            0, 0, 0, 0,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
             0.2, 0.2, 0.2, 1,
             0.2, 0.2, 0.2, 1
           ]
@@ -108,24 +340,24 @@
           "vertex-colors": [
             0.2, 0.2, 0.2, 1,
             0.2, 0.2, 0.2, 1,
-            0, 0, 0, 0,
-            0, 0, 0, 0
+            0, 0, 0, 1,
+            0, 0, 0, 1
           ]
         },
         "left": {
           "vertex-colors": [
             0.2, 0.2, 0.2, 1,
-            0, 0, 0, 0,
-            0, 0, 0, 0,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
             0.2, 0.2, 0.2, 1
           ]
         },
         "right": {
           "vertex-colors": [
-            0, 0, 0, 0,
+            0, 0, 0, 1,
             0.2, 0.2, 0.2, 1,
             0.2, 0.2, 0.2, 1,
-            0, 0, 0, 0
+            0, 0, 0, 1
           ]
         },
         "size-x": -60,
@@ -135,7 +367,7 @@
           "exclude": true
         },
         "translate-y": -25,
-        "translate-z": -30
+        "translate-z": 30
       }
     }
   ]
