@@ -1,4 +1,20 @@
 {
+  "paths": {
+    "loop": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": 0,
+          "translate-y": 0,
+          "translate-z": -50
+        },
+        {
+          "translate-x": 1
+        }
+      ],
+      "speed": 1
+    }
+  },
   "spawn-translate-z": 10,
   "characters": [
     {
@@ -95,6 +111,31 @@
           ]
         }
       ]
+    },
+    {
+      "id": "loop-test",
+      "entities": [
+        {
+          "id": "loop-test",
+          "texture-id": "grid.png",
+          "texture-repeat-x": 20,
+          "texture-repeat-y": 20,
+          "vertex-colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ],
+      "path-id": "loop",
+      "translate-z": -50
     }
   ],
   "prefabs": [
