@@ -6,13 +6,27 @@
         {
           "translate-x": 250,
           "translate-y": 10,
-          "translate-z": 25
+          "translate-z": 50
         },
         {
           "translate-x": 50
         }
       ],
       "speed": 25
+    },
+    "water": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": 0,
+          "translate-y": -5,
+          "translate-z": 30
+        },
+        {
+          "translate-x": 20
+        }
+      ],
+      "speed": 10
     }
   },
   "spawn-translate-y": 10,
@@ -45,7 +59,6 @@
           "attach-offset-x": -110,
           "attach-offset-y": 10,
           "attach-offset-z": 60,
-          "rotate-x": 90,
           "rotate-z": 270,
           "texture-id": "wall.png",
           "texture-repeat-x": 20,
@@ -56,10 +69,10 @@
             0, 0, 0.2, 1
           ],
           "vertices": [
-            20, 0, -10,
-            -20, 0, -10,
-            -20, 0, 10,
-            20, 0, 10
+            10, 0, -20,
+            -10, 0, -20,
+            -10, 0, 20,
+            10, 0, 20
           ]
         },
         {
@@ -314,7 +327,34 @@
       "path-id": "tunnel",
       "translate-x": 250,
       "translate-y": 10,
-      "translate-z": 25
+      "translate-z": 50
+    },
+    {
+      "id": "water",
+      "entities": [
+        {
+          "id": "water-0",
+          "alpha": 0.4,
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-x": 5,
+          "texture-repeat-y": 1,
+          "vertex-colors": [
+            0.2, 0.2, 1, 1,
+            0.2, 0.2, 1, 1,
+            0.2, 0.2, 1, 1,
+            0.2, 0.2, 1, 1
+          ],
+          "vertices": [
+            40, 0, -10,
+            -60, 0, -10,
+            -60, 0, 10,
+            40, 0, 10
+          ]
+        }
+      ],
+      "path-id": "water",
+      "translate-y": -5,
+      "translate-z": 30
     }
   ],
   "prefabs": [
