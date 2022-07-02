@@ -1,0 +1,122 @@
+{
+  "characters": [
+    {
+      "id": "copypaste",
+      "entities": [
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-x+",
+          "rotate-z": 270,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-x-",
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-y+",
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-y-",
+          "rotate-x": 180,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-z+",
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        },
+        {
+          "attach-offset-x": 0,
+          "attach-offset-y": 0,
+          "attach-offset-z": 0,
+          "id": "wall-z-",
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            5, 0, -5,
+            -5, 0, -5,
+            -5, 0, 5,
+            5, 0, 5
+          ]
+        }
+      ]
+    }
+  ]
+}

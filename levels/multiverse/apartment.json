@@ -1,0 +1,73 @@
+{
+  "fog-density": 0.0002,
+  "fog-state": true,
+  "spawn-translate-y": -5,
+  "spawn-translate-z": 20,
+  "characters": [
+    {
+      "id": "apartments",
+      "entities": [
+        {
+          "attach-offset-x": 80,
+          "attach-offset-z": 60,
+          "id": "building-1",
+          "rotate-z": 90,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            100, 0, -100,
+            -100, 0, -100,
+            -100, 0, 100,
+            100, 0, 100
+          ]
+        },
+        {
+          "attach-offset-z": -100,
+          "id": "building-2",
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            100, 0, -100,
+            -100, 0, -100,
+            -100, 0, 100,
+            100, 0, 100
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "character": "apartments",
+        "front": {
+          "draw": false
+        },
+        "left": {
+          "draw": false
+        },
+        "size-x": -80,
+        "size-y": -10,
+        "size-z": -80
+      }
+    }
+  ]
+}
