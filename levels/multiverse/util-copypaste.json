@@ -1,4 +1,22 @@
 {
+  "paths": {
+    "path": {
+      "end": "loop",
+      "points": [
+        {
+          "translate-x": 0,
+          "translate-y": 0,
+          "translate-z": 0
+        },
+        {
+          "translate-x": 1,
+          "translate-y": 1,
+          "translate-z": 1
+        }
+      ],
+      "speed": 1
+    }
+  },
   "characters": [
     {
       "id": "copypaste",
@@ -117,6 +135,14 @@
           ]
         }
       ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "character": "copypaste"
+      }
     }
   ]
 }

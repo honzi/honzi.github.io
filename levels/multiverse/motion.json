@@ -1,0 +1,64 @@
+{
+  "characters": [
+    {
+      "id": "rotation",
+      "change": {
+        "rotate-z": 1
+      }
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "collision": false,
+          "texture-id": "lavaleaf.png"
+        },
+        "back": {
+          "exclude": true
+        },
+        "bottom": {
+          "vertex-colors": [
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1,
+            1, 1, 0, 1
+          ]
+        },
+        "character": "rotation",
+        "front": {
+          "exclude": true
+        },
+        "left": {
+          "vertex-colors": [
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1,
+            0, 1, 0, 1
+          ]
+        },
+        "right": {
+          "vertex-colors": [
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1,
+            1, 0, 0, 1
+          ]
+        },
+        "size-x": -20,
+        "size-y": -20,
+        "size-z": -200,
+        "top": {
+          "vertex-colors": [
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1,
+            0, 0, 1, 1
+          ]
+        },
+        "translate-z": -100
+      }
+    }
+  ]
+}

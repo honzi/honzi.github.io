@@ -1,0 +1,153 @@
+{
+  "spawn-translate-y": 5,
+  "paths": {
+    "travel-land": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": 0
+        },
+        {
+          "translate-x": 10
+        }
+      ],
+      "speed": 10
+    },
+    "travel-entities": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": -210
+        },
+        {
+          "translate-x": 210
+        }
+      ],
+      "speed": 10
+    }
+  },
+  "characters": [
+    {
+      "id": "stationary",
+      "entities": [
+        {
+          "attach-offset-x": -200,
+          "collision": false,
+          "id": "block-x+",
+          "rotate-z": 270,
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            10, 0, -105,
+            -10, 0, -105,
+            -10, 0, 105,
+            10, 0, 105
+          ]
+        },
+        {
+          "attach-offset-x": 200,
+          "collision": false,
+          "id": "block-x-",
+          "rotate-z": 90,
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            10, 0, -105,
+            -10, 0, -105,
+            -10, 0, 105,
+            10, 0, 105
+          ]
+        },
+        {
+          "id": "road",
+          "collision": false,
+          "rotate-y": 90,
+          "texture-id": "wall.png",
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            15, 0.01, -200,
+            -15, 0.01, -200,
+            -15, 0.01, 200,
+            15, 0.01, 200
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entities",
+      "path-id": "travel-entities",
+      "translate-x": -210
+    },
+    {
+      "id": "land",
+      "entities": [
+        {
+          "id": "land",
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-x": 42,
+          "texture-repeat-y": 20,
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            210, 0, -100,
+            -210, 0, -100,
+            -210, 0, 100,
+            210, 0, 100
+          ]
+        }
+      ],
+      "path-id": "travel-land"
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "vertex-colors": [
+            0.45, 0.1, 0, 1,
+            0.45, 0.1, 0, 1,
+            0.45, 0.1, 0, 1,
+            0.45, 0.1, 0, 1
+          ]
+        },
+        "back": {
+          "exclude": true
+        },
+        "character": "stationary",
+        "front": {
+          "exclude": true
+        },
+        "size-x": -50,
+        "size-y": -10,
+        "size-z": -10,
+        "translate-y": 6,
+        "translate-z": -55
+      }
+    },
+    {
+      "type": "prefabs_webgl_tree_2d",
+      "properties": {
+        "character": "entities",
+        "translate-z": 25
+      }
+    }
+  ]
+}
