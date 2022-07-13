@@ -1,8 +1,7 @@
 {
   "fog-density": 0.0002,
   "fog-state": true,
-  "spawn-translate-y": -5,
-  "spawn-translate-z": 20,
+  "spawn-translate-z": 30,
   "characters": [
     {
       "id": "apartments",
