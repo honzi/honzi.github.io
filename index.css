@@ -5,11 +5,13 @@ body{
     background: #000;
     color: #ccc;
     font: 700 14px monospace;
-    line-height: 2em;
-    text-align: center;
 }
 .external{
     color: #f99;
+}
+ul{
+    margin-top: 0;
+    padding-left: 20px;
 }
 
 a:focus{
