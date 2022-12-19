@@ -19,7 +19,7 @@
   },
   "characters": [
     {
-      "id": "copypaste",
+      "id": "copypasta",
       "entities": [
         {
           "attach-offset-x": 0,
@@ -141,7 +141,7 @@
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
-        "character": "copypaste"
+        "character": "copypasta"
       }
     }
   ]
