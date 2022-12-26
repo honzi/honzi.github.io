@@ -1,0 +1,23 @@
+{
+  "fog-density": 0.005,
+  "fog-state": true,
+  "characters": [
+    {
+      "id": "spooky"
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "character": "spooky",
+        "random-colors": true,
+        "size-x": -80,
+        "size-y": -40,
+        "size-z": -80,
+        "translate-x": 35,
+        "translate-y": 15
+      }
+    }
+  ]
+}
