@@ -1,6 +1,10 @@
 {
+  "title": "spooky.json",
+  "camera-zoom-max": 0,
   "fog-density": 0.005,
   "fog-state": true,
+  "spawn-translate-x": -35,
+  "spawn-translate-y": -15,
   "characters": [
     {
       "id": "spooky"
@@ -14,9 +18,7 @@
         "random-colors": true,
         "size-x": -80,
         "size-y": -40,
-        "size-z": -80,
-        "translate-x": 35,
-        "translate-y": 15
+        "size-z": -80
       }
     }
   ]

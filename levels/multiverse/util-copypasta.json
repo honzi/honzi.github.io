@@ -1,6 +1,11 @@
 {
+  "title": "copypasta",
+  "camera-zoom-max": 50,
   "fog-density": 0.0001,
   "fog-state": true,
+  "spawn-translate-x": 0,
+  "spawn-translate-y": 0,
+  "spawn-translate-z": 0,
   "paths": {
     "path": {
       "end": "loop",
