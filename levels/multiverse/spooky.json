@@ -14,6 +14,9 @@
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
+        "all": {
+          "texture-id": "grid.png"
+        },
         "character": "spooky",
         "random-colors": true,
         "size-x": -80,

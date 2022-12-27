@@ -148,6 +148,9 @@
     {
       "type": "webgl_primitive_cuboid",
       "properties": {
+        "all": {
+          "texture-id": "default.png"
+        },
         "character": "copypasta",
         "random-colors": true,
         "size-x": 1,
