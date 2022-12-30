@@ -18,7 +18,6 @@
           "texture-id": "grid.png"
         },
         "character": "spooky",
-        "random-colors": true,
         "size-x": -80,
         "size-y": -40,
         "size-z": -80

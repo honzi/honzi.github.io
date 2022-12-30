@@ -152,7 +152,6 @@
           "texture-id": "default.png"
         },
         "character": "copypasta",
-        "random-colors": true,
         "size-x": 1,
         "size-y": 1,
         "size-z": 1,
