@@ -3,9 +3,12 @@
   "camera-zoom-max": 50,
   "fog-density": 0.0001,
   "fog-state": true,
-  "spawn-translate-x": 0,
-  "spawn-translate-y": 0,
-  "spawn-translate-z": 0,
+  "spawn-rotate-x": 45,
+  "spawn-rotate-y": 315,
+  "spawn-rotate-z": 0,
+  "spawn-translate-x": 7,
+  "spawn-translate-y": 7,
+  "spawn-translate-z": 7,
   "paths": {
     "path": {
       "end": "loop",
@@ -34,6 +37,7 @@
           "attach-offset-z": 0,
           "id": "wall-x+",
           "rotate-z": 270,
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,
@@ -53,6 +57,7 @@
           "attach-offset-z": 0,
           "id": "wall-x-",
           "rotate-z": 90,
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,
@@ -71,6 +76,7 @@
           "attach-offset-y": 0,
           "attach-offset-z": 0,
           "id": "wall-y+",
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,
@@ -90,6 +96,7 @@
           "attach-offset-z": 0,
           "id": "wall-y-",
           "rotate-x": 180,
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,
@@ -109,6 +116,7 @@
           "attach-offset-z": 0,
           "id": "wall-z+",
           "rotate-x": 90,
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,
@@ -128,6 +136,7 @@
           "attach-offset-z": 0,
           "id": "wall-z-",
           "rotate-x": 270,
+          "texture-id": "default.png",
           "vertex-colors": [
             0.1, 0.1, 0.1, 1,
             0.1, 0.1, 0.1, 1,

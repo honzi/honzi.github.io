@@ -1,13 +1,27 @@
 {
   "title": "spooky.json",
   "camera-zoom-max": 0,
-  "fog-density": 0.005,
+  "fog-density": 0.004,
   "fog-state": true,
   "spawn-translate-x": -35,
   "spawn-translate-y": -15,
   "characters": [
     {
-      "id": "spooky"
+      "id": "spooky",
+      "entities": [
+        {
+          "attach-offset-y": -35,
+          "attach-offset-z": -40,
+          "rotate-x": 270,
+          "texture-id": "grid.png",
+          "vertices": [
+            40, 0, -15,
+            -40, 0, -15,
+            -40, 0, 15,
+            40, 0, 15
+          ]
+        }
+      ]
     }
   ],
   "prefabs": [
@@ -18,9 +32,34 @@
           "texture-id": "grid.png"
         },
         "character": "spooky",
+        "front": {
+          "exclude": true
+        },
         "size-x": -80,
         "size-y": -40,
         "size-z": -80
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "texture-id": "grid.png"
+        },
+        "back": {
+          "exclude": true
+        },
+        "character": "spooky",
+        "bottom": {
+          "exclude": true
+        },
+        "size-x": -80,
+        "size-y": -100,
+        "size-z": -30,
+        "top": {
+          "exclude": true
+        },
+        "translate-z": -55
       }
     }
   ]
