@@ -155,6 +155,26 @@
   ],
   "prefabs": [
     {
+      "type": "webgl_primitive_ellipsoid",
+      "properties": {
+        "groups": [
+          "skybox"
+        ],
+        "prefix": "skybox",
+        "color0": [
+          0.2, 0.2, 0.2, 1
+        ],
+        "color1": [
+          0, 0, 0, 1
+        ],
+        "radius-x": -10,
+        "radius-y": -10,
+        "radius-z": -10,
+        "slices-latitude": 4,
+        "slices-longitude": 2
+      }
+    },
+    {
       "type": "webgl_primitive_cuboid",
       "properties": {
         "all": {
