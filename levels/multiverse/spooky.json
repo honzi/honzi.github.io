@@ -4,14 +4,14 @@
   "fog-density": 0.004,
   "fog-state": true,
   "spawn-translate-x": -35,
-  "spawn-translate-y": -15,
+  "spawn-translate-y": -10,
   "characters": [
     {
       "id": "spooky",
       "entities": [
         {
-          "attach-offset-y": -35,
-          "attach-offset-z": -40,
+          "attach-offset-y": -30,
+          "attach-offset-z": -20,
           "rotate-x": 270,
           "texture-id": "grid.png",
           "vertices": [
@@ -35,9 +35,12 @@
         "front": {
           "exclude": true
         },
+        "left": {
+          "exclude": true
+        },
         "size-x": -80,
-        "size-y": -40,
-        "size-z": -80
+        "size-y": -30,
+        "size-z": -40
       }
     },
     {
@@ -54,12 +57,60 @@
           "exclude": true
         },
         "size-x": -80,
-        "size-y": -100,
+        "size-y": -90,
         "size-z": -30,
         "top": {
           "exclude": true
         },
-        "translate-z": -55
+        "translate-z": -35
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "texture-id": "grid.png"
+        },
+        "character": "spooky",
+        "right": {
+          "exclude": true
+        },
+        "size-x": -80,
+        "size-y": -30,
+        "size-z": -20,
+        "translate-x": 80,
+        "translate-z": -10
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "all": {
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0.5, 0.5, 0.5, 1,
+            0.5, 0.5, 0.5, 1,
+            0, 0, 0, 1
+          ]
+        },
+        "character": "spooky",
+        "left": {
+          "vertex-colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ]
+        },
+        "right": {
+          "exclude": true
+        },
+        "size-x": -80,
+        "size-y": -30,
+        "size-z": -20,
+        "translate-x": 80,
+        "translate-z": 10
       }
     }
   ]
