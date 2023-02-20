@@ -1,0 +1,120 @@
+{
+  "fog-density": 0.0001,
+  "fog-state": false,
+  "spawn-translate-y": 5,
+  "spawn-translate-z": 10,
+  "paths": {
+    "lanovka": {
+      "end": "loop",
+      "points": [
+        {
+          "translate-x": -10,
+          "translate-y": 1,
+          "translate-z": 0
+        },
+        {
+          "speed": 0.2,
+          "translate-x": 10
+        },
+        {
+          "translate-z": -200
+        },
+        {
+          "speed": 0.2,
+          "translate-x": -10
+        }
+      ]
+    }
+  },
+  "characters": [
+    {
+      "id": "lanovka-base-lower",
+      "entities": [
+        {
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            25, 0, -25,
+            -25, 0, -25,
+            -25, 0, 25,
+            25, 0, 25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanovka-base-upper",
+      "translate-z": -200,
+      "entities": [
+        {
+          "attach-offset-y": -1,
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1,
+            0.1, 0.1, 0.1, 1
+          ],
+          "vertices": [
+            25, 0, -25,
+            -25, 0, -25,
+            -25, 0, 25,
+            25, 0, 25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanovka-0",
+      "path-id": "lanovka",
+      "translate-x": -10,
+      "translate-z": -100,
+      "entities": [
+        {
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanovka-1",
+      "path-id": "lanovka",
+      "path-point": 2,
+      "translate-x": 10,
+      "translate-z": -100,
+      "entities": [
+        {
+          "texture-id": "grid.png",
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1,
+            0.2, 0.2, 0.2, 1
+          ],
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ]
+    }
+  ]
+}

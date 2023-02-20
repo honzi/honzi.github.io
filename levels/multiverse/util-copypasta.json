@@ -30,6 +30,16 @@
   "characters": [
     {
       "id": "copypasta",
+      "path-direction": 1,
+      "path-end": "default",
+      "path-id": "",
+      "path-point": 0,
+      "rotate-x": 0,
+      "rotate-y": 0,
+      "rotate-z": 0,
+      "translate-x": 0,
+      "translate-y": 0,
+      "translate-z": 0,
       "entities": [
         {
           "attach-offset-x": 0,
