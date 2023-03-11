@@ -9,6 +9,9 @@ body{
 .external{
     color: #f99;
 }
+.external:after{
+    content: "↗";
+}
 ul{
     margin-top: 0;
     padding-left: 20px;
