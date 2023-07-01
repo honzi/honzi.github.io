@@ -7,9 +7,8 @@
 <a href=../index.htm>Honzi</a>/<a href=index.htm>Bookmarks</a>/Favorite SCPs
 <ul>
   <li>Random SCPs:<ul>
-    <li><a class=external href=https://iterami.github.io/RandomSCP.htm/ rel=noreferrer>iterami/RandomSCP.htm</a>
-    <li><a href=scp/index.htm>Minified Random SCP</a>
-    <li><a href=scp/best.htm>Minified Random Favorite SCP</a>
+    <li><a class=external href="javascript:random_scp();" rel=noreferrer>Random SCP</a>
+    <li><a class=external href="javascript:random_favorite();" rel=noreferrer>Random Favorite SCP</a>
   </ul>
   <li><a class=external href=https://scp-wiki.wikidot.com/twistedgears-kaktus-proposal rel=noreferrer>001 - Broken God</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/kate-mctiriss-s-proposal rel=noreferrer>001 - Edit Reality</a>
@@ -192,3 +191,33 @@
   <li><a class=external href=https://scp-wiki.wikidot.com/scp-6668 rel=noreferrer>6668 - Infinite Rat Sinkhole</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/scp-6833 rel=noreferrer>6833 - Multiverse Urine Ocean</a>
 </ul>
+
+<script>
+function random_favorite(){
+    let scp = ['015', '028', '062', '079', '083', '087', '093', 155, 184, 206, 216, 225, 249, 261, 300, 342, 354, 415, 432, 433, 455, 507, 635, 648, 684, 704, 716, 719, 738, 778, 850, 880, 914, 1009, 1050, 1130, 1165, 1188, 1190, 1220, 1230, 1272, 1303, 1346, 1347, 1397, 1411, 1437, 1472, 1494, 1499, 1555, 1562, 1587, 1660, 1674, 1730, 1872, 1881, 1896, 1981, 1983, 1989, 2003, 2093, 2120, 2206, 2220, 2224, 2298, 2316, 2334, 2385, 2399, 2427, 2508, 2521, 2571, 2614, 2649, 2684, 2691, 2740, 2764, 2821, 2840, 2894, 2917, 2922, 2935, 2949, 3007, 3010, 3022, 3029, 3041, 3054, 3068, 3082, 3084, 3096, 3109, 3122, 3182, 3200, 3283, 3285, 3311, 3352, 3379, 3392, 3398, 3426, 3446, 3493, 3539, 3560, 3674, 3682, 3752, 3790, 3930, 3935, 3957, 3964, 3969, 4000, 4011, 4040, 4050, 4051, 4072, 4111, 4116, 4137, 4143, 4214, 4240, 4251, 4350, 4363, 4379, 4447, 4488, 4505, 4530, 4558, 4614, 4660, 4779, 4785, 4792, 4811, 4832, 4857, 4919, 4963, 4994, 5001, 5067, 5161, 5186, 5317, 5356, 5401, 5733, 5902, 6001, 6162, 6223, 6250, 6300, 6523, 6668, 6833];
+    globalThis.open(
+      'https://scp-wiki.wikidot.com/scp-' + scp[Math.floor(Math.random() * scp.length)],
+      '_blank',
+      'noreferrer'
+    );
+}
+
+function random_scp(){
+    let article = Math.floor(Math.random() * 8000);
+    if(article < 100){
+        if(article < 10){
+            article = '00' + article;
+
+        } else {
+            article = '0' + article;
+        }
+    }
+
+    globalThis.open(
+      'https://scp-wiki.wikidot.com/scp-' + article,
+      '_blank',
+      'noreferrer'
+    );
+}
+
+</script>
