@@ -18,7 +18,7 @@ function calculate_time(){
       'cookies-per-week': 604800,
     };
     for(const time in times){
-        document.getElementById(time).value = core_number_format({
+        document.getElementById(time).textContent = core_number_format({
           'decimals-max': 3,
           'number': core_round({
             'number': cps * times[time],
