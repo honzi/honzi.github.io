@@ -101,7 +101,7 @@ function calculate_skillpoints(){
 
     document.getElementById('skill-result').textContent = core_number_format({
       'decimals-min': 0,
-      'number': Math.floor(Math.pow(2, 2.5 * (level - 1)) * rank * 250),
+      'number': Math.ceil(Math.pow(2, 2.5 * (level - 1)) * rank * 250),
     });
 }
 
