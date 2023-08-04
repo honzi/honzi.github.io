@@ -14,7 +14,7 @@ function calculate_combat(){
     for(const id in skills){
         const value = document.getElementById(id).value;
 
-        if(!globalThis.isNaN(value)
+        if(!Number.isNaN(value)
           && value.length >= 1
           && value >= 1){
             skills[id] = Number.parseInt(
