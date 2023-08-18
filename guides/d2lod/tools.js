@@ -1,45 +1,45 @@
 'use strict';
 
 function calculate(){
-    const first = Number.parseInt(
-      document.getElementById('first').value,
+    const value1 = Number.parseInt(
+      document.getElementById('select1').value,
       10
     );
-    const second = Number.parseInt(
-      document.getElementById('second').value,
+    const value2 = Number.parseInt(
+      document.getElementById('select2').value,
       10
     );
 
-    if(first > second){
+    if(value1 > value2){
         document.getElementById('result').textContent = 'Runes cannot be downgraded.';
         return;
     }
 
     let result = '';
 
-    if(second < 22){
+    if(value2 < 22){
         result =
           Math.pow(
             3,
-            second - first
+            value2 - value1
           );
 
-    }else if(first > 20){
+    }else if(value1 > 20){
         result =
           Math.pow(
             2,
-            second - first
+            value2 - value1
           );
 
     }else{
         result =
           Math.pow(
             3,
-            21 - first
+            21 - value1
           )
           * Math.pow(
             2,
-            second - 21
+            value2 - 21
           );
     }
 
@@ -48,7 +48,7 @@ function calculate(){
       'number': result,
     });
 
-    if(second > 10){
+    if(value2 > 10){
         result +=
           '<br>You will also require gems to transmute runes starting at Thul.';
     }
@@ -59,10 +59,10 @@ function calculate(){
 function repo_init(){
     core_repo_init({
       'events': {
-        'first': {
+        'select1': {
           'onchange': calculate,
         },
-        'second': {
+        'select2': {
           'onchange': calculate,
         },
       },

@@ -49,17 +49,17 @@ function calculate_combat(){
 }
 
 function calculate_xp(){
-    const first = Number.parseInt(
-      document.getElementById('first').value,
+    const value1 = Number.parseInt(
+      document.getElementById('value1').value,
       10
     );
-    const second = Number.parseInt(
-      document.getElementById('second').value,
+    const value2 = Number.parseInt(
+      document.getElementById('value2').value,
       10
     );
 
-    if(first >= second){
-        document.getElementById('result').textContent = 'First level must be lower than the second level.';
+    if(value1 >= value2){
+        document.getElementById('result').textContent = '1st level must be lower than the 2nd level.';
         return;
     }
 
@@ -187,18 +187,18 @@ function calculate_xp(){
       200000000,
     ];
 
-    document.getElementById('first-xp').textContent = xp[first - 1];
-    document.getElementById('second-xp').textContent = xp[second - 1];
+    document.getElementById('xp1').textContent = xp[value1 - 1];
+    document.getElementById('xp2').textContent = xp[value2 - 1];
 
     document.getElementById('result').innerHTML =
       'Min ('
-      + xp[first - 1]
+      + xp[value1 - 1]
       + ' xp): '
-      + ((xp[first - 1] / xp[second - 1]) * 100)
+      + ((xp[value1 - 1] / xp[value2 - 1]) * 100)
       + '%<br>Max ('
-      + (xp[first] - 1)
+      + (xp[value1] - 1)
       + ' xp): '
-      + (((xp[first] - 1) / xp[second - 1]) * 100)
+      + (((xp[value1] - 1) / xp[value2 - 1]) * 100)
       + '%';
 }
 
@@ -223,21 +223,21 @@ function repo_init(){
         document.getElementById(ids[id]).oninput = calculate_combat;
     }
 
-    document.getElementById('first').onchange = calculate_xp;
-    document.getElementById('second').onchange = calculate_xp;
+    document.getElementById('value1').onchange = calculate_xp;
+    document.getElementById('value2').onchange = calculate_xp;
 
     let select_options = '';
     for(let i = 1; i <= 120; i++){
         select_options += '<option value=' + i + '>' + i + '</option>';
     }
-    document.getElementById('first').innerHTML = select_options;
+    document.getElementById('value1').innerHTML = select_options;
 
     select_options = '';
     for(let i = 2; i <= 120; i++){
         select_options += '<option value=' + i + '>' + i + '</option>';
     }
     select_options += '<option value=121>Max</option>';
-    document.getElementById('second').innerHTML = select_options;
+    document.getElementById('value2').innerHTML = select_options;
 
     calculate_combat();
     calculate_xp();
