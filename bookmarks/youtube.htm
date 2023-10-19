@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>YouTube Embedder</title>
+<link href=../../common/css/core.css rel=stylesheet>
+
+<a href=../index.htm>Honzi</a>/<a href=index.htm>Bookmarks</a>/YouTube Embedder<br>
+<input id=url type=text><input id=open type=button value=Open>
+<div id=video></div>
+
+<script src=../../common/js/core.js></script>
+<script>
+function open(){
+    let url = document.getElementById('url').value;
+    const com = url.indexOf('youtube.com/watch?v=');
+
+    if(com !== -1){
+        url = url.substring(com + 20);
+    }
+
+    document.getElementById('video').innerHTML = '<iframe height=600 src="https://youtube.com/embed/' + url + '" width=100%></iframe>';
+}
+
+function repo_init(){
+    core_repo_init({
+      'events': {
+        'open': {
+          'onclick': open,
+        },
+      },
+      'owner': 'honzi',
+      'root': '../index.htm',
+      'title': 'honzi.github.io',
+    });
+}
+</script>
