@@ -137,7 +137,7 @@ function calculate_year(){
 function repo_init(){
     core_repo_init({
       'owner': 'honzi',
-      'root': '../../index.htm',
+      'root': 'index.htm',
       'title': 'honzi.github.io',
     });
 
