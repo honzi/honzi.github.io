@@ -228,15 +228,15 @@ function repo_init(){
 
     let select_options = '';
     for(let i = 1; i <= 120; i++){
-        select_options += '<option value=' + i + '>' + i + '</option>';
+        select_options += '<option value=' + i + '>' + i;
     }
     document.getElementById('value1').innerHTML = select_options;
 
     select_options = '';
     for(let i = 2; i <= 120; i++){
-        select_options += '<option value=' + i + '>' + i + '</option>';
+        select_options += '<option value=' + i + '>' + i;
     }
-    select_options += '<option value=121>Max</option>';
+    select_options += '<option value=121>Max';
     document.getElementById('value2').innerHTML = select_options;
 
     calculate_combat();
