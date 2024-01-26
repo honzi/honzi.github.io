@@ -2,11 +2,11 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>Diablo 2: Lord of Destruction Tools</title>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/<a href=index.htm>Diablo 2: Lord of Destruction</a>/Tools<br>
 How many
-<select id=select1>
+<select id=select1 onchange=calculate()>
   <option value=1>1: El
   <option value=2>2: Eld
   <option value=3>3: Tir
@@ -41,7 +41,7 @@ How many
   <option value=32>32: Cham
 </select>
 <a href=runes.htm>runes</a> are required to create 1
-<select id=select2>
+<select id=select2 onchange=calculate()>
   <option value=2>2: Eld
   <option value=3>3: Tir
   <option value=4>4: Nef
@@ -78,5 +78,57 @@ How many
 rune?
 <div id=result></div>
 
-<script src=../../../common/js/core.js></script>
-<script src=tools.js></script>
+<script>
+function calculate(){
+    const value1 = Number.parseInt(
+      document.getElementById('select1').value,
+      10
+    );
+    const value2 = Number.parseInt(
+      document.getElementById('select2').value,
+      10
+    );
+
+    if(value1 > value2){
+        document.getElementById('result').textContent = 'Runes cannot be downgraded.';
+        return;
+    }
+
+    let result = '';
+
+    if(value2 < 22){
+        result =
+          Math.pow(
+            3,
+            value2 - value1
+          );
+
+    }else if(value1 > 20){
+        result =
+          Math.pow(
+            2,
+            value2 - value1
+          );
+
+    }else{
+        result =
+          Math.pow(
+            3,
+            21 - value1
+          )
+          * Math.pow(
+            2,
+            value2 - 21
+          );
+    }
+
+    if(value2 > 10){
+        result +=
+          '<br>You will also require gems to transmute runes starting at Thul.';
+    }
+
+    document.getElementById('result').innerHTML = result;
+}
+
+calculate();
+</script>

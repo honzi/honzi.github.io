@@ -3,14 +3,14 @@
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>World of Warcraft Tools</title>
 <link href=../../colors.css rel=stylesheet>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/<a href=index.htm>World of Warcraft</a>/Tools
 <table>
   <tr class=header>
     <td>Abilities
     <td>%
-    <td>Max: <input class=mini id=max step=any type=number>
+    <td>Max: <input class=mini id=max oninput=calculate_percentage() step=any type=number>
   <tr>
     <td><ul>
       <li><a class=wow-heirloom href=heirlooms.htm>Discerning Eye of the Beast</a>
@@ -90,5 +90,25 @@
     <td id=50>
 </table>
 
-<script src=../../../common/js/core.js></script>
-<script src=tools.js></script>
+<script>
+function calculate_percentage(){
+    const max = Number(document.getElementById('max').value) || 1;
+
+    const percents = [
+      2,
+      3,
+      5,
+      7,
+      10,
+      20,
+      25,
+      30,
+      35,
+      50,
+    ];
+
+    for(const percent in percents){
+        document.getElementById(percents[percent]).textContent = (max * (percents[percent] / 100)).toFixed(2);
+    }
+}
+</script>

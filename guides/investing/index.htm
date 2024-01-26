@@ -2,10 +2,50 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>Investing</title>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/Investing<br>
 <span id=time></span> until NYSE opens.
 
-<script src=../../../common/js/core.js></script>
-<script src=tools.js></script>
+<script>
+function update_time(){
+    const now = new Date();
+    const opening = new Date();
+    opening.setHours(
+      14 - now.getTimezoneOffset() / 60,
+      30,
+      0,
+      0
+    );
+    if(now >= opening){
+        opening.setDate(opening.getDate() + 1);
+    }
+    const day = opening.getDay();
+    if(day === 0 || day === 6){
+        opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
+    }
+    const remaining = (opening - now) / 1000;
+    let hours = Number.parseInt(remaining / 3600, 10) % 24;
+    if(hours < 10){
+        hours = '0' + hours;
+    }
+    let minutes = Number.parseInt(remaining / 60, 10) % 60;
+    if(minutes < 10){
+        minutes = '0' + minutes;
+    }
+    let seconds = Math.round(remaining % 60);
+    if(seconds < 10){
+        seconds = '0' + seconds;
+    }
+
+    document.getElementById('time').innerHTML = Number.parseInt(remaining / 86400, 10) + ':'
+      + hours + ':'
+      + minutes + ':'
+      + seconds;
+}
+
+globalThis.setInterval(
+  update_time,
+  1000
+);
+</script>

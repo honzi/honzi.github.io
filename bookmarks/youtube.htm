@@ -2,13 +2,12 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>YouTube Embedder</title>
-<link href=../../common/css/core.css rel=stylesheet>
+<link href=../../common/css/writings.css rel=stylesheet>
 
 <a href=../index.htm>Honzi</a>/<a href=index.htm>Bookmarks</a>/YouTube Embedder<br>
 <input id=url type=text><button id=open type=button>Open</button>
 <div id=video></div>
 
-<script src=../../common/js/core.js></script>
 <script>
 function open(){
     let url = document.getElementById('url').value;
@@ -19,18 +18,5 @@ function open(){
     }
 
     document.getElementById('video').innerHTML = '<iframe height=600 src="https://youtube.com/embed/' + url + '" width=100%></iframe>';
-}
-
-function repo_init(){
-    core_repo_init({
-      'events': {
-        'open': {
-          'onclick': open,
-        },
-      },
-      'owner': 'honzi',
-      'root': '../index.htm',
-      'title': 'honzi.github.io',
-    });
 }
 </script>

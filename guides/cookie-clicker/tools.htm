@@ -2,7 +2,7 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>Cookie Clicker Tools</title>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/<a href=index.htm>Cookie Clicker</a>/Tools
 <table>
@@ -12,15 +12,15 @@
     <td>Percent Cost
     <td>Total Cost
   <tr>
-    <td><input id=max-magic step=any type=number>
-    <td><input id=cost-base step=any type=number>
-    <td><input id=cost-percent step=any type=number>
+    <td><input id=max-magic oninput=calculate_magiccost() step=any type=number>
+    <td><input id=cost-base oninput=calculate_magiccost() step=any type=number>
+    <td><input id=cost-percent oninput=calculate_magiccost() step=any type=number>
     <td id=cost-total>
 </table>
 <table class=center>
   <tr class=header>
     <td>Cookies per Second
-    <td><input id=time step=any type=number>
+    <td><input id=time oninput=calculate_time() step=any type=number>
   <tr>
     <td>Cookies per Minute
     <td id=cookies-per-minute>
@@ -35,5 +35,26 @@
     <td input id=cookies-per-week>
 </table>
 
-<script src=../../../common/js/core.js></script>
-<script src=tools.js></script>
+<script>
+function calculate_magiccost(){
+    const base = Number(document.getElementById('cost-base').value) || 0;
+    const max = Number(document.getElementById('max-magic').value) || 0;
+    const percent = Number(document.getElementById('cost-percent').value) || 100;
+
+    document.getElementById('cost-total').textContent = Math.floor(base + max * (percent / 100));
+}
+
+function calculate_time(){
+    let cps = Number(document.getElementById('time').value) || 1;
+
+    const times = {
+      'cookies-per-day': 86400,
+      'cookies-per-hour': 3600,
+      'cookies-per-minute': 60,
+      'cookies-per-week': 604800,
+    };
+    for(const time in times){
+        document.getElementById(time).textContent = cps * times[time];
+    }
+}
+</script>

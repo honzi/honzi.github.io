@@ -2,10 +2,17 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>Clicker Heroes Tools</title>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/<a href=index.htm>Clicker Heroes</a>/Tools<br>
-<input id=dps step=any type=number> Immortal Damage * <input id=cps step=any type=number> CPS * <input class=mini id=seconds step=any type=number> seconds = <span id=output></span> Damage.
+<input id=dps oninput=calculate_immortal_damage() step=any type=number value=0> Immortal Damage * <input id=cps oninput=calculate_immortal_damage() step=any type=number value=0> CPS * <input class=mini id=seconds oninput=calculate_immortal_damage() step=any type=number value=30> seconds = <span id=output></span> Damage.
 
-<script src=../../../common/js/core.js></script>
-<script src=tools.js></script>
+<script>
+function calculate_immortal_damage(){
+    document.getElementById('output').textContent = Number.parseFloat(document.getElementById('dps').value)
+      * Number.parseFloat(document.getElementById('cps').value)
+      * Number.parseFloat(document.getElementById('seconds').value);
+}
+
+calculate_immortal_damage();
+</script>

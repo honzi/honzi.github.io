@@ -2,7 +2,7 @@
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <title>EVE Online Tools</title>
-<link href=../../../common/css/core.css rel=stylesheet>
+<link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/<a href=index.htm>EVE Online</a>/Tools
 <table>
@@ -66,53 +66,155 @@
 </table>
 <table>
   <tr>
-    <td colspan=3><input id=material-input step=any type=number>
+    <td colspan=2><input id=material-input step=any type=number>
   <tr class=header>
     <td>Efficiency
     <td>Result
-    <td>Minimum Runs
   <tr>
     <td>-10%
     <td id=material-10>
-    <td id=runs-10>
   <tr>
     <td>-9%
     <td id=material-9>
-    <td id=runs-9>
   <tr>
     <td>-8%
     <td id=material-8>
-    <td id=runs-8>
   <tr>
     <td>-7%
     <td id=material-7>
-    <td id=runs-7>
   <tr>
     <td>-6%
     <td id=material-6>
-    <td id=runs-6>
   <tr>
     <td>-5%
     <td id=material-5>
-    <td id=runs-5>
   <tr>
     <td>-4%
     <td id=material-4>
-    <td id=runs-4>
   <tr>
     <td>-3%
     <td id=material-3>
-    <td id=runs-3>
   <tr>
     <td>-2%
     <td id=material-2>
-    <td id=runs-2>
   <tr>
     <td>-1%
     <td id=material-1>
-    <td id=runs-1>
 </table>
 
-<script src=../../../common/js/core.js></script>
-<script src=../../../common/js/math.js></script>
-<script src=tools.js></script>
+<script>
+function calculate_alignment(){
+    const inertia = Number(document.getElementById('alignment-inertia').value);
+    const mass = Number(document.getElementById('alignment-mass').value);
+
+    document.getElementById('alignment-result').textContent = (Math.log(2) * inertia * mass) / 500000;
+}
+
+function calculate_efficiency(){
+    const lost = Number(document.getElementById('efficiency-lost').value);
+    const total = lost + Number(document.getElementById('efficiency-destroyed').value);
+
+    document.getElementById('efficiency-result').textContent = (1 - (lost  / total)) * 100;
+}
+
+function calculate_ehp(){
+    const hp = {
+      'armor': Number(document.getElementById('armor-hp').value),
+      'shield': Number(document.getElementById('shield-hp').value),
+      'structure': Number(document.getElementById('structure-hp').value),
+    };
+
+    document.getElementById('total-hp').textContent = hp['armor'] + hp['shield'] + hp['structure'];
+
+    const resists = [
+      'em',
+      'explosive',
+      'kinetic',
+      'thermal',
+    ];
+    for(const type in resists){
+        let ehp = 0;
+
+        const hp_types = [
+          'armor',
+          'shield',
+          'structure',
+        ];
+        for(const hp_type in hp_types){
+            const resistance = Number(document.getElementById(hp_types[hp_type] + '-' + resists[type]).value);
+
+            ehp += hp[hp_types[hp_type]] / (1 - (resistance / 100));
+        }
+
+        document.getElementById('total-' + resists[type]).textContent = Math.round(ehp);
+    }
+}
+
+function calculate_material(){
+    const base = Number(document.getElementById('material-input').value);
+
+    for(let i = 1; i < 11; i++){
+        document.getElementById('material-' + i).textContent = Math.ceil(Math.round(base * ((100 - i) / 100)));
+    }
+}
+
+function calculate_skillpoints(){
+    const level = Number(document.getElementById('skill-level').value);
+    const rank = Number(document.getElementById('skill-rank').value);
+
+    document.getElementById('skill-result').textContent = Math.ceil(Math.pow(2, 2.5 * (level - 1)) * rank * 250);
+}
+
+function calculate_target(){
+    const scan = Number(document.getElementById('target-scan').value);
+    const sig = Number(document.getElementById('target-sig').value);
+
+    document.getElementById('target-result').textContent = (40000 / scan ) / Math.pow(Math.asinh(sig), 2);
+}
+
+function calculate_year(){
+    let year = Number.parseInt(
+      document.getElementById('current-year').value,
+      10
+    );
+    if(Number.isNaN(year)){
+        year = new Date().getFullYear();
+    }
+
+    document.getElementById('current-year').value = year;
+    document.getElementById('eve-year').textContent = year + 21338;
+    document.getElementById('yc-year').textContent = year - 1898;
+}
+
+calculate_alignment();
+calculate_efficiency();
+calculate_skillpoints();
+calculate_target();
+calculate_year();
+
+document.getElementById('alignment-inertia').oninput =
+  document.getElementById('alignment-mass').oninput = calculate_alignment;
+document.getElementById('efficiency-destroyed').oninput =
+  document.getElementById('efficiency-lost').oninput = calculate_efficiency;
+document.getElementById('current-year').oninput = calculate_year;
+document.getElementById('armor-hp').oninput =
+  document.getElementById('armor-em').oninput =
+  document.getElementById('armor-explosive').oninput =
+  document.getElementById('armor-kinetic').oninput =
+  document.getElementById('armor-thermal').oninput =
+  document.getElementById('shield-hp').oninput =
+  document.getElementById('shield-em').oninput =
+  document.getElementById('shield-explosive').oninput =
+  document.getElementById('shield-kinetic').oninput =
+  document.getElementById('shield-thermal').oninput =
+  document.getElementById('structure-hp').oninput =
+  document.getElementById('structure-em').oninput =
+  document.getElementById('structure-explosive').oninput =
+  document.getElementById('structure-kinetic').oninput =
+  document.getElementById('structure-thermal').oninput = calculate_ehp;
+document.getElementById('material-input').oninput = calculate_material;
+document.getElementById('skill-level').oninput =
+  document.getElementById('skill-rank').oninput = calculate_skillpoints;
+document.getElementById('target-scan').oninput =
+  document.getElementById('target-sig').oninput = calculate_target;
+</script>
