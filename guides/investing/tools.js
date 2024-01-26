@@ -24,12 +24,17 @@ function update_time(){
       0,
       0
     );
-    if(now > opening){
+    if(now >= opening){
         opening.setDate(opening.getDate() + 1);
+    }
+    const day = opening.getDay();
+    if(day === 0 || day === 6){
+        opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
     }
     const seconds = (opening - now) / 1000;
 
-    document.getElementById('time').innerHTML = core_digits_min({
+    document.getElementById('time').innerHTML = Number.parseInt(seconds / 86400, 10) + ':'
+    + core_digits_min({
       'number': Number.parseInt(seconds / 3600, 10) % 24,
     }) + ':'
     + core_digits_min({
