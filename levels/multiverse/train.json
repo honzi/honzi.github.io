@@ -1,0 +1,176 @@
+{
+  "camera-zoom-max": 0,
+  "spawn-rotate-x": 20,
+  "characters": [
+    {
+      "id": "train",
+      "entities": [
+        {
+          "id": "ground",
+          "attach-y": -13,
+          "collision": false,
+          "texture-animated": true,
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-x": 4,
+          "texture-repeat-y": 2,
+          "vertex-colors": [
+            0, 0.2, 0, 1
+          ],
+          "vertices": [
+            1000, 0, -1000,
+            -1000, 0, -1000,
+            -1000, 0, 1000,
+            1000, 0, 1000
+          ]
+        },
+        {
+          "id": "reset",
+          "attach-x": 1000,
+          "draw": false,
+          "event-modify": [
+            {
+              "set": true,
+              "stat": "translate-x",
+              "value": -1000
+            },
+            {
+              "set": true,
+              "stat": "change-translate-x",
+              "value": 4
+            }
+          ],
+          "event-range": 0,
+          "rotate-z": 90,
+          "vertices": [
+            25, 0, -1000,
+            -25, 0, -1000,
+            -25, 0, 1000,
+            25, 0, 1000
+          ]
+        },
+        {
+          "id": "wall-0",
+          "attach-x": -30,
+          "attach-z": -10,
+          "collision": false,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.25, 0.25, 0.25, 1
+          ],
+          "vertices": [
+            20, 0, -10,
+            -20, 0, -10,
+            -20, 0, 10,
+            20, 0, 10
+          ]
+        },
+        {
+          "id": "wall-1",
+          "attach-x": 30,
+          "attach-z": -10,
+          "collision": false,
+          "rotate-x": 90,
+          "vertex-colors": [
+            0.25, 0.25, 0.25, 1
+          ],
+          "vertices": [
+            20, 0, -10,
+            -20, 0, -10,
+            -20, 0, 10,
+            20, 0, 10
+          ]
+        },
+        {
+          "id": "wall-2",
+          "attach-x": -30,
+          "attach-z": 10,
+          "collision": false,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.25, 0.25, 0.25, 1
+          ],
+          "vertices": [
+            20, 0, -10,
+            -20, 0, -10,
+            -20, 0, 10,
+            20, 0, 10
+          ]
+        },
+        {
+          "id": "wall-3",
+          "attach-x": 30,
+          "attach-z": 10,
+          "collision": false,
+          "rotate-x": 270,
+          "vertex-colors": [
+            0.25, 0.25, 0.25, 1
+          ],
+          "vertices": [
+            20, 0, -10,
+            -20, 0, -10,
+            -20, 0, 10,
+            20, 0, 10
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tree-0",
+      "change-translate-x": 4,
+      "collides": true,
+      "level": 0,
+      "translate-y": -13,
+      "translate-z": -200
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_stars",
+      "properties": {
+        "groups": [
+          "skybox"
+        ],
+        "height-limit": 0.49,
+        "prefix": "skybox",
+        "stars": 1000
+      }
+    },
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "train",
+        "all": {
+          "vertex-colors": [
+            0.2, 0.2, 0.2, 1
+          ]
+        },
+        "back": {
+          "draw": false
+        },
+        "bottom": {
+          "vertex-colors": [
+            0.3, 0.3, 0.3, 1
+          ]
+        },
+        "character": "train",
+        "front": {
+          "draw": false
+        },
+        "size-x": -100,
+        "size-y": -20,
+        "size-z": -20
+      }
+    },
+    {
+      "type": "prefabs_webgl_tree_2d",
+      "properties": {
+        "character": "tree-0",
+        "height": 20,
+        "height-range": 30,
+        "prefix": "tree",
+        "width-base": 10,
+        "width-leaf": 25
+      }
+    }
+  ]
+}
