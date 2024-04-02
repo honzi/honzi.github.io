@@ -1,5 +1,7 @@
 {
   "camera-zoom-max": 0,
+  "fog-density": 0.00001,
+  "fog-state": true,
   "spawn-rotate-x": 20,
   "characters": [
     {
@@ -11,16 +13,15 @@
           "collision": false,
           "texture-animated": true,
           "texture-id": "lavaleaf.png",
-          "texture-repeat-x": 4,
-          "texture-repeat-y": 2,
+          "texture-repeat-x": 2,
           "vertex-colors": [
             0, 0.2, 0, 1
           ],
           "vertices": [
-            1000, 0, -1000,
-            -1000, 0, -1000,
-            -1000, 0, 1000,
-            1000, 0, 1000
+            500, 0, -500,
+            -500, 0, -500,
+            -500, 0, 500,
+            500, 0, 500
           ]
         },
         {
