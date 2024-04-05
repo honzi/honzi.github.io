@@ -2,7 +2,6 @@
   "camera-zoom-max": 0,
   "fog-density": 0.00001,
   "fog-state": true,
-  "spawn-rotate-x": 20,
   "characters": [
     {
       "id": "train",
@@ -164,6 +163,7 @@
           "level": 0
         },
         "count": 100,
+        "prefix": "tree-right",
         "properties": {
           "height": 20,
           "height-range": 30,
@@ -188,6 +188,7 @@
           "level": 0
         },
         "count": 100,
+        "prefix": "tree-left",
         "properties": {
           "height": 20,
           "height-range": 30,
