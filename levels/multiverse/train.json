@@ -26,13 +26,13 @@
         },
         {
           "id": "reset",
-          "attach-x": 1000,
+          "attach-x": 500,
           "draw": false,
           "event-modify": [
             {
               "set": true,
               "stat": "translate-x",
-              "value": -1000
+              "value": -500
             },
             {
               "set": true,
@@ -43,10 +43,10 @@
           "event-range": 0,
           "rotate-z": 90,
           "vertices": [
-            25, 0, -1000,
-            -25, 0, -1000,
-            -25, 0, 1000,
-            25, 0, 1000
+            25, 0, -600,
+            -25, 0, -600,
+            -25, 0, 600,
+            25, 0, 600
           ]
         },
         {
@@ -114,14 +114,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "tree-0",
-      "change-translate-x": 4,
-      "collides": true,
-      "level": 0,
-      "translate-y": -13,
-      "translate-z": -200
     }
   ],
   "prefabs": [
@@ -163,14 +155,51 @@
       }
     },
     {
-      "type": "prefabs_webgl_tree_2d",
+      "type": "webgl_prefab_repeat",
       "properties": {
-        "character": "tree-0",
-        "height": 20,
-        "height-range": 30,
-        "prefix": "tree",
-        "width-base": 10,
-        "width-leaf": 25
+        "type": "prefabs_webgl_tree_2d",
+        "characters": {
+          "change-translate-x": 4,
+          "collides": true,
+          "level": 0
+        },
+        "count": 100,
+        "properties": {
+          "height": 20,
+          "height-range": 30,
+          "width-base": 10,
+          "width-leaf": 25
+        },
+        "x-max": 500,
+        "x-min": -500,
+        "y-max": -13,
+        "y-min": -13,
+        "z-max": 500,
+        "z-min": 75
+      }
+    },
+    {
+      "type": "webgl_prefab_repeat",
+      "properties": {
+        "type": "prefabs_webgl_tree_2d",
+        "characters": {
+          "change-translate-x": 4,
+          "collides": true,
+          "level": 0
+        },
+        "count": 100,
+        "properties": {
+          "height": 20,
+          "height-range": 30,
+          "width-base": 10,
+          "width-leaf": 25
+        },
+        "x-max": 500,
+        "x-min": -500,
+        "y-max": -13,
+        "y-min": -13,
+        "z-max": -75,
+        "z-min": -500
       }
     }
   ]
