@@ -5,9 +5,25 @@
 <link href=../../../common/css/writings.css rel=stylesheet>
 
 <a href=../../index.htm>Honzi</a>/<a href=../index.htm>Guides</a>/Investing<br>
-<span id=time></span> until NYSE opens.
+<table class=center>
+  <tr class=header>
+    <td>Exchange
+    <td>Opens In
+    <td>On Date
+  <tr>
+    <td>NYSE
+    <td id=time>
+    <td id=date>
+</table>
 
 <script>
+function two_digits(value){
+    if(value < 10){
+        return '0' + value;
+    }
+    return value;
+}
+
 function update_time(){
     const now = new Date();
     const opening = new Date();
@@ -25,23 +41,14 @@ function update_time(){
         opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
     }
     const remaining = (opening - now) / 1000;
-    let hours = Number.parseInt(remaining / 3600, 10) % 24;
-    if(hours < 10){
-        hours = '0' + hours;
-    }
-    let minutes = Number.parseInt(remaining / 60, 10) % 60;
-    if(minutes < 10){
-        minutes = '0' + minutes;
-    }
-    let seconds = Math.round(remaining % 60);
-    if(seconds < 10){
-        seconds = '0' + seconds;
-    }
+    document.getElementById('time').textContent = Number.parseInt(remaining / 86400, 10) + ':'
+      + two_digits(Number.parseInt(remaining / 3600, 10) % 24) + ':'
+      + two_digits(Number.parseInt(remaining / 60, 10) % 60) + ':'
+      + two_digits(Math.round(remaining % 60));
 
-    document.getElementById('time').innerHTML = Number.parseInt(remaining / 86400, 10) + ':'
-      + hours + ':'
-      + minutes + ':'
-      + seconds;
+    document.getElementById('date').textContent = opening.getFullYear() + '-'
+      + two_digits(opening.getMonth() + 1) + '-'
+      + two_digits(opening.getDate());
 }
 
 update_time();
