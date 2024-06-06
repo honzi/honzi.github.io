@@ -177,7 +177,7 @@ function calculate_year(){
       document.getElementById('current-year').value,
       10
     );
-    if(Number.isNaN(year)){
+    if(globalThis.isNaN(year)){
         year = new Date().getFullYear();
     }
 
