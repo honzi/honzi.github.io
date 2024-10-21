@@ -27,7 +27,8 @@
           "id": "reset",
           "attach-x": 500,
           "draw": false,
-          "event-modify": [
+          "event-range": 0,
+          "event-todo": [
             {
               "set": true,
               "stat": "translate-x",
@@ -39,7 +40,6 @@
               "value": 4
             }
           ],
-          "event-range": 0,
           "rotate-z": 90,
           "vertices": [
             25, 0, -500,
