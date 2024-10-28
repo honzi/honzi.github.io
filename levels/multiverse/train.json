@@ -25,19 +25,15 @@
         },
         {
           "id": "reset",
-          "attach-x": 500,
+          "attach-x": 1000,
+          "collision": false,
           "draw": false,
-          "event-range": 0,
+          "event-range": 500,
           "event-todo": [
             {
               "set": true,
               "stat": "translate-x",
               "value": -500
-            },
-            {
-              "set": true,
-              "stat": "change-translate-x",
-              "value": 4
             }
           ],
           "rotate-z": 90,
