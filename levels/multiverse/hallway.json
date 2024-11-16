@@ -1,0 +1,72 @@
+{
+  "camera-zoom-max": 0,
+  "fog-density": 0.0015,
+  "fog-state": true,
+  "characters": [
+    {
+      "id": "hallway",
+      "entities": [
+        {
+          "id": "warp-0",
+          "attach-z": -30,
+          "draw": false,
+          "event-todo": [
+            {
+              "stat": "translate-z",
+              "value": 50
+            }
+          ],
+          "event-range": 0,
+          "rotate-x": 90,
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        },
+        {
+          "id": "warp-1",
+          "attach-z": 30,
+          "draw": false,
+          "event-todo": [
+            {
+              "stat": "translate-z",
+              "value": -50
+            }
+          ],
+          "event-range": 0,
+          "rotate-x": 270,
+          "vertices": [
+            10, 0, -10,
+            -10, 0, -10,
+            -10, 0, 10,
+            10, 0, 10
+          ]
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "hallway",
+        "character": "hallway",
+        "all": {
+          "texture-id": "lavaleaf.png",
+          "texture-repeat-y": 3
+        },
+        "back": {
+          "draw": true
+        },
+        "front": {
+          "draw": true
+        },
+        "size-x": -10,
+        "size-y": -10,
+        "size-z": -150
+      }
+    }
+  ]
+}
