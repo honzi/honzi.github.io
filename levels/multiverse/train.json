@@ -12,7 +12,7 @@
           "collision": false,
           "texture-animated": true,
           "texture": "lavaleaf.png",
-          "texture-repeat-x": 2,
+          "texture-x": 2,
           "vertex-colors": [
             0, 0.2, 0, 1
           ],

@@ -55,7 +55,7 @@
         "character": "hallway",
         "all": {
           "texture": "lavaleaf.png",
-          "texture-repeat-y": 3
+          "texture-y": 3
         },
         "back": {
           "draw": true
