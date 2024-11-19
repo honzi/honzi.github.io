@@ -54,7 +54,7 @@
         "prefix": "hallway",
         "character": "hallway",
         "all": {
-          "texture-id": "lavaleaf.png",
+          "texture": "lavaleaf.png",
           "texture-repeat-y": 3
         },
         "back": {
