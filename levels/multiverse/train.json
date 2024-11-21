@@ -10,8 +10,8 @@
           "id": "ground",
           "attach-y": -13,
           "collision": false,
-          "texture-animated": true,
           "texture": "lavaleaf.png",
+          "texture-animated": true,
           "texture-x": 2,
           "vertex-colors": [
             0, 0.2, 0, 1
@@ -154,13 +154,14 @@
       "properties": {
         "type": "prefabs_webgl_tree_2d",
         "characters": {
-          "change-translate-x": 4,
+          "change-translate-x": 3,
           "collides": true,
           "level": 0
         },
         "count": 50,
         "prefix": "tree-right",
         "properties": {
+          "billboard": true,
           "height": 20,
           "height-range": 30,
           "width-base": 10,
@@ -179,13 +180,14 @@
       "properties": {
         "type": "prefabs_webgl_tree_2d",
         "characters": {
-          "change-translate-x": 4,
+          "change-translate-x": 3,
           "collides": true,
           "level": 0
         },
         "count": 50,
         "prefix": "tree-left",
         "properties": {
+          "billboard": true,
           "height": 20,
           "height-range": 30,
           "width-base": 10,
