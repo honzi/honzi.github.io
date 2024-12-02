@@ -2,6 +2,20 @@
   "camera-zoom-max": 0,
   "fog-density": 0.00001,
   "fog-state": true,
+  "paths": {
+    "warp": {
+      "end": "warp",
+      "points": [
+        {
+          "translate-x": -500
+        },
+        {
+          "translate-x": 500
+        }
+      ],
+      "speed": 3
+    }
+  },
   "characters": [
     {
       "id": "train",
@@ -21,27 +35,6 @@
             -500, 0, -400,
             -500, 0, 400,
             500, 0, 400
-          ]
-        },
-        {
-          "id": "reset",
-          "attach-x": 1000,
-          "collision": false,
-          "draw": false,
-          "event-range": 500,
-          "event-todo": [
-            {
-              "set": true,
-              "stat": "translate-x",
-              "value": -500
-            }
-          ],
-          "rotate-z": 90,
-          "vertices": [
-            25, 0, -500,
-            -25, 0, -500,
-            -25, 0, 500,
-            25, 0, 500
           ]
         },
         {
@@ -154,9 +147,9 @@
       "properties": {
         "type": "prefabs_webgl_tree_2d",
         "characters": {
-          "change-translate-x": 3,
-          "collides": true,
-          "level": 0
+          "level": 0,
+          "path-id": "warp",
+          "path-point": 1
         },
         "count": 50,
         "prefix": "tree-right",
@@ -180,9 +173,9 @@
       "properties": {
         "type": "prefabs_webgl_tree_2d",
         "characters": {
-          "change-translate-x": 3,
-          "collides": true,
-          "level": 0
+          "level": 0,
+          "path-id": "warp",
+          "path-point": 1
         },
         "count": 50,
         "prefix": "tree-left",
