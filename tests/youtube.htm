@@ -9,8 +9,16 @@
 
 <script>
 function openvideo(){
-    const url = new URL(document.getElementById('url').value);
+    const url = document.getElementById('url').value;
+    if(!url){
+        return;
+    }
+    const video = new URL(url).searchParams.get('v');
+    if(video.length !== 11){
+        return;
+    }
+
     const height = window.innerHeight - 50;
-    document.getElementById('video').innerHTML = '<iframe height=' + height + ' src="https://youtube.com/embed/' + url.searchParams.get('v') + '" width=100%></iframe>';
+    document.getElementById('video').innerHTML = '<iframe height=' + height + ' src="https://youtube.com/embed/' + video + '" width=100%></iframe>';
 }
 </script>
