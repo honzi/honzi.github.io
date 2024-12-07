@@ -13,7 +13,9 @@ function openvideo(){
     if(!url){
         return;
     }
-    const video = new URL(url).searchParams.get('v');
+    const video = url.length === 11
+      ? url
+      : new URL(url).searchParams.get('v');
     if(video.length !== 11){
         return;
     }
