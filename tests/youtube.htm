@@ -9,13 +9,8 @@
 
 <script>
 function openvideo(){
-    let url = document.getElementById('url').value;
-    const com = url.indexOf('youtube.com/watch?v=');
-
-    if(com !== -1){
-        url = url.substring(com + 20);
-    }
-
-    document.getElementById('video').innerHTML = '<iframe height=600 src="https://youtube.com/embed/' + url + '" width=100%></iframe>';
+    const url = new URL(document.getElementById('url').value);
+    const height = window.innerHeight - 50;
+    document.getElementById('video').innerHTML = '<iframe height=' + height + ' src="https://youtube.com/embed/' + url.searchParams.get('v') + '" width=100%></iframe>';
 }
 </script>
