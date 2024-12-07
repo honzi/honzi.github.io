@@ -4,12 +4,11 @@
 <title>YouTube Embedder</title>
 <link href=../../common/css/writings.css rel=stylesheet>
 
-<a href=../index.htm>Honzi</a>/<a href=index.htm>Tests</a>/YouTube Embedder<br>
-<input id=url type=text><button id=open type=button>Open</button>
+<a href=../index.htm>Honzi</a>/<a href=index.htm>Tests</a>/YouTube Embedder <input id=url type=text><button onclick=openvideo() type=button>Open</button>
 <div id=video></div>
 
 <script>
-function open(){
+function openvideo(){
     let url = document.getElementById('url').value;
     const com = url.indexOf('youtube.com/watch?v=');
 
