@@ -9,7 +9,7 @@
   <li>Random SCPs:<ul>
     <li><a class=external href="javascript:random_favorite();" rel=noreferrer>Favorite SCPs</a>
     <li><a class=external href="javascript:random_scp();" rel=noreferrer>Any SCP</a>
-    <li><a class=external href="javascript:open_recent();" rel=noreferrer>Reopen Recent</a>
+    <li><a class=external href="javascript:open_recent();" id=recent rel=noreferrer>Reopen Recent</a>
   </ul>
   <li><a class=external href=https://scp-wiki.wikidot.com/twistedgears-kaktus-proposal rel=noreferrer>001 Broken God</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/kate-mctiriss-s-proposal rel=noreferrer>001 Edit Reality</a>
@@ -213,6 +213,7 @@ function open_scp(scp){
       'noreferrer'
     );
     recent = scp;
+    document.getElementById('recent').textContent = 'Reopen ' + scp;
 }
 
 function random_favorite(){
