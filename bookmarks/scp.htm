@@ -6,10 +6,9 @@
 
 <a href=../index.htm>Honzi</a>/<a href=index.htm>Bookmarks</a>/Favorite SCPs
 <ul>
-  <li>Random SCPs:<ul>
-    <li><a class=external href="javascript:random_favorite();" rel=noreferrer>Favorite SCPs</a>
+  <li>Random SCPs: <span id=recent></span><ul>
     <li><a class=external href="javascript:random_scp();" rel=noreferrer>Any SCP</a>
-    <li><a class=external href="javascript:open_recent();" id=recent rel=noreferrer>Reopen Recent</a>
+    <li><a class=external href="javascript:random_favorite();" rel=noreferrer>Favorite SCPs</a>
   </ul>
   <li><a class=external href=https://scp-wiki.wikidot.com/scp-000 rel=noreferrer>000 Void</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/twistedgears-kaktus-proposal rel=noreferrer>001 Broken God</a>
@@ -198,39 +197,38 @@
 </ul>
 
 <script>
-function open_recent(){
-    if(recent === -1){
-        random_scp();
-
-    }else{
-        open_scp(recent);
-    }
-}
-
 function open_scp(scp){
     globalThis.open(
       'https://scp-wiki.wikidot.com/scp-' + scp,
       '_blank',
       'noreferrer'
     );
-    recent = scp;
-    document.getElementById('recent').textContent = 'Reopen ' + scp;
 }
 
 function random_favorite(){
-    const scp = ['015', '028', '062', '079', '083', '087', '093', 155, 184, 206, 216, 225, 249, 261, 300, 342, 354, 415, 432, 433, 455, 507, 635, 648, 684, 704, 716, 719, 738, 778, 850, 880, 914, 1009, 1050, 1130, 1165, 1188, 1190, 1220, 1230, 1272, 1303, 1346, 1347, 1397, 1411, 1437, 1472, 1494, 1499, 1555, 1562, 1587, 1660, 1674, 1730, 1872, 1881, 1896, 1981, 1983, 1989, 2003, 2093, 2120, 2206, 2220, 2224, 2298, 2316, 2334, 2385, 2399, 2427, 2508, 2521, 2571, 2614, 2649, 2684, 2691, 2740, 2764, 2821, 2840, 2894, 2917, 2922, 2935, 2949, 3007, 3010, 3022, 3025, 3029, 3041, 3054, 3068, 3082, 3084, 3096, 3109, 3122, 3182, 3200, 3283, 3285, 3311, 3352, 3379, 3392, 3398, 3426, 3444, 3446, 3493, 3539, 3560, 3607, 3674, 3682, 3752, 3790, 3930, 3935, 3957, 3964, 3969, 4000, 4011, 4040, 4050, 4051, 4072, 4111, 4116, 4137, 4143, 4214, 4240, 4251, 4350, 4363, 4379, 4447, 4488, 4505, 4530, 4558, 4614, 4660, 4779, 4785, 4792, 4811, 4832, 4857, 4919, 4963, 4994, 5001, 5067, 5161, 5186, 5317, 5356, 5401, 5733, 5902, 6001, 6162, 6223, 6250, 6300, 6523, 6668, 6833];
-    open_scp(scp[Math.floor(Math.random() * scp.length)]);
+    const scps = ['000', '015', '028', '062', '079', '083', '087', '093', 155, 184, 206, 216, 225, 249, 261, 300, 342, 354, 415, 432, 433, 455, 507, 635, 648, 684, 704, 716, 719, 738, 778, 850, 880, 914, 1009, 1050, 1130, 1165, 1188, 1190, 1220, 1230, 1272, 1303, 1346, 1347, 1397, 1411, 1437, 1472, 1494, 1499, 1555, 1562, 1587, 1660, 1674, 1730, 1872, 1881, 1896, 1981, 1983, 1989, 2003, 2093, 2120, 2206, 2220, 2224, 2298, 2316, 2334, 2385, 2399, 2427, 2508, 2521, 2571, 2614, 2649, 2684, 2691, 2740, 2764, 2821, 2840, 2894, 2917, 2922, 2935, 2949, 3007, 3010, 3022, 3025, 3029, 3041, 3054, 3068, 3082, 3084, 3096, 3109, 3122, 3182, 3200, 3283, 3285, 3311, 3352, 3379, 3392, 3398, 3426, 3444, 3446, 3493, 3539, 3560, 3607, 3674, 3682, 3752, 3790, 3930, 3935, 3957, 3964, 3969, 4000, 4011, 4040, 4050, 4051, 4072, 4111, 4116, 4137, 4143, 4214, 4240, 4251, 4350, 4363, 4379, 4447, 4488, 4505, 4530, 4558, 4614, 4660, 4779, 4785, 4792, 4811, 4832, 4857, 4919, 4963, 4994, 5001, 5067, 5161, 5186, 5317, 5356, 5401, 5733, 5902, 6001, 6162, 6223, 6250, 6300, 6523, 6668, 6833];
+    const scp = scps[Math.floor(Math.random() * scps.length)];
+    open_scp(scp);
+    update_recent(scp);
 }
 
 function random_scp(){
-    let article = Math.floor(Math.random() * 9001) - 1;
-    if(article < 100){
-        article = article < 10
-          ? '00' + article
-          : '0' + article;
+    let scp = Math.floor(Math.random() * 9001) - 1;
+    if(scp < 100){
+        scp = (scp < 10 ? '00' : '0') + scp;
     }
-    open_scp(article);
+    open_scp(scp);
+    update_recent(scp);
 }
 
-let recent = -1;
+function update_recent(scp){
+    recent.unshift(scp);
+    let list = '';
+    for(const scp in recent){
+        list += '<a class=external href="javascript:open_scp(' + recent[scp] + ');" rel=noreferrer>' + recent[scp] + '</a>, ';
+    }
+    document.getElementById('recent').innerHTML = list;
+}
+
+const recent = [];
 </script>
