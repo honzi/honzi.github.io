@@ -11,6 +11,7 @@
     <li><a class=external href="javascript:random_scp();" rel=noreferrer>Any SCP</a>
     <li><a class=external href="javascript:open_recent();" id=recent rel=noreferrer>Reopen Recent</a>
   </ul>
+  <li><a class=external href=https://scp-wiki.wikidot.com/scp-000 rel=noreferrer>000 Void</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/twistedgears-kaktus-proposal rel=noreferrer>001 Broken God</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/kate-mctiriss-s-proposal rel=noreferrer>001 Edit Reality</a>
   <li><a class=external href=https://scp-wiki.wikidot.com/shaggydredlocks-proposal rel=noreferrer>001 The Sun</a>
@@ -222,14 +223,11 @@ function random_favorite(){
 }
 
 function random_scp(){
-    let article = Math.floor(Math.random() * 9000);
+    let article = Math.floor(Math.random() * 9001) - 1;
     if(article < 100){
-        if(article < 10){
-            article = '00' + article;
-
-        }else{
-            article = '0' + article;
-        }
+        article = article < 10
+          ? '00' + article
+          : '0' + article;
     }
     open_scp(article);
 }
