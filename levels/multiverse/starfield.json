@@ -20,18 +20,19 @@
           {
             "id": "stars",
             "point-size": 200,
+            "rotate-x": 90,
             "vertex-colors": [1, 1, 1, 1],
             "vertex-repeat": 1000
           }
         ],
         "id": "stars",
-        "speed-z": 1,
-        "x-max": 75,
-        "x-min": -75,
-        "y-max": 75,
-        "y-min": -75,
-        "z-max": 150,
-        "z-min": -150
+        "speed-y": 1,
+        "x-max": 90,
+        "x-min": -90,
+        "y-max": 150,
+        "y-min": -150,
+        "z-max": 90,
+        "z-min": -90
       }
     }
   ]
