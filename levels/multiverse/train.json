@@ -24,8 +24,7 @@
           "id": "ground",
           "attach-y": -13,
           "collision": false,
-          "texture": "lavaleaf.png",
-          "texture-animated": true,
+          "texture": "lavaleaf.png,.1",
           "texture-x": 2,
           "vertex-colors": [
             0, 0.2, 0, 1
