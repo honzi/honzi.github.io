@@ -5,6 +5,7 @@
   "characters": [
     {
       "id": "hallway",
+      "static": true,
       "entities": [
         {
           "id": "warp-0",
