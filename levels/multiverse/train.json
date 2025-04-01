@@ -7,10 +7,10 @@
       "end": "warp",
       "points": [
         {
-          "translate-x": -500
+          "position-x": -500
         },
         {
-          "translate-x": 500
+          "position-x": 500
         }
       ],
       "speed": 3
