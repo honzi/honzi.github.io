@@ -24,7 +24,6 @@
             "draw-mode": "POINTS",
             "point-size": 200,
             "rotate-x": 90,
-            "vertex-colors": [1, 1, 1, 1],
             "vertex-repeat": 1000
           }
         ],
