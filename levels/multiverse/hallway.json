@@ -1,7 +1,6 @@
 {
   "camera-zoom-max": 0,
-  "fog-density": 0.0015,
-  "fog-state": true,
+  "fog": 50,
   "characters": [
     {
       "id": "hallway",

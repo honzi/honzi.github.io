@@ -1,7 +1,6 @@
 {
   "camera-zoom-max": 0,
-  "fog-density": 0.0001,
-  "fog-state": true,
+  "fog": 150,
   "gravity-acceleration": 0,
   "characters": [
     {
