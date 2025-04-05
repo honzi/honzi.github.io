@@ -1,6 +1,6 @@
 {
   "camera-zoom-max": 0,
-  "fog": 400,
+  "fog-end": 400,
   "paths": {
     "warp": {
       "end": "warp",

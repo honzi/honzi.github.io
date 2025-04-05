@@ -1,6 +1,6 @@
 {
   "camera-zoom-max": 0,
-  "fog": 50,
+  "fog-end": 50,
   "characters": [
     {
       "id": "hallway",

@@ -1,6 +1,6 @@
 {
   "camera-zoom-max": 0,
-  "fog": 150,
+  "fog-end": 150,
   "gravity-acceleration": 0,
   "characters": [
     {
