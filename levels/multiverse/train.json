@@ -18,7 +18,7 @@
   "characters": [
     {
       "id": "train",
-      "static": true,
+      "spawn": false,
       "entities": [
         {
           "id": "ground",

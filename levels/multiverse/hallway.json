@@ -4,7 +4,7 @@
   "characters": [
     {
       "id": "hallway",
-      "static": true,
+      "spawn": false,
       "entities": [
         {
           "id": "warp-0",

@@ -5,7 +5,7 @@
   "characters": [
     {
       "id": "space",
-      "static": true
+      "spawn": false
     }
   ],
   "prefabs": [
