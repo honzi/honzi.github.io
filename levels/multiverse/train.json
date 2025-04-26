@@ -27,7 +27,7 @@
           "texture": "lavaleaf.png,.1",
           "texture-x": 2,
           "vertex-colors": [
-            0, 0.2, 0, 1
+            0, 0.5, 0, 1
           ],
           "vertices": [
             500, 0, -400,
@@ -126,11 +126,6 @@
         },
         "back": {
           "draw": false
-        },
-        "bottom": {
-          "vertex-colors": [
-            0.3, 0.3, 0.3, 1
-          ]
         },
         "character": "train",
         "front": {

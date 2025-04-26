@@ -58,10 +58,10 @@
           "texture-y": 3
         },
         "back": {
-          "draw": true
+          "exclude": true
         },
         "front": {
-          "draw": true
+          "exclude": true
         },
         "size-x": -10,
         "size-y": -10,
