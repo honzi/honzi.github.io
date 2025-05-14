@@ -1,14 +1,42 @@
 {
   "camera-zoom-max": 0,
-  "fog-end": 400,
+  "fog-end": 500,
   "paths": {
-    "warp": {
+    "left": {
       "end": "warp",
       "points": [
         {
           "position-x": -500
         },
         {
+          "event-todo": [
+            {
+              "stat": "position-z",
+              "random-max": 360,
+              "set": true,
+              "value": -400
+            }
+          ],
+          "position-x": 500
+        }
+      ],
+      "speed": 3
+    },
+    "right": {
+      "end": "warp",
+      "points": [
+        {
+          "position-x": -500
+        },
+        {
+          "event-todo": [
+            {
+              "stat": "position-z",
+              "random-max": 360,
+              "set": true,
+              "value": 40
+            }
+          ],
           "position-x": 500
         }
       ],
@@ -142,33 +170,7 @@
         "type": "prefabs_webgl_tree_2d",
         "characters": {
           "level": 0,
-          "path-id": "warp",
-          "path-point": 1
-        },
-        "count": 50,
-        "prefix": "tree-right",
-        "properties": {
-          "billboard": true,
-          "height": 20,
-          "height-range": 30,
-          "width-base": 10,
-          "width-leaf": 25
-        },
-        "x-max": 497,
-        "x-min": -497,
-        "y-max": -13,
-        "y-min": -13,
-        "z-max": 400,
-        "z-min": 40
-      }
-    },
-    {
-      "type": "webgl_prefab_repeat",
-      "properties": {
-        "type": "prefabs_webgl_tree_2d",
-        "characters": {
-          "level": 0,
-          "path-id": "warp",
+          "path-id": "left",
           "path-point": 1
         },
         "count": 50,
@@ -186,6 +188,32 @@
         "y-min": -13,
         "z-max": -40,
         "z-min": -400
+      }
+    },
+    {
+      "type": "webgl_prefab_repeat",
+      "properties": {
+        "type": "prefabs_webgl_tree_2d",
+        "characters": {
+          "level": 0,
+          "path-id": "right",
+          "path-point": 1
+        },
+        "count": 50,
+        "prefix": "tree-right",
+        "properties": {
+          "billboard": true,
+          "height": 20,
+          "height-range": 30,
+          "width-base": 10,
+          "width-leaf": 25
+        },
+        "x-max": 497,
+        "x-min": -497,
+        "y-max": -13,
+        "y-min": -13,
+        "z-max": 400,
+        "z-min": 40
       }
     }
   ]
