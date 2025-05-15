@@ -1,0 +1,198 @@
+{
+  "spawn": {
+    "lock": {
+      "camera-rotate-x": 45,
+      "camera-rotate-y": 0,
+      "camera-zoom": 40,
+      "controls": "rts",
+      "jump-allow": false,
+      "jump-height": 0,
+      "position-y": 0,
+      "position-z": 0,
+      "rotate-y": 0
+    },
+    "position-x": 0
+  },
+  "paths": {
+    "coin-bad": {
+      "end": "warp",
+      "points": [
+        {
+          "position-z": -400
+        },
+        {
+          "event-todo": [
+            {
+              "random-max": 100,
+              "set": true,
+              "stat": "position-x",
+              "value": -50
+            }
+          ],
+          "position-z": 20
+        }
+      ],
+      "speed": 4
+    },
+    "coin-good": {
+      "end": "warp",
+      "points": [
+        {
+          "position-z": -400
+        },
+        {
+          "event-todo": [
+            {
+              "stat": "path-id",
+              "todo": "coin-bad",
+              "type": "character",
+              "value": ""
+            },
+            {
+              "stat": "path-id",
+              "value": ""
+            },
+            {
+              "set": true,
+              "stat": "life",
+              "todo": "_me",
+              "type": "character",
+              "value": 0
+            }
+          ],
+          "position-z": 20
+        }
+      ],
+      "speed": 4
+    }
+  },
+  "characters": [
+    {
+      "id": "dropdown",
+      "spawn": false
+    },
+    {
+      "id": "coin-bad",
+      "entities": [
+        {
+          "id": "coin-bad-body",
+          "billboard": true,
+          "collision": false,
+          "event-range": 5,
+          "event-todo": [
+            {
+              "random-max": 100,
+              "set": true,
+              "stat": "position-x",
+              "todo": "coin-bad",
+              "type": "character",
+              "value": -50
+            },
+            {
+              "stat": "position-z",
+              "todo": "coin-bad",
+              "type": "character",
+              "value": -420
+            },
+            {
+              "set": true,
+              "stat": "life",
+              "todo": "_me",
+              "type": "character",
+              "value": 0
+            }
+          ],
+          "vertex-colors": [
+            0.4, 0.2, 0.4, 1
+          ],
+          "vertices": [
+            2, 2, -0,
+            -2, 2, -0,
+            -2, -2, 0,
+            2, -2, 0
+          ]
+        }
+      ],
+      "level": 0,
+      "path-id": "coin-bad",
+      "position-y": 5,
+      "position-z": -520,
+      "spawn": false
+    },
+    {
+      "id": "coin-good",
+      "entities": [
+        {
+          "id": "coin-good-body",
+          "billboard": true,
+          "collision": false,
+          "event-range": 5,
+          "event-todo": [
+            {
+              "todo": "audio_start",
+              "type": "function",
+              "value": "boop"
+            },
+            {
+              "random-max": 100,
+              "set": true,
+              "stat": "position-x",
+              "todo": "coin-good",
+              "type": "character",
+              "value": -50
+            },
+            {
+              "stat": "position-z",
+              "todo": "coin-good",
+              "type": "character",
+              "value": -420
+            },
+            {
+              "stat": "level-xp",
+              "todo": "_me",
+              "type": "character",
+              "value": 1
+            }
+          ],
+          "vertex-colors": [
+            0.745, 0.392, 0, 1
+          ],
+          "vertices": [
+            2, 2, -0,
+            -2, 2, -0,
+            -2, -2, 0,
+            2, -2, 0
+          ]
+        }
+      ],
+      "level": 0,
+      "path-id": "coin-good",
+      "position-y": 5,
+      "position-z": -400,
+      "spawn": false
+    }
+  ],
+  "prefabs": [
+    {
+      "type": "webgl_primitive_cuboid",
+      "properties": {
+        "prefix": "base",
+        "all": {
+          "texture": "grid.png"
+        },
+        "bottom": {
+          "exclude": true
+        },
+        "character": "dropdown",
+        "front": {
+          "exclude": true
+        },
+        "position-y": 5,
+        "position-z": -180,
+        "size-x": -100,
+        "size-y": -10,
+        "size-z": -400
+      }
+    }
+  ]
+}
