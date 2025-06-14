@@ -72,25 +72,25 @@ function calculate_combat(){
     document.getElementById('result-138').textContent =
       Math.floor((
         1.3 * Math.max(
-          (skills['attack'] + skills['strength']),
-          skills['magic'] * 2,
-          skills['ranged'] * 2
+          (skills.attack + skills.strength),
+          skills.magic * 2,
+          skills.ranged * 2
         )
-        + skills['defense']
-        + skills['constitution']
-        + (skills['prayer'] / 2)
-        + (skills['summoning'] / 2)
+        + skills.defense
+        + skills.constitution
+        + (skills.prayer / 2)
+        + (skills.summoning / 2)
       ) / 4);
 
     document.getElementById('result-200').textContent =
       Math.max(
-        skills['attack'],
-        skills['magic'],
-        skills['ranged'],
-        skills['strength'],
-        skills['summoning']
+        skills.attack,
+        skills.magic,
+        skills.ranged,
+        skills.strength,
+        skills.summoning
       )
-      + skills['defense'] + 2;
+      + skills.defense + 2;
 }
 
 function calculate_xp(){

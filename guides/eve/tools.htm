@@ -124,7 +124,7 @@ function calculate_ehp(){
       'structure': Number(document.getElementById('structure-hp').value),
     };
 
-    document.getElementById('total-hp').textContent = hp['armor'] + hp['shield'] + hp['structure'];
+    document.getElementById('total-hp').textContent = hp.armor + hp.shield + hp.structure;
 
     const resists = [
       'em',
