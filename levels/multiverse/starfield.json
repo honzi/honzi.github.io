@@ -1,7 +1,7 @@
 {
-  "camera-zoom-max": 0,
-  "fog-end": 150,
-  "gravity-acceleration": 0,
+  "camera_zoom_max": 0,
+  "fog_end": 150,
+  "gravity_acceleration": 0,
   "characters": [
     {
       "id": "space",
@@ -20,21 +20,21 @@
         "entities": [
           {
             "id": "stars",
-            "draw-mode": "POINTS",
-            "point-size": 200,
-            "rotate-x": 90,
-            "vertex-repeat": 1000
+            "draw_mode": "POINTS",
+            "point_size": 200,
+            "rotate_x": 90,
+            "vertex_repeat": 1000
           }
         ],
         "id": "stars",
         "particle": {
-          "speed-y": 1,
-          "x-max": 90,
-          "x-min": -90,
-          "y-max": 150,
-          "y-min": -150,
-          "z-max": 90,
-          "z-min": -90
+          "speed_y": 1,
+          "x_max": 90,
+          "x_min": -90,
+          "y_max": 150,
+          "y_min": -150,
+          "z_max": 90,
+          "z_min": -90
         }
       }
     }

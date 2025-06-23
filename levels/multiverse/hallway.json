@@ -1,23 +1,23 @@
 {
-  "camera-zoom-max": 0,
-  "fog-end": 50,
+  "camera_zoom_max": 0,
+  "fog_end": 50,
   "characters": [
     {
       "id": "hallway",
       "spawn": false,
       "entities": [
         {
-          "id": "warp-0",
-          "attach-z": -30,
+          "id": "warp_0",
+          "attach_z": -30,
           "draw": false,
-          "event-todo": [
+          "event_todo": [
             {
-              "stat": "position-z",
+              "stat": "position_z",
               "value": 50
             }
           ],
-          "event-range": 0,
-          "rotate-x": 90,
+          "event_range": 0,
+          "rotate_x": 90,
           "vertices": [
             10, 0, -10,
             -10, 0, -10,
@@ -26,17 +26,17 @@
           ]
         },
         {
-          "id": "warp-1",
-          "attach-z": 30,
+          "id": "warp_1",
+          "attach_z": 30,
           "draw": false,
-          "event-todo": [
+          "event_todo": [
             {
-              "stat": "position-z",
+              "stat": "position_z",
               "value": -50
             }
           ],
-          "event-range": 0,
-          "rotate-x": 270,
+          "event_range": 0,
+          "rotate_x": 270,
           "vertices": [
             10, 0, -10,
             -10, 0, -10,
@@ -55,7 +55,7 @@
         "character": "hallway",
         "all": {
           "texture": "lavaleaf.png",
-          "texture-y": 3
+          "texture_y": 3
         },
         "back": {
           "exclude": true
@@ -63,9 +63,9 @@
         "front": {
           "exclude": true
         },
-        "size-x": -10,
-        "size-y": -10,
-        "size-z": -150
+        "size_x": -10,
+        "size_y": -10,
+        "size_z": -150
       }
     }
   ]
