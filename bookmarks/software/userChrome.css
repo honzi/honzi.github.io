@@ -1,0 +1,12 @@
+#context-print-selection,
+#context-savelink,
+#context-savepage,
+#context-sendaudio,
+#context-sendimage,
+#context-sendvideo,
+#context-sep-screenshots,
+#context-sep-setbackground,
+#context-setDesktopBackground,
+#context-take-screenshot {
+    display: none !important;
+}
