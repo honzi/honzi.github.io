@@ -1,3 +1,6 @@
+#context-add-engine,
+#context-copyaudiourl,
+#context-copyvideourl,
 #context-media-sep-video-commands,
 #context-print-selection,
 #context-savelink,
@@ -11,6 +14,9 @@
 #context-take-screenshot,
 #context-video-pictureinpicture,
 #context-video-saveimage,
-#context-viewvideo {
+#context-viewvideo,
+#spell-add-dictionaries-main,
+#spell-check-enabled,
+#spell-separator {
     display: none !important;
 }
