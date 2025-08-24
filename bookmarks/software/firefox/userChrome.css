@@ -1,3 +1,4 @@
+#context-media-sep-video-commands,
 #context-print-selection,
 #context-savelink,
 #context-savepage,
@@ -7,6 +8,9 @@
 #context-sep-screenshots,
 #context-sep-setbackground,
 #context-setDesktopBackground,
-#context-take-screenshot {
+#context-take-screenshot,
+#context-video-pictureinpicture,
+#context-video-saveimage,
+#context-viewvideo {
     display: none !important;
 }
