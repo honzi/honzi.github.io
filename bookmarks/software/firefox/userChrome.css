@@ -94,6 +94,7 @@
 #toolbar-context-toggle-vertical-tabs,
 #toolbarDownloadsAnchorMenuSeparator,
 #toolbarNavigatorItemsMenuSeparator,
-#viewToolbarsMenuSeparator {
+#viewToolbarsMenuSeparator,
+.tabbrowser-tab .tab-close-button {
     display: none !important;
 }
