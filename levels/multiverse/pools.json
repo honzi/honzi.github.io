@@ -1,0 +1,196 @@
+{
+  "camera_zoom_max": 0,
+  "pointerlock": true,
+  "characters": [
+    {
+      "id": "pools",
+      "spawn": false,
+      "entities": [
+        {
+          "attach_y": -5,
+          "texture": "stone.png",
+          "texture_x": 30,
+          "texture_y": 30,
+          "vertex_colors": [
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            30, 0, -30,
+            -30, 0, -30,
+            -30, 0, 30,
+            30, 0, 30
+          ]
+        },
+        {
+          "attach_x": -10,
+          "attach_y": -10,
+          "attach_z": -100,
+          "rotate_z": 270,
+          "texture": "stone.png",
+          "texture_x": 5,
+          "texture_y": 70,
+          "vertex_colors": [
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            5, 0, -70,
+            -5, 0, -70,
+            -5, 0, 70,
+            5, 0, 70
+          ]
+        },
+        {
+          "attach_x": -20,
+          "attach_y": -5,
+          "attach_z": -100,
+          "texture": "stone.png",
+          "texture_x": 10,
+          "texture_y": 70,
+          "vertex_colors": [
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            10, 0, -70,
+            -10, 0, -70,
+            -10, 0, 70,
+            10, 0, 70
+          ]
+        },
+        {
+          "attach_x": 10,
+          "attach_y": -15,
+          "attach_z": -100,
+          "texture": "stone.png",
+          "texture_x": 20,
+          "texture_y": 70,
+          "vertex_colors": [
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, -70,
+            -20, 0, -70,
+            -20, 0, 70,
+            20, 0, 70
+          ]
+        },
+        {
+          "attach_x": 30,
+          "attach_y": 85,
+          "attach_z": -70,
+          "rotate_z": 90,
+          "texture": "stone.png",
+          "texture_x": 100,
+          "texture_y": 100,
+          "vertex_colors": [
+            0, 0, 0, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            100, 0, -100,
+            -100, 0, -100,
+            -100, 0, 100,
+            100, 0, 100
+          ]
+        },
+        {
+          "attach_x": -30,
+          "attach_y": 85,
+          "attach_z": -70,
+          "rotate_z": 270,
+          "texture": "stone.png",
+          "texture_x": 100,
+          "texture_y": 100,
+          "vertex_colors": [
+            1, 1, 1, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            100, 0, -100,
+            -100, 0, -100,
+            -100, 0, 100,
+            100, 0, 100
+          ]
+        },
+        {
+          "attach_x": 10,
+          "attach_y": -5,
+          "attach_z": -30,
+          "rotate_x": 330,
+          "texture": "stone.png",
+          "texture_x": 20,
+          "texture_y": 10,
+          "vertex_colors": [
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, -20,
+            -20, 0, -20,
+            -20, 0, 0,
+            20, 0, 0
+          ]
+        },
+        {
+          "attach_y": 85,
+          "attach_z": 30,
+          "rotate_x": 270,
+          "texture": "stone.png",
+          "texture_x": 30,
+          "texture_y": 100,
+          "vertex_colors": [
+            1, 1, 1, 1,
+            1, 1, 1, 1,
+            0, 0, 0, 1,
+            0, 0, 0, 1
+          ],
+          "vertices": [
+            30, 0, -100,
+            -30, 0, -100,
+            -30, 0, 100,
+            30, 0, 100
+          ]
+        },
+        {
+          "attach_y": 85,
+          "attach_z": -170,
+          "rotate_x": 90,
+          "texture": "stone.png",
+          "texture_x": 30,
+          "texture_y": 100,
+          "vertex_colors": [
+            0, 0, 0, 1,
+            0, 0, 0, 1,
+            1, 1, 1, 1,
+            1, 1, 1, 1
+          ],
+          "vertices": [
+            30, 0, -100,
+            -30, 0, -100,
+            -30, 0, 100,
+            30, 0, 100
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "attach_x": 10,
+          "attach_y": -14,
+          "attach_z": -100,
+          "collision": false,
+          "texture": "lavaleaf.png",
+          "vertex_colors": [
+            0, 1, 1, 1
+          ],
+          "vertices": [
+            20, 0, -70,
+            -20, 0, -70,
+            -20, 0, 70,
+            20, 0, 70
+          ]
+        }
+      ]
+    }
+  ]
+}
