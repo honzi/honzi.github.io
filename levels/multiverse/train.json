@@ -1,8 +1,9 @@
 {
   "camera_zoom_max": 0,
   "fog_end": 500,
-  "paths": {
-    "left": {
+  "paths": [
+    {
+      "id": "left",
       "end": "warp",
       "points": [
         {
@@ -22,7 +23,8 @@
       ],
       "speed": 3
     },
-    "right": {
+    {
+      "id": "right",
       "end": "warp",
       "points": [
         {
@@ -42,7 +44,7 @@
       ],
       "speed": 3
     }
-  },
+  ],
   "characters": [
     {
       "id": "train",

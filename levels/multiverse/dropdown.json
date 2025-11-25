@@ -13,8 +13,9 @@
     },
     "position_x": 0
   },
-  "paths": {
-    "coin_bad": {
+  "paths": [
+    {
+      "id": "coin_bad",
       "end": "warp",
       "points": [
         {
@@ -34,7 +35,8 @@
       ],
       "speed": 4
     },
-    "coin_good": {
+    {
+      "id": "coin_good",
       "end": "warp",
       "points": [
         {
@@ -65,7 +67,7 @@
       ],
       "speed": 4
     }
-  },
+  ],
   "characters": [
     {
       "id": "dropdown",
