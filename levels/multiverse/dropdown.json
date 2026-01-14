@@ -55,11 +55,8 @@
               "value": ""
             },
             {
-              "set": true,
-              "stat": "life",
-              "todo": "_me",
-              "type": "character",
-              "value": 0
+              "todo": "webgl_character_die",
+              "type": "function"
             }
           ],
           "position_z": 20
@@ -97,11 +94,8 @@
               "value": -420
             },
             {
-              "set": true,
-              "stat": "life",
-              "todo": "_me",
-              "type": "character",
-              "value": 0
+              "todo": "webgl_character_die",
+              "type": "function"
             }
           ],
           "vertex_colors": [
