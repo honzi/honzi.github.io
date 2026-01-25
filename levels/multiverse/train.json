@@ -48,6 +48,7 @@
   "characters": [
     {
       "id": "train",
+      "base": true,
       "spawn": false,
       "entities": [
         {
@@ -157,7 +158,6 @@
         "back": {
           "draw": false
         },
-        "character": "train",
         "front": {
           "draw": false
         },

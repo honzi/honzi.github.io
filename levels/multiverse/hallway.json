@@ -4,6 +4,7 @@
   "characters": [
     {
       "id": "hallway",
+      "base": true,
       "spawn": false,
       "entities": [
         {
@@ -52,7 +53,6 @@
       "type": "webgl_primitive_cuboid",
       "properties": {
         "prefix": "hallway",
-        "character": "hallway",
         "all": {
           "texture": "lavaleaf.png",
           "texture_y": 3

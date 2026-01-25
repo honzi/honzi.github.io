@@ -4,6 +4,7 @@
   "characters": [
     {
       "id": "pools",
+      "base": true,
       "spawn": false,
       "entities": [
         {

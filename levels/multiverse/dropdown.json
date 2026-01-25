@@ -68,6 +68,7 @@
   "characters": [
     {
       "id": "dropdown",
+      "base": true,
       "spawn": false
     },
     {
@@ -179,7 +180,6 @@
         "bottom": {
           "exclude": true
         },
-        "character": "dropdown",
         "front": {
           "exclude": true
         },

@@ -5,6 +5,7 @@
   "characters": [
     {
       "id": "space",
+      "base": true,
       "spawn": false
     }
   ],
@@ -13,7 +14,6 @@
       "type": "webgl_primitive_particle",
       "properties": {
         "id": "stars",
-        "character": "space",
         "groups": [
           "skybox"
         ],
