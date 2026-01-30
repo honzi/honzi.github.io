@@ -10,6 +10,7 @@
 #context-reveal-password,
 #context-savelink,
 #context-savepage,
+#context-savevideo,
 #context-sendaudio,
 #context-sendimage,
 #context-sendlinktodevice,
@@ -51,7 +52,6 @@
 #context_ungroupTab,
 #context_unpinSelectedTabs,
 #context_unpinTab,
-#customizationMenuSeparator,
 #frame-sep,
 #inspect-separator,
 #manage-saved-logins,
@@ -82,7 +82,6 @@
 #spell-check-enabled,
 #spell-separator,
 #spell-suggestions-separator,
-#tabbarItemsMenuSeparator,
 #toolbar-context-bookmarkSelectedTab,
 #toolbar-context-move-to-panel,
 #toolbar-context-reloadSelectedTab,
@@ -91,9 +90,7 @@
 #toolbar-context-report-extension,
 #toolbar-context-selectAllTabs,
 #toolbar-context-toggle-vertical-tabs,
-#toolbarDownloadsAnchorMenuSeparator,
-#toolbarNavigatorItemsMenuSeparator,
-#viewToolbarsMenuSeparator,
-.tabbrowser-tab .tab-close-button {
+.tabbrowser-tab .tab-close-button,
+menuseparator {
     display: none !important;
 }
