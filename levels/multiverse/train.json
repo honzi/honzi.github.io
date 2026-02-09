@@ -21,7 +21,7 @@
           "position_x": 500
         }
       ],
-      "speed": 3
+      "speed": 2
     },
     {
       "id": "right",
@@ -42,7 +42,7 @@
           "position_x": 500
         }
       ],
-      "speed": 3
+      "speed": 2
     }
   ],
   "characters": [
