@@ -14,9 +14,6 @@
       "type": "webgl_primitive_particle",
       "properties": {
         "id": "stars",
-        "groups": [
-          "skybox"
-        ],
         "entities": [
           {
             "id": "stars",
@@ -26,7 +23,7 @@
             "vertex_repeat": 1000
           }
         ],
-        "id": "stars",
+        "groups": ["skybox"],
         "particle": {
           "speed_y": 1,
           "x_max": 90,

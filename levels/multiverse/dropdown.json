@@ -17,6 +17,7 @@
     {
       "id": "coin_bad",
       "end": "warp",
+      "speed": 4,
       "points": [
         {
           "position_z": -400
@@ -32,12 +33,12 @@
           ],
           "position_z": 20
         }
-      ],
-      "speed": 4
+      ]
     },
     {
       "id": "coin_good",
       "end": "warp",
+      "speed": 4,
       "points": [
         {
           "position_z": -400
@@ -61,8 +62,7 @@
           ],
           "position_z": 20
         }
-      ],
-      "speed": 4
+      ]
     }
   ],
   "characters": [
@@ -73,6 +73,11 @@
     },
     {
       "id": "coin_bad",
+      "level": 0,
+      "path_id": "coin_bad",
+      "position_y": 5,
+      "position_z": -520,
+      "spawn": false,
       "entities": [
         {
           "id": "coin_bad_body",
@@ -109,15 +114,15 @@
             2, -2, 0
           ]
         }
-      ],
-      "level": 0,
-      "path_id": "coin_bad",
-      "position_y": 5,
-      "position_z": -520,
-      "spawn": false
+      ]
     },
     {
       "id": "coin_good",
+      "level": 0,
+      "path_id": "coin_good",
+      "position_y": 5,
+      "position_z": -400,
+      "spawn": false,
       "entities": [
         {
           "id": "coin_good_body",
@@ -161,12 +166,7 @@
             2, -2, 0
           ]
         }
-      ],
-      "level": 0,
-      "path_id": "coin_good",
-      "position_y": 5,
-      "position_z": -400,
-      "spawn": false
+      ]
     }
   ],
   "prefabs": [
