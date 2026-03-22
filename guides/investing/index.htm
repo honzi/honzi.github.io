@@ -13,8 +13,8 @@
     <td>On Date
   <tr>
     <td>NYSE
-    <td id=time>
-    <td id=date>
+    <td id=time_nyse>
+    <td id=date_nyse>
 </table>
 
 <script>
@@ -25,36 +25,38 @@ function two_digits(value){
     return value;
 }
 
-function update_time(){
+function update_times(){
     const now = new Date();
-    const opening = new Date();
-    opening.setHours(
-      13 - now.getTimezoneOffset() / 60,
-      30,
-      0,
-      0
-    );
-    if(now >= opening){
-        opening.setDate(opening.getDate() + 1);
-    }
-    const day = opening.getDay();
-    if(day === 0 || day === 6){
-        opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
-    }
-    const remaining = (opening - now) / 1000;
-    document.getElementById('time').textContent = Number.parseInt(remaining / 86400, 10) + ':'
-      + two_digits(Number.parseInt(remaining / 3600, 10) % 24) + ':'
-      + two_digits(Number.parseInt(remaining / 60, 10) % 60) + ':'
-      + two_digits(Math.round(remaining % 60));
+    const times = {
+      'nyse': [13 - now.getTimezoneOffset() / 60, 30, 0, 0],
+    };
 
-    document.getElementById('date').textContent = opening.getFullYear() + '-'
-      + two_digits(opening.getMonth() + 1) + '-'
-      + two_digits(opening.getDate());
+    for(const time in times){
+        const opening = new Date();
+        opening.setHours(...times[time]);
+        if(now >= opening){
+            opening.setDate(opening.getDate() + 1);
+        }
+        const day = opening.getDay();
+        if(day === 0 || day === 6){
+            opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
+        }
+        const remaining = (opening - now) / 1000;
+        document.getElementById('time_' + time).textContent = Number.parseInt(remaining / 86400, 10) + ':'
+          + two_digits(Number.parseInt(remaining / 3600, 10) % 24) + ':'
+          + two_digits(Number.parseInt(remaining / 60, 10) % 60) + ':'
+          + two_digits(Math.round(remaining % 60));
+        document.getElementById('date_' + time).textContent = opening.getFullYear() + '-'
+          + two_digits(opening.getMonth() + 1) + '-'
+          + two_digits(opening.getDate());
+    }
 }
 
-update_time();
-globalThis.setInterval(
-  update_time,
-  1000
-);
+globalThis.onload = function(){
+    update_times();
+    globalThis.setInterval(
+      update_times,
+      1000
+    );
+}
 </script>
