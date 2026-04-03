@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>404 - PAGE NOT FOUND</title>
+<link href=../../common/css/writings.css rel=stylesheet>
+
+<a href=../index.htm>Honzi</a>/404 - PAGE NOT FOUND
+<div id=repo></div>
+
+<script>
+globalThis.onload = function(){
+    const repo = globalThis.location.search.substring(1);
+    if(repo === 'multiverse' || repo === 'YouTubeViewer.htm'){
+        document.getElementById('repo').innerHTML = 'Did you mean <a href=../../' + repo + '/index.htm>' + repo + '/index.htm</a>?';
+    }
+};
+</script>
