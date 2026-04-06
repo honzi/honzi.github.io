@@ -12,7 +12,7 @@ body{
 }
 .external::after{
     content: "↗";
-    line-height: inherit;
+    line-height: 1;
 }
 ul{
     margin: 0;
