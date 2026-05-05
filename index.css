@@ -20,7 +20,7 @@ ul{
     gap: 4px;
     list-style: disc inside;
     margin: 0;
-    padding-left: 0;
+    padding-left: 1ch;
 }
 
 *:focus{
