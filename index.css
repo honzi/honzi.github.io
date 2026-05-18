@@ -18,7 +18,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    list-style: disc inside;
+    list-style: "- " inside;
     margin: 4px 0;
     padding-left: 1ch;
 }
