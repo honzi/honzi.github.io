@@ -13,14 +13,14 @@ body{
     text-decoration-color: #c66;
 }
 .external::after{
-    content: "↗";
+    content: '↗';
     line-height: 1;
 }
 ul{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    list-style: "- " inside;
+    list-style: '- ' inside;
     margin: 4px 0;
     padding-left: 1ch;
 }
