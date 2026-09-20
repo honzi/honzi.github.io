@@ -42,9 +42,9 @@ function update_times(){
             opening.setDate(opening.getDate() + (day === 6 ? 2 : 1));
         }
         const remaining = (opening - now) / 1000;
-        document.getElementById('time_' + time).textContent = Number.parseInt(remaining / 86400, 10) + ':'
-          + two_digits(Number.parseInt(remaining / 3600, 10) % 24) + ':'
-          + two_digits(Number.parseInt(remaining / 60, 10) % 60) + ':'
+        document.getElementById('time_' + time).textContent = Math.floor(remaining / 86400) + ':'
+          + two_digits(Math.floor(remaining / 3600) % 24) + ':'
+          + two_digits(Math.floor(remaining / 60) % 60) + ':'
           + two_digits(Math.round(remaining % 60));
         document.getElementById('date_' + time).textContent = opening.getFullYear() + '-'
           + two_digits(opening.getMonth() + 1) + '-'

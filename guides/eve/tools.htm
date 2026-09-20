@@ -174,13 +174,10 @@ function calculate_target(){
 }
 
 function calculate_year(){
-    let year = Number.parseInt(
-      document.getElementById('current-year').value,
-      10
-    );
-    if(globalThis.isNaN(year)){
-        year = new Date().getFullYear();
-    }
+    const value = document.getElementById('current-year').value;
+    const year = value
+      ? Number(value)
+      : new Date().getFullYear();
 
     document.getElementById('current-year').value = year;
     document.getElementById('eve-year').textContent = year + 21338;

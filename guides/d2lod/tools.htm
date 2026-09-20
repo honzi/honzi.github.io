@@ -81,14 +81,8 @@ rune?
 
 <script>
 function calculate(){
-    const value1 = Number.parseInt(
-      document.getElementById('select1').value,
-      10
-    );
-    const value2 = Number.parseInt(
-      document.getElementById('select2').value,
-      10
-    );
+    const value1 = Number(document.getElementById('select1').value);
+    const value2 = Number(document.getElementById('select2').value);
 
     if(value1 > value2){
         document.getElementById('result').textContent = 'Runes cannot be downgraded.';

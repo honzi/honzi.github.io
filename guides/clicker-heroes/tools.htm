@@ -10,9 +10,9 @@
 
 <script>
 function calculate_immortal_damage(){
-    document.getElementById('output').textContent = Number.parseFloat(document.getElementById('dps').value)
-      * Number.parseFloat(document.getElementById('cps').value)
-      * Number.parseFloat(document.getElementById('seconds').value);
+    document.getElementById('output').textContent = Number(document.getElementById('dps').value)
+      * Number(document.getElementById('cps').value)
+      * Number(document.getElementById('seconds').value);
 }
 
 calculate_immortal_damage();

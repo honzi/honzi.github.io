@@ -63,10 +63,7 @@ function calculate_combat(){
         if(!globalThis.isNaN(value)
           && value.length >= 1
           && value >= 1){
-            skills[id] = Number.parseInt(
-              value,
-              10
-            );
+            skills[id] = Number(value);
         }
     }
 
@@ -95,14 +92,8 @@ function calculate_combat(){
 }
 
 function calculate_xp(){
-    const value1 = Number.parseInt(
-      document.getElementById('value1').value,
-      10
-    );
-    const value2 = Number.parseInt(
-      document.getElementById('value2').value,
-      10
-    );
+    const value1 = Number(document.getElementById('value1').value);
+    const value2 = Number(document.getElementById('value2').value);
 
     if(value1 >= value2){
         document.getElementById('result').textContent = '1st level must be lower than the 2nd level.';
@@ -261,11 +252,11 @@ function update_time(){
 
     const remaining = (tomorrow - now) / 1000;
 
-    let hours = Number.parseInt(remaining / 3600, 10) % 24;
+    let hours = Math.floor(remaining / 3600, 10) % 24;
     if(hours < 10){
         hours = '0' + hours;
     }
-    let minutes = Number.parseInt(remaining / 60, 10) % 60;
+    let minutes = Math.floor(remaining / 60, 10) % 60;
     if(minutes < 10){
         minutes = '0' + minutes;
     }
