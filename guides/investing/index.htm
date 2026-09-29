@@ -52,11 +52,11 @@ function update_times(){
     }
 }
 
-globalThis.onload = function(){
+globalThis.addEventListener('load', function(){
     update_times();
     globalThis.setInterval(
       update_times,
       1000
     );
-}
+}, {'once': true});
 </script>
